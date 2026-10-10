@@ -1,0 +1,24 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"urn:ashare:minute-bar:v1",
+  "title":"Canonical finalized 1m bar",
+  "type":"object","additionalProperties":false,
+  "required":["symbol","bar_start_at","bar_end_at","open","high","low","close","volume_shares","amount_cny","source","received_at","is_final","quality"],
+  "properties":{
+    "symbol":{"type":"string","pattern":"^(SH|SZ)\\.[0-9]{6}$"},
+    "bar_start_at":{"type":"string","format":"date-time"},
+    "bar_end_at":{"type":"string","format":"date-time"},
+    "open":{"type":"string","pattern":"^[0-9]+(\\.[0-9]+)?$"},
+    "high":{"type":"string","pattern":"^[0-9]+(\\.[0-9]+)?$"},
+    "low":{"type":"string","pattern":"^[0-9]+(\\.[0-9]+)?$"},
+    "close":{"type":"string","pattern":"^[0-9]+(\\.[0-9]+)?$"},
+    "volume_shares":{"type":"integer","minimum":0},
+    "amount_cny":{"type":"string","pattern":"^[0-9]+(\\.[0-9]+)?$"},
+    "source":{"type":"string","minLength":2},
+    "received_at":{"type":"string","format":"date-time"},
+    "is_final":{"type":"boolean"},
+    "quality":{"enum":["VALID","STALE","GAP","PARTIAL","REVISED_PENDING","INVALID","SOURCE_UNAVAILABLE"]},
+    "revision":{"type":"integer","minimum":1},
+    "fingerprint":{"type":"string"}
+  }
+}

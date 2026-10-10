@@ -1,0 +1,10 @@
+{
+  "scenario": "SIGTERM with active SSE client, isolated database",
+  "graceful_shutdown_timeout_seconds": 10,
+  "exit_code": -15,
+  "elapsed_seconds": 10.258,
+  "application_shutdown_complete": true,
+  "instance_lock_released": true,
+  "database_check": "ok",
+  "status": "PASS"
+}

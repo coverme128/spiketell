@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string>/Users/bojiao/development/flutter/bin:/usr/local/Cellar/openjdk@11/11.0.27/libexec/openjdk.jdk/Contents/Home/bin:/usr/local/bin:/usr/local/sbin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/go/bin:/Users/bojiao/development/flutter/bin:/Users/bojiao/.codex/tmp/arg0/codex-arg08LdFyQ:/usr/local/Cellar/openjdk@11/11.0.27/libexec/openjdk.jdk/Contents/Home/bin:/Users/bojiao/Library/Android/sdk/emulator:/Users/bojiao/Library/Android/sdk/platform-tools:/Users/bojiao/.cursor/extensions/openai.chatgpt-26.908.40401-darwin-x64/bin/macos-x86_64:/Users/bojiao/Library/Android/sdk/emulator:/Users/bojiao/Library/Android/sdk/platform-tools</string>
+	</dict>
+	<key>KeepAlive</key>
+	<true/>
+	<key>Label</key>
+	<string>local.spiketell.radar</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/bojiao/Documents/GitHub/spiketell/.venv/bin/python</string>
+		<string>/Users/bojiao/Documents/GitHub/spiketell/scripts/start.py</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/Users/bojiao/Documents/GitHub/spiketell/data/service.log</string>
+	<key>StandardOutPath</key>
+	<string>/Users/bojiao/Documents/GitHub/spiketell/data/service.log</string>
+	<key>ThrottleInterval</key>
+	<integer>15</integer>
+	<key>WorkingDirectory</key>
+	<string>/Users/bojiao/Documents/GitHub/spiketell</string>
+</dict>
+</plist>

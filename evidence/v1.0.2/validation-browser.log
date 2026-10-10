@@ -1,0 +1,32 @@
+
+> spiketell-web@0.1.0 test
+> playwright test
+
+[WebServer] INFO:     Started server process [58091]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:18765 (Press CTRL+C to quit)
+
+Running 15 tests using 1 worker
+
+(node:58100) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:58100) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/app.spec.ts:5:1 › real application CRUD and blocked feed (1.4s)
+  ✓   2 tests/app.spec.ts:13:35 › responsive 1440 (1.6s)
+  ✓   3 tests/app.spec.ts:13:35 › responsive 390 (1.1s)
+  ✓   4 tests/app.spec.ts:13:35 › responsive 430 (1.2s)
+  ✓   5 tests/app.spec.ts:21:1 › notification denied and quiet mode persist (846ms)
+  ✓   6 tests/app.spec.ts:26:1 › SSE reconnect fallback and missing detail (788ms)
+  ✓   7 tests/app.spec.ts:29:1 › simulation card visibly marked and source details (1.0s)
+  ✓   8 tests/app.spec.ts:36:1 › source onboarding records consent without fabricating qualification (908ms)
+  ✓   9 tests/app.spec.ts:44:1 › security search selection adds to real watchlist API (1.7s)
+  ✓  10 tests/app.spec.ts:51:1 › activity exports full server history with exact version fields (778ms)
+  ✓  11 tests/app.spec.ts:56:1 › watchlist capacity preference persists without qualifying provider (868ms)
+  ✓  12 tests/app.spec.ts:65:35 › v102 four scenarios simulation 1440 (995ms)
+  ✓  13 tests/app.spec.ts:65:35 › v102 four scenarios simulation 390 (928ms)
+  ✓  14 tests/app.spec.ts:65:35 › v102 four scenarios simulation 430 (866ms)
+  ✓  15 tests/app.spec.ts:78:1 › v102 notification kinds dedup and reversal replay suppression - injected browser capability (1.0s)
+
+  15 passed (19.2s)

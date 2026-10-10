@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ashare:episode-event:v1.0.2",
+  "title": "Durable event journal envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "sequence",
+    "event_id",
+    "episode_id",
+    "event_type",
+    "recorded_at",
+    "delivery_mode",
+    "payload"
+  ],
+  "properties": {
+    "sequence": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 8
+    },
+    "episode_id": {
+      "type": "string",
+      "minLength": 16
+    },
+    "event_type": {
+      "enum": [
+        "EPISODE_CREATED",
+        "EPISODE_UPDATED",
+        "EPISODE_EXPIRED",
+        "EPISODE_INVALIDATED",
+        "FEED_HEALTH_CHANGED",
+        "RESYNC_REQUIRED",
+        "REVERSAL_OBSERVED",
+        "BREAKOUT_UNVERIFIED",
+        "SCENARIOS_CHANGED"
+      ]
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "delivery_mode": {
+      "enum": [
+        "LIVE",
+        "REPLAY",
+        "SIMULATION"
+      ]
+    },
+    "payload": {
+      "type": "object"
+    }
+  }
+}

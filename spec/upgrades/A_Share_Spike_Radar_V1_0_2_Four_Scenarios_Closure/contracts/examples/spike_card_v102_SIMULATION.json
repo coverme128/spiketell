@@ -1,0 +1,33 @@
+{
+  "episode_id": "0f6cc42a56f051dcfd50c03d",
+  "symbol": "SH.600000",
+  "name": "测试股票A",
+  "rule_version": "spike_rules_v1.0.2",
+  "trigger_bar_start_at": "2026-10-09T09:59:00+08:00",
+  "last_bar_end_at": "2026-10-09T10:00:00+08:00",
+  "received_at": "2026-10-09T10:00:09+08:00",
+  "updated_at": "2026-10-09T10:00:10+08:00",
+  "reference_close_cny": "10.12",
+  "ret1_pct": "1.200",
+  "ret3_pct": "1.402805611222444889779559100",
+  "turnover_burst": "4",
+  "score": 75,
+  "priority": "HIGH",
+  "episode_state": "NEW",
+  "action": "VIEW_NOW",
+  "reasons": [
+    "价格快速上行",
+    "成交额显著高于历史同分钟",
+    "突破20分钟区间高位"
+  ],
+  "risks": [],
+  "feed_health": "HEALTHY",
+  "data_mode": "SIMULATION",
+  "as_of_label": "截至10:00完整分钟，非可成交价",
+  "primary_scenario": "VOLUME_BREAKOUT",
+  "matched_scenarios": [
+    "RAPID_RISE",
+    "VOLUME_BREAKOUT"
+  ],
+  "is_attention_eligible": true
+}

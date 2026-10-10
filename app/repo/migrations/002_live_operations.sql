@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS preparation (symbol TEXT PRIMARY KEY, payload TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS source_snapshots (symbol TEXT NOT NULL, source TEXT NOT NULL, observed_at TEXT NOT NULL, payload TEXT NOT NULL, PRIMARY KEY(symbol,source));
+CREATE TABLE IF NOT EXISTS baseline_amounts (symbol TEXT NOT NULL, session_date TEXT NOT NULL, slot TEXT NOT NULL, source TEXT NOT NULL, amount_cny TEXT NOT NULL, received_at TEXT NOT NULL, semantics TEXT NOT NULL, PRIMARY KEY(symbol,session_date,slot,source));
+CREATE TABLE IF NOT EXISTS runtime_evidence (key TEXT PRIMARY KEY, payload TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS minute_coverage (symbol TEXT NOT NULL, bar_end_at TEXT NOT NULL, eligibility TEXT NOT NULL, valid_received_at TEXT, reason TEXT, metadata TEXT NOT NULL, PRIMARY KEY(symbol,bar_end_at));
+CREATE TABLE IF NOT EXISTS session_observations (session_date TEXT PRIMARY KEY, started_at TEXT NOT NULL, last_seen_at TEXT NOT NULL, max_gap_seconds REAL NOT NULL DEFAULT 0, browser_visible_minutes INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE IF NOT EXISTS ignored_episodes (episode_id TEXT PRIMARY KEY REFERENCES episodes(episode_id), ignored_at TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS baseline_lookup ON baseline_amounts(symbol,slot,session_date);
+CREATE INDEX IF NOT EXISTS bar_latest ON minute_bars(symbol,bar_start_at DESC);
+CREATE INDEX IF NOT EXISTS coverage_day ON minute_coverage(bar_end_at);

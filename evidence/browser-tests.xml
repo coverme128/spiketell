@@ -1,0 +1,36 @@
+<testsuites id="" name="" tests="16" failures="0" skipped="0" errors="0" time="25.251254">
+<testsuite name="app.spec.ts" timestamp="2026-10-10T04:45:09.118Z" hostname="" tests="16" failures="0" skipped="0" time="21.754" errors="0">
+<testcase name="real application CRUD and blocked feed" classname="app.spec.ts" time="1.389">
+</testcase>
+<testcase name="responsive 1440" classname="app.spec.ts" time="1.46">
+</testcase>
+<testcase name="responsive 390" classname="app.spec.ts" time="1.154">
+</testcase>
+<testcase name="responsive 430" classname="app.spec.ts" time="1.159">
+</testcase>
+<testcase name="notification denied and quiet mode persist" classname="app.spec.ts" time="0.963">
+</testcase>
+<testcase name="SSE reconnect fallback and missing detail" classname="app.spec.ts" time="0.779">
+</testcase>
+<testcase name="simulation card visibly marked and source details" classname="app.spec.ts" time="1.082">
+</testcase>
+<testcase name="source onboarding records consent without fabricating qualification" classname="app.spec.ts" time="0.89">
+</testcase>
+<testcase name="security search selection adds to real watchlist API" classname="app.spec.ts" time="1.62">
+</testcase>
+<testcase name="activity exports full server history with exact version fields" classname="app.spec.ts" time="0.758">
+</testcase>
+<testcase name="watchlist capacity preference persists without qualifying provider" classname="app.spec.ts" time="0.996">
+</testcase>
+<testcase name="v102 four scenarios simulation 1440" classname="app.spec.ts" time="1.615">
+</testcase>
+<testcase name="v102 four scenarios simulation 390" classname="app.spec.ts" time="1.2">
+</testcase>
+<testcase name="v102 four scenarios simulation 430" classname="app.spec.ts" time="2.779">
+</testcase>
+<testcase name="v102 notification kinds dedup and reversal replay suppression - injected browser capability" classname="app.spec.ts" time="1.454">
+</testcase>
+<testcase name="personal foreground verification shows actual blockers after entering stock" classname="app.spec.ts" time="2.456">
+</testcase>
+</testsuite>
+</testsuites>

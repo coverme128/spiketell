@@ -1,0 +1,3 @@
+import {defineConfig} from '@playwright/test';
+import {existsSync} from 'node:fs';
+export default defineConfig({testDir:'tests',workers:1,reporter:[['list'],['junit',{outputFile:'../evidence/browser-tests.xml'}]],use:{baseURL:'http://127.0.0.1:18765',browserName:'chromium',channel:existsSync('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome')?'chrome':undefined},webServer:{command:'../.venv/bin/python -m uvicorn tests.browser_server:app --app-dir .. --host 127.0.0.1 --port 18765 --timeout-graceful-shutdown 2',url:'http://127.0.0.1:18765/api/v1/health/live',reuseExistingServer:false,env:{RADAR_DB:'../data/browser-test.sqlite3',RADAR_EVIDENCE:'../config/missing-browser-test.json',RADAR_MODE:'LIVE',RADAR_PORT:'18765'}}});

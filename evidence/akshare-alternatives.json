@@ -1,0 +1,53 @@
+{
+  "observed_at": "2026-10-10T10:12:19.120522+08:00",
+  "checks": [
+    {
+      "name": "sina_minute",
+      "status": "OK",
+      "data": {
+        "rows": 1970,
+        "columns": [
+          "day",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "amount"
+        ],
+        "sample": [
+          {
+            "day": "2026-10-09 14:57:00",
+            "open": "9.570",
+            "high": "9.580",
+            "low": "9.550",
+            "close": "9.560",
+            "volume": "822600",
+            "amount": "7868226.2258"
+          },
+          {
+            "day": "2026-10-09 15:00:00",
+            "open": "9.540",
+            "high": "9.540",
+            "low": "9.540",
+            "close": "9.540",
+            "volume": "1272543",
+            "amount": "12140060.2179"
+          }
+        ]
+      },
+      "seconds": 5.485
+    },
+    {
+      "name": "sina_calendar",
+      "status": "OK",
+      "data": {
+        "rows": 8797,
+        "first": "1990-12-19",
+        "last": "2026-12-31",
+        "date_2026_10_10_open": false
+      },
+      "seconds": 2.341
+    }
+  ]
+}

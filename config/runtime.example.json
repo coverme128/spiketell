@@ -1,0 +1,14 @@
+{
+  "provider": {
+    "name": "akshare",
+    "personal_use_confirmed": false,
+    "rights_evidence": "",
+    "timestamp_semantics": "UNKNOWN",
+    "timestamp_samples": [],
+    "finalization_verified": false,
+    "capacity_verified": false
+  },
+  "clock": {},
+  "calendar": {},
+  "instruments": {}
+}

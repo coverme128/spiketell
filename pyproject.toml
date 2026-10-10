@@ -1,0 +1,13 @@
+[project]
+name = "spiketell"
+version = "0.1.0"
+description = "Local A-share minute spike radar"
+requires-python = ">=3.12"
+dependencies = ["fastapi", "uvicorn", "akshare", "curl_cffi"]
+
+[project.optional-dependencies]
+test = ["pytest", "httpx", "jsonschema", "PyYAML"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

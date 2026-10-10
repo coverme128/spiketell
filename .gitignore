@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+node_modules/
+web/dist/
+data/
+.env
+.env.local
+*.sqlite*
+.DS_Store
+evidence/*.png
+evidence/*.zip
+config/runtime.json
+web/test-results/
+web/playwright-report/

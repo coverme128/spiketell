@@ -1,0 +1,24 @@
+{
+  "feed": {
+    "status": "STOPPED",
+    "session": "CLOSED",
+    "updated_at": "2026-10-10T10:24:47.313395+08:00",
+    "available_count": 0,
+    "monitored_count": 0,
+    "last_bar_end_at": null,
+    "reasons": [
+      "PROVIDER_RIGHTS_UNVERIFIED",
+      "UNKNOWN_TIMESTAMP_SEMANTICS",
+      "FINALIZATION_UNVERIFIED",
+      "CAPACITY_UNVERIFIED",
+      "NO_SESSION",
+      "WATCHLIST_EMPTY"
+    ],
+    "data_mode": "LIVE",
+    "release_status": "DATA_PROVIDER_BLOCKED"
+  },
+  "database_check": "ok",
+  "last_poll_at": null,
+  "watchlist_count": 0,
+  "purpose": "Post-fix local startup and database check; not intraday qualification"
+}

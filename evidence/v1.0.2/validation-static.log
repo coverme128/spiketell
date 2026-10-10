@@ -1,0 +1,42 @@
+PASS package files: 31
+PASS declared SHA256: 33
+PASS synthetic fixture cases: 10
+STATUS: SPEC_READY (not runtime verified)
+test_json_examples_against_schemas (test_contracts.TestContracts.test_json_examples_against_schemas) ... ok
+test_live_examples_are_explicitly_simulated (test_contracts.TestContracts.test_live_examples_are_explicitly_simulated) ... ok
+test_openapi_yaml_parses (test_contracts.TestContracts.test_openapi_yaml_parses) ... ok
+test_cases (test_oracle.TestRuleOracle.test_cases) ... ok
+test_episode_id_is_deterministic (test_oracle.TestRuleOracle.test_episode_id_is_deterministic) ... ok
+test_episode_same_card_expires_after_three_weak (test_oracle.TestRuleOracle.test_episode_same_card_expires_after_three_weak) ... ok
+test_replayed_terminal_does_not_reopen (test_oracle.TestRuleOracle.test_replayed_terminal_does_not_reopen) ... ok
+test_rule_version_score_is_not_probability (test_oracle.TestRuleOracle.test_rule_version_score_is_not_probability) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.175s
+
+OK
+PASS: 34 static reference tests, 2 JSON schemas, 22 full-bar fixtures, 28 acceptance traceability rows, manifest hashes.
+RUNTIME STATUS: PENDING (AKShare live gates not tested).
+........................................................................ [ 45%]
+........................................................................ [ 91%]
+.............                                                            [100%]
+=============================== warnings summary ===============================
+.venv/lib/python3.13/site-packages/fastapi/testclient.py:1
+  /Users/bojiao/Documents/GitHub/spiketell/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+157 passed, 1 warning in 2.69s
+
+> spiketell-web@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 31 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.42 kB │ gzip:  0.32 kB
+dist/assets/index-Da6s7rH4.css   15.73 kB │ gzip:  4.33 kB
+dist/assets/index-CSzky2vC.js   256.41 kB │ gzip: 81.26 kB │ map: 1,122.33 kB
+✓ built in 1.32s

@@ -1,0 +1,25 @@
+{
+  "observed_at": "2026-10-10T09:09:24.693817+08:00",
+  "status": "DATA_PROVIDER_BLOCKED",
+  "purpose": "Raw reachability; not live qualification",
+  "observations": [
+    {
+      "symbol": "SH.600000",
+      "status": "TIMEOUT",
+      "elapsed_seconds": 25.018,
+      "ingest_time": "2026-10-10T09:09:23.032916+08:00"
+    },
+    {
+      "symbol": "SZ.000001",
+      "status": "REQUEST_FAILED",
+      "rows": 0,
+      "elapsed_seconds": 1.66,
+      "ingest_time": "2026-10-10T09:09:24.693766+08:00",
+      "raw_latest_labels": [],
+      "samples": []
+    }
+  ],
+  "timestamp_semantics": "UNVERIFIED",
+  "load_10_30_50": "PENDING_QUALIFIED_SYMBOL_POOL_AND_TRADING_SESSION",
+  "rights": "UNVERIFIED"
+}

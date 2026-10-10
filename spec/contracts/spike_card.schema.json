@@ -1,0 +1,30 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"urn:ashare:spike-card:v1",
+  "title":"Spike Opportunity Attention Card - NOT a buy signal",
+  "type":"object","additionalProperties":false,
+  "required":["episode_id","symbol","name","rule_version","trigger_bar_start_at","last_bar_end_at","received_at","reference_close_cny","ret1_pct","score","priority","episode_state","action","reasons","risks","feed_health","data_mode","updated_at"],
+  "properties":{
+    "episode_id":{"type":"string","minLength":16},
+    "symbol":{"type":"string","pattern":"^(SH|SZ)\\.[0-9]{6}$"},
+    "name":{"type":"string"},
+    "rule_version":{"type":"string"},
+    "trigger_bar_start_at":{"type":"string","format":"date-time"},
+    "last_bar_end_at":{"type":"string","format":"date-time"},
+    "received_at":{"type":"string","format":"date-time"},
+    "updated_at":{"type":"string","format":"date-time"},
+    "reference_close_cny":{"type":"string"},
+    "ret1_pct":{"type":"string"},
+    "ret3_pct":{"type":["string","null"]},
+    "turnover_burst":{"type":["string","null"]},
+    "score":{"type":"integer","minimum":0,"maximum":90},
+    "priority":{"enum":["HIGH","MEDIUM","LOW"]},
+    "episode_state":{"enum":["NEW","ACTIVE","STRENGTHENING","WEAKENING","EXPIRED","INVALIDATED"]},
+    "action":{"enum":["VIEW_NOW","MONITOR","IGNORE"]},
+    "reasons":{"type":"array","items":{"type":"string"},"maxItems":3},
+    "risks":{"type":"array","items":{"type":"string"}},
+    "feed_health":{"enum":["HEALTHY","DEGRADED","STOPPED"]},
+    "data_mode":{"enum":["LIVE","SIMULATION"]},
+    "as_of_label":{"type":"string"}
+  }
+}

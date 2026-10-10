@@ -1,0 +1,107 @@
+{
+  "observed_at": "2026-10-10T11:27:54.614300+08:00",
+  "source_kind": "REAL_HISTORICAL_PRICES",
+  "execution_mode": "SIMULATION",
+  "clock": "VIRTUAL_BAR_END_PLUS_20_SECONDS",
+  "candidate_semantics": "end",
+  "semantics_verified": false,
+  "rule_version": "spike_rules_v1.0.0",
+  "counts": {
+    "SH.600000": {
+      "name": "浦发银行",
+      "raw_rows": 1970,
+      "session_dates": [
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-08",
+        "2026-10-09"
+      ],
+      "minute_results": {
+        "NO_TRIGGER": 1961
+      },
+      "excluded": {
+        "NON_CONTINUOUS_BAR": 9
+      },
+      "episodes": 0
+    },
+    "SZ.000001": {
+      "name": "平安银行",
+      "raw_rows": 1970,
+      "session_dates": [
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-08",
+        "2026-10-09"
+      ],
+      "minute_results": {
+        "NO_TRIGGER": 1961
+      },
+      "excluded": {
+        "NON_CONTINUOUS_BAR": 9
+      },
+      "episodes": 0
+    },
+    "SZ.300308": {
+      "name": "中际旭创",
+      "raw_rows": 1970,
+      "session_dates": [
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-08",
+        "2026-10-09"
+      ],
+      "minute_results": {
+        "NO_TRIGGER": 1958,
+        "LOW": 3
+      },
+      "excluded": {
+        "NON_CONTINUOUS_BAR": 9
+      },
+      "episodes": 2
+    },
+    "SH.688981": {
+      "name": "中芯国际",
+      "raw_rows": 1970,
+      "session_dates": [
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-08",
+        "2026-10-09"
+      ],
+      "minute_results": {
+        "NO_TRIGGER": 1961
+      },
+      "excluded": {
+        "NON_CONTINUOUS_BAR": 9
+      },
+      "episodes": 0
+    }
+  },
+  "live_qualification": false,
+  "explanation": "Historical integration only. Receipt times are replay-clock values; no live notification or performance claim.",
+  "event_count": 9,
+  "all_delivery_modes": [
+    "SIMULATION"
+  ],
+  "database_check": "ok"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "MEASURED",
+  "measurement": {
+    "source": "SNTP/time.cloudflare.com",
+    "host": "time.cloudflare.com",
+    "checked_at": "2026-10-10T09:09:02.714200+08:00",
+    "offset_seconds": 0.3554645776748657,
+    "roundtrip_seconds": 0.18509459495544434
+  },
+  "observed_at": "2026-10-10T09:09:02.714573+08:00"
+}

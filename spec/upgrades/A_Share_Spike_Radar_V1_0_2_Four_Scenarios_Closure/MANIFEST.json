@@ -1,0 +1,27 @@
+{
+  "name": "A_Share_Spike_Radar_V1_0_2_Four_Scenarios_Closure",
+  "rule_version": "spike_rules_v1.0.2",
+  "status": "SPEC_DELTA_READY",
+  "files": {
+    "00_README.md": "8d8d728ca97420c7add814c39c27873567d95166b4f930b937c68fa650fa9954",
+    "01_PRODUCT_DELTA.md": "44d45ec7b8283b85f3a5e86f9b8a5fbe273025cfa5826a174a8cfde9156c026b",
+    "02_DOMAIN_RULES_DELTA.md": "11a946a8ae9803c0d239b3250fcfdbebcd75bb7c0e8408ac33a2c13a456a80a4",
+    "03_IMPLEMENTATION_DELTA.md": "413f69a47b96931f7bd67deae65799be790c6ea28db61653e9a6ea4638e6f77f",
+    "04_HANDOFF_ACCEPTANCE.md": "7d7a8dad8f89ae40c95fa5c0a2e1390cd5851f85bd3fbc0b6fe72bf0a729a29a",
+    "CHANGESET.json": "14bd2290394947d16ec42895ee46104a2fd12ab707cd735a6488a46222b7bb16",
+    "CODEX_START.md": "ceff3f2d0b83ba0cef9f9d53e8c599ed3f2bc3ee9abf4d404ed22e29bc5dfe0c",
+    "MIGRATION_MATRIX.csv": "0947501b38188250346db39cc43d2261f0d59664c855aaafaa2da25e7410f6ca",
+    "VALIDATION_REPORT.md": "2a21c7a9948574b945bb59750dedf4f36d4fd6caa5934f2ae12bc8bf684453a8",
+    "acceptance_traceability.csv": "7874ffccadb5c8f372b48377847994224c1aa5da1ba44c4569b212ddd5d7cc13",
+    "contracts/episode_event.v1.0.2.schema.json": "d61333e852b3be654441a6394fd2a32d4e0d7b05267a43a25d4f0002cc5400a0",
+    "contracts/examples/spike_card_v102_SIMULATION.json": "8680f0d6703ccf7a379463db28a5561e175794ca3180cde19fee9ee6a3384420",
+    "contracts/rule_profile.v1.0.2.json": "2dc742038c07b011a948f761a546d8d99008c904e33cd1a62929f6a9251bf049",
+    "contracts/spike_card.v1.0.2.schema.json": "01354080488cd020ace02969ea62375c34f79ab31a468866b220e2973c0391fc",
+    "fixtures/four_scenario_full_bars.json": "4ea4fad8cb0779f1e1b57378214eaeb4dc55134a97fc703d7d10baaf3e2256d9",
+    "reference/scenario_oracle_v102.py": "fafae6db614ac1ecb604d54688d9730811a59220ca8052860dc99d5d99991218",
+    "tests/test_scenarios_v102.py": "f57e5257f1cf28fc930f61ea02e99b0a85c7330abc322088ba1aab1605ddfcc7",
+    "tools/build_synthetic_fixtures.py": "a28f83cf0e37107d239cc6bcd8c60ada637b7dc9424693d79d2496618b099108",
+    "tools/package_upgrade.py": "93529b92f85063fdfd5bd1b71a677659066a7d630ba99d14ab9672338d209b98",
+    "tools/validate_upgrade.py": "b377541f055c45887ba6b42b942fc99b9c1505eb3443fa04eb5eaea685fa3956"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "feed": {
+    "status": "STOPPED",
+    "session": "CLOSED",
+    "updated_at": "2026-10-10T11:41:49.089365+08:00",
+    "available_count": 0,
+    "monitored_count": 0,
+    "last_bar_end_at": null,
+    "reasons": [
+      "PROVIDER_RIGHTS_UNVERIFIED",
+      "UNKNOWN_TIMESTAMP_SEMANTICS",
+      "FINALIZATION_UNVERIFIED",
+      "CAPACITY_UNVERIFIED",
+      "NO_SESSION",
+      "WATCHLIST_EMPTY"
+    ],
+    "data_mode": "LIVE",
+    "release_status": "DATA_PROVIDER_BLOCKED"
+  },
+  "database_check": "ok",
+  "setup": {
+    "provider": {},
+    "calibration": {
+      "state": "WAITING_CONSENT",
+      "message": "请先确认数据使用范围"
+    },
+    "operations": {
+      "checked_at": "2026-10-10T11:41:42.729792+08:00",
+      "errors": {},
+      "state": "RUNNING"
+    },
+    "calendar_ready": true,
+    "clock_ready": true,
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [],
+      "expected_eligible_symbol_minutes": 0,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": null,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    },
+    "source_documentation": "https://github.com/akfamily/akshare",
+    "maintenance": {
+      "backup": "data/backups/radar-2026-10-10.sqlite3",
+      "database_check": "ok",
+      "date": "2026-10-10",
+      "retention_days": 90
+    }
+  },
+  "watchlist_count": 0
+}

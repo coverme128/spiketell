@@ -1,0 +1,82 @@
+{
+  "observed_at": "2026-10-10T10:13:30.525853+08:00",
+  "status": "RAW_FEED_REACHABLE",
+  "release_status": "DATA_PROVIDER_BLOCKED",
+  "transport": "curl",
+  "purpose": "Raw reachability; not live qualification",
+  "observations": [
+    {
+      "symbol": "SH.600000",
+      "status": "RAW_RESPONSE_ONLY",
+      "error": null,
+      "rows": 1205,
+      "zero_open_rows": 964,
+      "elapsed_seconds": 1.536,
+      "ingest_time": "2026-10-10T10:13:29.153240+08:00",
+      "raw_latest_labels": [
+        "2026-10-09 14:59:00",
+        "2026-10-09 15:00:00"
+      ],
+      "samples": [
+        {
+          "时间": "2026-10-09 14:59:00",
+          "开盘": 9.56,
+          "收盘": 9.56,
+          "最高": 9.56,
+          "最低": 9.56,
+          "成交量": 0,
+          "成交额": 0.0,
+          "均价": 9.657
+        },
+        {
+          "时间": "2026-10-09 15:00:00",
+          "开盘": 9.56,
+          "收盘": 9.54,
+          "最高": 9.56,
+          "最低": 9.54,
+          "成交量": 12725,
+          "成交额": 12140060.0,
+          "均价": 9.656
+        }
+      ]
+    },
+    {
+      "symbol": "SZ.000001",
+      "status": "RAW_RESPONSE_ONLY",
+      "error": null,
+      "rows": 1205,
+      "zero_open_rows": 964,
+      "elapsed_seconds": 1.372,
+      "ingest_time": "2026-10-10T10:13:30.525818+08:00",
+      "raw_latest_labels": [
+        "2026-10-09 14:59:00",
+        "2026-10-09 15:00:00"
+      ],
+      "samples": [
+        {
+          "时间": "2026-10-09 14:59:00",
+          "开盘": 11.61,
+          "收盘": 11.61,
+          "最高": 11.61,
+          "最低": 11.61,
+          "成交量": 0,
+          "成交额": 0.0,
+          "均价": 11.686
+        },
+        {
+          "时间": "2026-10-09 15:00:00",
+          "开盘": 11.61,
+          "收盘": 11.59,
+          "最高": 11.61,
+          "最低": 11.59,
+          "成交量": 11213,
+          "成交额": 12995809.0,
+          "均价": 11.685
+        }
+      ]
+    }
+  ],
+  "timestamp_semantics": "UNVERIFIED",
+  "load_10_30_50": "PENDING_QUALIFIED_SYMBOL_POOL_AND_TRADING_SESSION",
+  "rights": "UNVERIFIED"
+}

@@ -1,0 +1,49 @@
+{
+  "observed_at": "2026-10-10T11:19:28.902621+08:00",
+  "purpose": "Real closed-session preparation, not intraday qualification",
+  "preparation_seconds": 0.972,
+  "preparation": {
+    "SH.600000": {
+      "baseline": {
+        "historical_days": 9,
+        "semantics_verified": false,
+        "slots_with_five_days": 238,
+        "total_continuous_slots": 237
+      },
+      "error": null,
+      "history_checked_date": "2026-10-10",
+      "message": "已获取资料，等待交易时段核验",
+      "metadata_checked_date": "2026-10-10",
+      "state": "WAITING_SESSION",
+      "updated_at": "2026-10-10T11:19:29.882818+08:00"
+    },
+    "SZ.000001": {
+      "baseline": {
+        "historical_days": 9,
+        "semantics_verified": false,
+        "slots_with_five_days": 238,
+        "total_continuous_slots": 237
+      },
+      "error": null,
+      "history_checked_date": "2026-10-10",
+      "message": "已获取资料，等待交易时段核验",
+      "metadata_checked_date": "2026-10-10",
+      "state": "WAITING_SESSION",
+      "updated_at": "2026-10-10T11:19:29.829749+08:00"
+    }
+  },
+  "search": [
+    {
+      "symbol": "SH.600000",
+      "name": "浦发银行"
+    }
+  ],
+  "fetch_seconds": 5.708,
+  "coverage": {
+    "SZ.000001": 237,
+    "SH.600000": 237
+  },
+  "errors": {},
+  "candidate_semantics": "end",
+  "semantics_verified": false
+}

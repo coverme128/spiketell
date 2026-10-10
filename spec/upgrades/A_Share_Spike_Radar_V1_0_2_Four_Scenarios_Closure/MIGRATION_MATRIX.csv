@@ -1,0 +1,16 @@
+change_id,base_file,delta_file,impact,implementation_rule,verification
+S01,02_DOMAIN_RULES/01-SPIKE-RULEBOOK.md,02_DOMAIN_RULES_DELTA.md,ADD,RAPID_RISE classification with v1.0.1 rapid exception,F201 F202
+S02,02_DOMAIN_RULES/01-SPIKE-RULEBOOK.md,02_DOMAIN_RULES_DELTA.md,ADD,MOMENTUM_ACCELERATION strict increasing returns,F204 F205 F206 F207
+S03,02_DOMAIN_RULES/01-SPIKE-RULEBOOK.md,02_DOMAIN_RULES_DELTA.md,BEHAVIOR_CHANGE,VOLUME_BREAKOUT independent conditional trigger,F208 F209 F210 F211 F212 F213 F214
+S04,02_DOMAIN_RULES/01-SPIKE-RULEBOOK.md,02_DOMAIN_RULES_DELTA.md,BEHAVIOR_CHANGE,SPIKE_REVERSAL veto prior to alert and sort,F215 F216 F217 F218
+S05,contracts/rule_profile.v1.json,contracts/rule_profile.v1.0.2.json,FULL_MERGED_REPLACEMENT,Preserve v1 base and v1.0.1 settings,F202 F228
+S06,contracts/spike_card.schema.json,contracts/spike_card.v1.0.2.schema.json,BACKWARD_COMPATIBLE_ADDITION,Add optional scenario fields respecting additionalProperties=false,F219
+S07,contracts/episode_event.schema.json,contracts/episode_event.v1.0.2.schema.json,ENUM_EXTENSION,Add scenario audit event types,F218 F220
+S08,contracts/openapi.yaml,03_IMPLEMENTATION_DELTA.md,DOC_AND_CODE,Sync API schema and examples,F219 F220
+S09,02_DOMAIN_RULES/03-EPISODE-ALERTS.md,01_PRODUCT_DELTA.md,BEHAVIOR_CHANGE,First-alert mutually exclusive plus high-upgrade at most once,F220 F221 F227
+S10,03_IMPLEMENTATION/02-API-DATA-CONTRACT.md,03_IMPLEMENTATION_DELTA.md,ADDITIVE,JSON decision details; no new DB service,F219 F228
+S11,reference/rule_oracle.py,reference/scenario_oracle_v102.py,BEHAVIOR_CHANGE,Versioned reference not silent historical replacement,F201 F217 F228
+S12,fixtures/rule_scenarios.json,fixtures/four_scenario_full_bars.json,ADDITIVE,Complete synthetic 1m fixtures,F201 F224
+S13,04_PRODUCTION_HANDOFF/02-TEST-MATRIX.md,04_HANDOFF_ACCEPTANCE.md,ADDITIVE,F201-F228 plus original T/M gates,F201 F228
+S14,04_PRODUCTION_HANDOFF/01-RELEASE-GATES.md,04_HANDOFF_ACCEPTANCE.md,UNCHANGED,Inherit real feed G01-G14,F225 F226
+S15,00_MASTER.md,CODEX_START.md,SCOPE_GUARD,No architecture expansion or buy advice,F228

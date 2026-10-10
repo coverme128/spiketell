@@ -1,0 +1,51 @@
+{
+  "observed_at": "2026-10-10T10:15:22.897509+08:00",
+  "checks": [
+    {
+      "candidate_semantics": "start",
+      "semantics_verified": false,
+      "coverage": {
+        "SH.600000": 236,
+        "SZ.000001": 236
+      },
+      "errors": {},
+      "excluded_rows": {
+        "SH.600000": {
+          "HISTORICAL_OPEN_UNAVAILABLE": 964,
+          "NON_CONTINUOUS_BAR": 5
+        },
+        "SZ.000001": {
+          "HISTORICAL_OPEN_UNAVAILABLE": 964,
+          "NON_CONTINUOUS_BAR": 5
+        }
+      },
+      "latest": {
+        "SH.600000": "2026-10-09T14:57:00+08:00",
+        "SZ.000001": "2026-10-09T14:57:00+08:00"
+      }
+    },
+    {
+      "candidate_semantics": "end",
+      "semantics_verified": false,
+      "coverage": {
+        "SZ.000001": 237,
+        "SH.600000": 237
+      },
+      "errors": {},
+      "excluded_rows": {
+        "SZ.000001": {
+          "HISTORICAL_OPEN_UNAVAILABLE": 964,
+          "NON_CONTINUOUS_BAR": 4
+        },
+        "SH.600000": {
+          "HISTORICAL_OPEN_UNAVAILABLE": 964,
+          "NON_CONTINUOUS_BAR": 4
+        }
+      },
+      "latest": {
+        "SZ.000001": "2026-10-09T14:57:00+08:00",
+        "SH.600000": "2026-10-09T14:57:00+08:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "A-Share Spike Radar V1.0.1 Minute-Only Closure",
+  "type": "targeted_addendum_not_complete_1plus4",
+  "base_zip": "A_Share_Multi_Stock_Spike_Radar_V1_1plus4_Bundle.zip",
+  "base_sha256": "08a3dcf41b4090b4e2aaa05f824d9737b01c5b01db4b80f8380176761b4c4a5b",
+  "base_rule_version": "spike_rules_v1.0.0",
+  "target_rule_version": "spike_rules_v1.0.1",
+  "status": "SPEC_DELTA_READY",
+  "not_runtime_verified": true,
+  "scenario_test_count": 14,
+  "external_data_required": true,
+  "new_data_frequency": "1m_final_only"
+}

@@ -1,0 +1,270 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:spiketell:sse-episode:v1.0.2",
+  "title": "Actual flat SSE episode payload; immutable historical event plus current card projection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "episode_id",
+    "symbol",
+    "event_type",
+    "next_state",
+    "bar_start_at",
+    "bar_end_at",
+    "rule_version",
+    "source",
+    "source_received_at",
+    "recorded_at",
+    "fingerprint",
+    "previous_state",
+    "score",
+    "priority",
+    "delivery_mode",
+    "card",
+    "alert_kind"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string"
+    },
+    "episode_id": {
+      "type": "string"
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string",
+      "pattern": "^(CREATED|UPDATED|SESSION_CLOSED|DATA_GAP|RULE_VERSION_CLOSED|REVERSAL_OBSERVED|BREAKOUT_UNVERIFIED|SCENARIOS_CHANGED|CORRECTION_R[0-9]+)$"
+    },
+    "next_state": {
+      "type": "string"
+    },
+    "bar_start_at": {
+      "type": "string"
+    },
+    "bar_end_at": {
+      "type": "string"
+    },
+    "rule_version": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "source_received_at": {
+      "type": "string"
+    },
+    "recorded_at": {
+      "type": "string"
+    },
+    "fingerprint": {
+      "type": "string"
+    },
+    "previous_state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 90
+    },
+    "priority": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ]
+    },
+    "delivery_mode": {
+      "enum": [
+        "LIVE",
+        "REPLAY",
+        "SIMULATION"
+      ]
+    },
+    "card": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "urn:ashare:spike-card:v1.0.2",
+      "title": "Attention Card v1.0.2 - one episode / multiple scenarios / not a buy signal",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "episode_id",
+        "symbol",
+        "name",
+        "rule_version",
+        "trigger_bar_start_at",
+        "last_bar_end_at",
+        "received_at",
+        "reference_close_cny",
+        "ret1_pct",
+        "score",
+        "priority",
+        "episode_state",
+        "action",
+        "reasons",
+        "risks",
+        "feed_health",
+        "data_mode",
+        "updated_at"
+      ],
+      "properties": {
+        "episode_id": {
+          "type": "string",
+          "minLength": 16
+        },
+        "symbol": {
+          "type": "string",
+          "pattern": "^(SH|SZ)\\.[0-9]{6}$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "rule_version": {
+          "type": "string"
+        },
+        "trigger_bar_start_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "last_bar_end_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "received_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "reference_close_cny": {
+          "type": "string"
+        },
+        "ret1_pct": {
+          "type": "string"
+        },
+        "ret3_pct": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "turnover_burst": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 90
+        },
+        "priority": {
+          "enum": [
+            "HIGH",
+            "MEDIUM",
+            "LOW"
+          ]
+        },
+        "episode_state": {
+          "enum": [
+            "NEW",
+            "ACTIVE",
+            "STRENGTHENING",
+            "WEAKENING",
+            "EXPIRED",
+            "INVALIDATED"
+          ]
+        },
+        "action": {
+          "enum": [
+            "VIEW_NOW",
+            "MONITOR",
+            "IGNORE"
+          ]
+        },
+        "reasons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 3
+        },
+        "risks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "feed_health": {
+          "enum": [
+            "HEALTHY",
+            "DEGRADED",
+            "STOPPED"
+          ]
+        },
+        "data_mode": {
+          "enum": [
+            "LIVE",
+            "SIMULATION"
+          ]
+        },
+        "as_of_label": {
+          "type": "string"
+        },
+        "primary_scenario": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "RAPID_RISE",
+            "MOMENTUM_ACCELERATION",
+            "VOLUME_BREAKOUT",
+            "SPIKE_REVERSAL",
+            null
+          ]
+        },
+        "matched_scenarios": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "RAPID_RISE",
+              "MOMENTUM_ACCELERATION",
+              "VOLUME_BREAKOUT",
+              "SPIKE_REVERSAL"
+            ]
+          }
+        },
+        "is_attention_eligible": {
+          "type": "boolean"
+        }
+      }
+    },
+    "alert_kind": {
+      "enum": [
+        "HIGH_NEW",
+        "HIGH_UPGRADE",
+        "MEDIUM_NEW",
+        "RAPID_NEW",
+        "ACCEL_NEW",
+        "BREAKOUT_NEW",
+        null
+      ]
+    },
+    "audit_sequence": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

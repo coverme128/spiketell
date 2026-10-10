@@ -1,0 +1,263 @@
+{
+  "feed": {
+    "status": "STOPPED",
+    "session": "CLOSED",
+    "updated_at": "2026-10-09T10:22:05+08:00",
+    "available_count": 0,
+    "monitored_count": 0,
+    "last_bar_end_at": null,
+    "reasons": [
+      "SIMULATION_ONLY"
+    ],
+    "data_mode": "SIMULATION",
+    "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+  },
+  "monitored_count": 0,
+  "available_count": 0,
+  "today_episode_count": 4,
+  "high_count": 0,
+  "top_cards": [
+    {
+      "episode_id": "447a76375b2790b47be5d466",
+      "symbol": "SZ.300001",
+      "name": "模拟样本 F202",
+      "rule_version": "spike_rules_v1.0.2",
+      "trigger_bar_start_at": "2026-10-09T10:01:00+08:00",
+      "last_bar_end_at": "2026-10-09T10:02:00+08:00",
+      "received_at": "2026-10-09T10:02:05+08:00",
+      "reference_close_cny": "101.9",
+      "ret1_pct": "1.900",
+      "ret3_pct": null,
+      "turnover_burst": null,
+      "score": 30,
+      "priority": "MEDIUM",
+      "episode_state": "NEW",
+      "action": "MONITOR",
+      "reasons": [
+        "1分钟价格快速上行"
+      ],
+      "risks": [
+        "成交历史不足"
+      ],
+      "feed_health": "STOPPED",
+      "data_mode": "SIMULATION",
+      "updated_at": "2026-10-09T10:02:12+08:00",
+      "as_of_label": "最后已完成分钟 K 线收盘价",
+      "primary_scenario": "RAPID_RISE",
+      "matched_scenarios": [
+        "RAPID_RISE"
+      ],
+      "is_attention_eligible": true
+    },
+    {
+      "episode_id": "d7df426ef6705230dbb0bba5",
+      "symbol": "SZ.300001",
+      "name": "模拟样本 F204",
+      "rule_version": "spike_rules_v1.0.2",
+      "trigger_bar_start_at": "2026-10-09T10:03:00+08:00",
+      "last_bar_end_at": "2026-10-09T10:04:00+08:00",
+      "received_at": "2026-10-09T10:04:05+08:00",
+      "reference_close_cny": "101.83",
+      "ret1_pct": "0.831765521338746410535696600",
+      "ret3_pct": "1.8300",
+      "turnover_burst": "6",
+      "score": 50,
+      "priority": "MEDIUM",
+      "episode_state": "NEW",
+      "action": "MONITOR",
+      "reasons": [
+        "连续三分钟涨幅逐分钟加速",
+        "1分钟价格快速上行",
+        "成交额显著高于历史同分钟"
+      ],
+      "risks": [],
+      "feed_health": "STOPPED",
+      "data_mode": "SIMULATION",
+      "updated_at": "2026-10-09T10:04:12+08:00",
+      "as_of_label": "最后已完成分钟 K 线收盘价",
+      "primary_scenario": "MOMENTUM_ACCELERATION",
+      "matched_scenarios": [
+        "RAPID_RISE",
+        "MOMENTUM_ACCELERATION"
+      ],
+      "is_attention_eligible": true
+    },
+    {
+      "episode_id": "2e1e9c59fbcdb568acedde99",
+      "symbol": "SZ.300001",
+      "name": "模拟样本 F208",
+      "rule_version": "spike_rules_v1.0.2",
+      "trigger_bar_start_at": "2026-10-09T10:20:00+08:00",
+      "last_bar_end_at": "2026-10-09T10:21:00+08:00",
+      "received_at": "2026-10-09T10:21:05+08:00",
+      "reference_close_cny": "100.56",
+      "ret1_pct": "0.5600",
+      "ret3_pct": "0.5600",
+      "turnover_burst": "4",
+      "score": 40,
+      "priority": "MEDIUM",
+      "episode_state": "NEW",
+      "action": "MONITOR",
+      "reasons": [
+        "此前20根窄幅横盘后放量突破",
+        "成交额显著高于历史同分钟"
+      ],
+      "risks": [],
+      "feed_health": "STOPPED",
+      "data_mode": "SIMULATION",
+      "updated_at": "2026-10-09T10:21:12+08:00",
+      "as_of_label": "最后已完成分钟 K 线收盘价",
+      "primary_scenario": "VOLUME_BREAKOUT",
+      "matched_scenarios": [
+        "VOLUME_BREAKOUT"
+      ],
+      "is_attention_eligible": true
+    }
+  ],
+  "all_cards": [
+    {
+      "episode_id": "447a76375b2790b47be5d466",
+      "symbol": "SZ.300001",
+      "name": "模拟样本 F202",
+      "rule_version": "spike_rules_v1.0.2",
+      "trigger_bar_start_at": "2026-10-09T10:01:00+08:00",
+      "last_bar_end_at": "2026-10-09T10:02:00+08:00",
+      "received_at": "2026-10-09T10:02:05+08:00",
+      "reference_close_cny": "101.9",
+      "ret1_pct": "1.900",
+      "ret3_pct": null,
+      "turnover_burst": null,
+      "score": 30,
+      "priority": "MEDIUM",
+      "episode_state": "NEW",
+      "action": "MONITOR",
+      "reasons": [
+        "1分钟价格快速上行"
+      ],
+      "risks": [
+        "成交历史不足"
+      ],
+      "feed_health": "STOPPED",
+      "data_mode": "SIMULATION",
+      "updated_at": "2026-10-09T10:02:12+08:00",
+      "as_of_label": "最后已完成分钟 K 线收盘价",
+      "primary_scenario": "RAPID_RISE",
+      "matched_scenarios": [
+        "RAPID_RISE"
+      ],
+      "is_attention_eligible": true
+    },
+    {
+      "episode_id": "d7df426ef6705230dbb0bba5",
+      "symbol": "SZ.300001",
+      "name": "模拟样本 F204",
+      "rule_version": "spike_rules_v1.0.2",
+      "trigger_bar_start_at": "2026-10-09T10:03:00+08:00",
+      "last_bar_end_at": "2026-10-09T10:04:00+08:00",
+      "received_at": "2026-10-09T10:04:05+08:00",
+      "reference_close_cny": "101.83",
+      "ret1_pct": "0.831765521338746410535696600",
+      "ret3_pct": "1.8300",
+      "turnover_burst": "6",
+      "score": 50,
+      "priority": "MEDIUM",
+      "episode_state": "NEW",
+      "action": "MONITOR",
+      "reasons": [
+        "连续三分钟涨幅逐分钟加速",
+        "1分钟价格快速上行",
+        "成交额显著高于历史同分钟"
+      ],
+      "risks": [],
+      "feed_health": "STOPPED",
+      "data_mode": "SIMULATION",
+      "updated_at": "2026-10-09T10:04:12+08:00",
+      "as_of_label": "最后已完成分钟 K 线收盘价",
+      "primary_scenario": "MOMENTUM_ACCELERATION",
+      "matched_scenarios": [
+        "RAPID_RISE",
+        "MOMENTUM_ACCELERATION"
+      ],
+      "is_attention_eligible": true
+    },
+    {
+      "episode_id": "2e1e9c59fbcdb568acedde99",
+      "symbol": "SZ.300001",
+      "name": "模拟样本 F208",
+      "rule_version": "spike_rules_v1.0.2",
+      "trigger_bar_start_at": "2026-10-09T10:20:00+08:00",
+      "last_bar_end_at": "2026-10-09T10:21:00+08:00",
+      "received_at": "2026-10-09T10:21:05+08:00",
+      "reference_close_cny": "100.56",
+      "ret1_pct": "0.5600",
+      "ret3_pct": "0.5600",
+      "turnover_burst": "4",
+      "score": 40,
+      "priority": "MEDIUM",
+      "episode_state": "NEW",
+      "action": "MONITOR",
+      "reasons": [
+        "此前20根窄幅横盘后放量突破",
+        "成交额显著高于历史同分钟"
+      ],
+      "risks": [],
+      "feed_health": "STOPPED",
+      "data_mode": "SIMULATION",
+      "updated_at": "2026-10-09T10:21:12+08:00",
+      "as_of_label": "最后已完成分钟 K 线收盘价",
+      "primary_scenario": "VOLUME_BREAKOUT",
+      "matched_scenarios": [
+        "VOLUME_BREAKOUT"
+      ],
+      "is_attention_eligible": true
+    }
+  ],
+  "risk_cards": [
+    {
+      "episode_id": "2e1e9c59fbcdb568acedde99",
+      "symbol": "SZ.300001",
+      "name": "模拟样本 F219",
+      "rule_version": "spike_rules_v1.0.2",
+      "trigger_bar_start_at": "2026-10-09T10:20:00+08:00",
+      "last_bar_end_at": "2026-10-09T10:22:00+08:00",
+      "received_at": "2026-10-09T10:22:05+08:00",
+      "reference_close_cny": "101.9",
+      "ret1_pct": "0",
+      "ret3_pct": "1.900",
+      "turnover_burst": null,
+      "score": 0,
+      "priority": "LOW",
+      "episode_state": "WEAKENING",
+      "action": "IGNORE",
+      "reasons": [],
+      "risks": [
+        "分钟内曾冲高且收盘回落，谨慎查看"
+      ],
+      "feed_health": "STOPPED",
+      "data_mode": "SIMULATION",
+      "updated_at": "2026-10-09T10:22:05+08:00",
+      "as_of_label": "最后已完成分钟 K 线收盘价",
+      "primary_scenario": "SPIKE_REVERSAL",
+      "matched_scenarios": [
+        "SPIKE_REVERSAL"
+      ],
+      "is_attention_eligible": false
+    }
+  ],
+  "historical_cards": [],
+  "cursor": 0,
+  "card_evidence": {
+    "447a76375b2790b47be5d466": {
+      "amount_cny": "4000000",
+      "source": "SYNTHETIC_V102"
+    },
+    "d7df426ef6705230dbb0bba5": {
+      "amount_cny": "6000000",
+      "source": "SYNTHETIC_V102"
+    },
+    "2e1e9c59fbcdb568acedde99": {
+      "amount_cny": "4000000",
+      "source": "SYNTHETIC_V102"
+    }
+  }
+}

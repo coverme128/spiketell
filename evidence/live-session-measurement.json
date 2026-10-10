@@ -1,0 +1,16 @@
+{
+  "status": "INSUFFICIENT_EVIDENCE",
+  "complete_sessions": 0,
+  "sessions": [],
+  "expected_eligible_symbol_minutes": 0,
+  "valid_final_symbol_minutes": 0,
+  "coverage_ratio": null,
+  "missing_symbol_minutes": {},
+  "visible_alert_samples": 0,
+  "visible_alert_p50_seconds": null,
+  "visible_alert_p95_seconds": null,
+  "expected_visible_alerts": 0,
+  "missing_visible_receipts": [],
+  "meets_numeric_targets": false,
+  "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+}

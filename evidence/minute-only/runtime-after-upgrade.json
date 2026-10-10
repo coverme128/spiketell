@@ -1,0 +1,88 @@
+{
+  "/api/v1/health/live": {
+    "up": true
+  },
+  "/api/v1/setup": {
+    "provider": {},
+    "baseline_ready_count": 0,
+    "eligible_watch_count": 0,
+    "enabled_watch_count": 0,
+    "baseline_status": "UNAVAILABLE",
+    "readiness_scope": "all_237_continuous_slots_have_five_prior_sessions",
+    "price_attention_requires_baseline": false,
+    "calibration": {
+      "state": "WAITING_CONSENT",
+      "message": "请先确认数据使用范围"
+    },
+    "operations": {
+      "checked_at": "2026-10-10T12:47:54.820106+08:00",
+      "errors": {},
+      "state": "RUNNING"
+    },
+    "calendar_ready": true,
+    "clock_ready": true,
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [],
+      "expected_eligible_symbol_minutes": 0,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": null,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    },
+    "source_documentation": "https://github.com/akfamily/akshare",
+    "maintenance": {
+      "backup": "data/backups/radar-2026-10-10.sqlite3",
+      "database_check": "ok",
+      "date": "2026-10-10",
+      "retention_days": 90
+    }
+  },
+  "/api/v1/watchlist": [],
+  "/api/v1/radar": {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CLOSED",
+      "updated_at": "2026-10-10T12:48:04.892904+08:00",
+      "available_count": 0,
+      "monitored_count": 0,
+      "last_bar_end_at": null,
+      "reasons": [
+        "PROVIDER_RIGHTS_UNVERIFIED",
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "NO_SESSION",
+        "WATCHLIST_EMPTY"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "monitored_count": 0,
+    "available_count": 0,
+    "today_episode_count": 0,
+    "high_count": 0,
+    "top_cards": [],
+    "all_cards": [],
+    "risk_cards": [],
+    "historical_cards": [],
+    "cursor": 0,
+    "card_evidence": {},
+    "scenario_diagnostics": []
+  },
+  "/openapi.json": {
+    "info": {
+      "title": "SpikeTell · A 股异动雷达",
+      "version": "1.0.2"
+    },
+    "verification_route_present": true
+  },
+  "database_integrity": "ok"
+}

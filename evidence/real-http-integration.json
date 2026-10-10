@@ -1,0 +1,170 @@
+{
+  "scenario": "Production HTTP app with real network, isolated database",
+  "imports": {
+    "items": [
+      {
+        "symbol": "SH.600000",
+        "status": "ADDED",
+        "reason": "元数据验证前暂停信号"
+      },
+      {
+        "symbol": "SZ.000001",
+        "status": "ADDED",
+        "reason": "元数据验证前暂停信号"
+      }
+    ]
+  },
+  "watchlist": [
+    {
+      "symbol": "SH.600000",
+      "name": "浦发银行",
+      "enabled": true,
+      "source_state": "INSTRUMENT_RESTRICTED",
+      "metadata": {
+        "board": "MAIN",
+        "checked_at": "2026-10-10T11:38:48.689292+08:00",
+        "eligibility_basis": "awaiting_current_session_trade",
+        "limits_verified": false,
+        "list_date": "1999-11-10",
+        "lower_limit_cny": "8.73",
+        "metadata_source": "eastmoney/stock/get",
+        "name": "浦发银行",
+        "ordinary_a": true,
+        "previous_close_cny": "9.7",
+        "quote_at": "2026-10-09T16:11:57+08:00",
+        "risk_status": "NORMAL",
+        "suspended": null,
+        "symbol": "SH.600000",
+        "upper_limit_cny": "10.67"
+      },
+      "excluded_rows": {},
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-10",
+        "message": "已获取资料，等待交易时段核验",
+        "metadata_checked_date": "2026-10-10",
+        "state": "WAITING_SESSION",
+        "updated_at": "2026-10-10T11:38:49.531804+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "last_bar_end_at": null,
+      "lag_seconds": null
+    },
+    {
+      "symbol": "SZ.000001",
+      "name": "平安银行",
+      "enabled": true,
+      "source_state": "INSTRUMENT_RESTRICTED",
+      "metadata": {
+        "board": "MAIN",
+        "checked_at": "2026-10-10T11:38:48.706534+08:00",
+        "eligibility_basis": "awaiting_current_session_trade",
+        "limits_verified": false,
+        "list_date": "1991-04-03",
+        "lower_limit_cny": "10.6",
+        "metadata_source": "eastmoney/stock/get",
+        "name": "平安银行",
+        "ordinary_a": true,
+        "previous_close_cny": "11.78",
+        "quote_at": "2026-10-09T15:34:30+08:00",
+        "risk_status": "NORMAL",
+        "suspended": null,
+        "symbol": "SZ.000001",
+        "upper_limit_cny": "12.96"
+      },
+      "excluded_rows": {},
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-10",
+        "message": "已获取资料，等待交易时段核验",
+        "metadata_checked_date": "2026-10-10",
+        "state": "WAITING_SESSION",
+        "updated_at": "2026-10-10T11:38:49.601135+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "last_bar_end_at": null,
+      "lag_seconds": null
+    }
+  ],
+  "setup": {
+    "provider": {},
+    "calibration": {
+      "state": "WAITING_CONSENT",
+      "message": "请先确认数据使用范围"
+    },
+    "operations": {
+      "checked_at": "2026-10-10T11:38:49.615763+08:00",
+      "errors": {},
+      "state": "RUNNING"
+    },
+    "calendar_ready": true,
+    "clock_ready": true,
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [],
+      "expected_eligible_symbol_minutes": 0,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": null,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    },
+    "source_documentation": "https://github.com/akfamily/akshare",
+    "maintenance": {
+      "backup": "/var/folders/bd/250gtz4d085f27y9t18kxhz40000gn/T/spiketell-live-http-jrd2pofx/backups/integration-2026-10-10.sqlite3",
+      "database_check": "ok",
+      "date": "2026-10-10",
+      "retention_days": 90
+    }
+  },
+  "database_check": "ok",
+  "feed": {
+    "status": "STOPPED",
+    "session": "CLOSED",
+    "updated_at": "2026-10-10T11:38:50.332832+08:00",
+    "available_count": 0,
+    "monitored_count": 2,
+    "last_bar_end_at": null,
+    "reasons": [
+      "PROVIDER_RIGHTS_UNVERIFIED",
+      "UNKNOWN_TIMESTAMP_SEMANTICS",
+      "FINALIZATION_UNVERIFIED",
+      "CAPACITY_UNVERIFIED",
+      "NO_SESSION",
+      "FEED_UNAVAILABLE"
+    ],
+    "data_mode": "LIVE",
+    "release_status": "DATA_PROVIDER_BLOCKED"
+  },
+  "live_qualification": false
+}

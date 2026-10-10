@@ -1,0 +1,70 @@
+{
+  "observed_at": "2026-10-10T10:11:01.863461+08:00",
+  "akshare_version": "1.19.1",
+  "import_seconds": 1.667,
+  "proxy_environment_present": false,
+  "checks": [
+    {
+      "stage": "DNS",
+      "status": "OK",
+      "host": "push2his.eastmoney.com",
+      "addresses": [
+        "103.220.167.80"
+      ]
+    },
+    {
+      "stage": "TLS",
+      "status": "OK",
+      "version": "TLSv1.3",
+      "elapsed_seconds": 0.241
+    },
+    {
+      "stage": "AKSHARE_MINUTE",
+      "symbol": "600000",
+      "status": "FAILED",
+      "error_chain": [
+        "ConnectionError",
+        "ProtocolError",
+        "RemoteDisconnected"
+      ],
+      "calls": [
+        {
+          "seconds": 0.276,
+          "error_chain": [
+            "ConnectionError",
+            "ProtocolError",
+            "RemoteDisconnected"
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.283
+    },
+    {
+      "stage": "AKSHARE_MINUTE",
+      "symbol": "000001",
+      "status": "FAILED",
+      "error_chain": [
+        "ConnectionError",
+        "ProtocolError",
+        "RemoteDisconnected"
+      ],
+      "calls": [
+        {
+          "seconds": 0.273,
+          "error_chain": [
+            "ConnectionError",
+            "ProtocolError",
+            "RemoteDisconnected"
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.274
+    },
+    {
+      "stage": "HTTPS_CONTROL",
+      "host": "www.akshare.xyz",
+      "http_status": 404,
+      "bytes": 147
+    }
+  ]
+}

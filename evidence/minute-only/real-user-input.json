@@ -1,0 +1,268 @@
+{
+  "checked_at": "2026-10-10T12:44:58.552237+08:00",
+  "evidence_kind": "ACTUAL_NETWORK_ISOLATED_USER_INPUT",
+  "injected_market_data": false,
+  "production_watchlist_modified": false,
+  "intraday_verified": false,
+  "stocks": [
+    {
+      "input": "600000",
+      "add_response": {
+        "items": [
+          {
+            "symbol": "SH.600000",
+            "status": "ADDED",
+            "reason": "元数据验证前暂停信号"
+          }
+        ]
+      },
+      "add_seconds": 0.898,
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-10",
+        "message": "已获取资料，等待交易时段核验",
+        "metadata_checked_date": "2026-10-10",
+        "state": "WAITING_SESSION",
+        "updated_at": "2026-10-10T12:45:03.321810+08:00"
+      },
+      "verification": {
+        "symbol": "SH.600000",
+        "name": "浦发银行",
+        "checked_at": "2026-10-10T12:45:03.324692+08:00",
+        "data_mode": "LIVE",
+        "rule_version": "spike_rules_v1.0.2",
+        "state": "WAITING_SESSION",
+        "message": "当前非连续竞价时段；已保存自选，开盘后自动准备并检测。",
+        "session": "CLOSED",
+        "feed_health": "STOPPED",
+        "blockers": [
+          "PROVIDER_RIGHTS_UNVERIFIED",
+          "UNKNOWN_TIMESTAMP_SEMANTICS",
+          "FINALIZATION_UNVERIFIED",
+          "CAPACITY_UNVERIFIED",
+          "NO_SESSION",
+          "FEED_UNAVAILABLE",
+          "INSTRUMENT_RESTRICTED"
+        ],
+        "preparation": {
+          "baseline": {
+            "historical_days": 9,
+            "semantics_verified": false,
+            "slots_with_five_days": 0,
+            "total_continuous_slots": 237
+          },
+          "baseline_warning": null,
+          "error": null,
+          "history_checked_date": "2026-10-10",
+          "message": "已获取资料，等待交易时段核验",
+          "metadata_checked_date": "2026-10-10",
+          "state": "WAITING_SESSION",
+          "updated_at": "2026-10-10T12:45:03.321810+08:00"
+        },
+        "baseline": {
+          "historical_days": 9,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237,
+          "semantics_verified": false
+        },
+        "latest_final_bar": null,
+        "latest_decision": null,
+        "today_received_minutes": 0,
+        "latest_bar_age_seconds": null,
+        "source_receive_delay_seconds": null,
+        "calibration": {},
+        "release_status": "DATA_PROVIDER_BLOCKED"
+      }
+    },
+    {
+      "input": "000001",
+      "add_response": {
+        "items": [
+          {
+            "symbol": "SZ.000001",
+            "status": "ADDED",
+            "reason": "元数据验证前暂停信号"
+          }
+        ]
+      },
+      "add_seconds": 0.791,
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-10",
+        "message": "已获取资料，等待交易时段核验",
+        "metadata_checked_date": "2026-10-10",
+        "state": "WAITING_SESSION",
+        "updated_at": "2026-10-10T12:45:04.910370+08:00"
+      },
+      "verification": {
+        "symbol": "SZ.000001",
+        "name": "平安银行",
+        "checked_at": "2026-10-10T12:45:04.913221+08:00",
+        "data_mode": "LIVE",
+        "rule_version": "spike_rules_v1.0.2",
+        "state": "WAITING_SESSION",
+        "message": "当前非连续竞价时段；已保存自选，开盘后自动准备并检测。",
+        "session": "CLOSED",
+        "feed_health": "STOPPED",
+        "blockers": [
+          "PROVIDER_RIGHTS_UNVERIFIED",
+          "UNKNOWN_TIMESTAMP_SEMANTICS",
+          "FINALIZATION_UNVERIFIED",
+          "CAPACITY_UNVERIFIED",
+          "NO_SESSION",
+          "FEED_UNAVAILABLE",
+          "INSTRUMENT_RESTRICTED"
+        ],
+        "preparation": {
+          "baseline": {
+            "historical_days": 9,
+            "semantics_verified": false,
+            "slots_with_five_days": 0,
+            "total_continuous_slots": 237
+          },
+          "baseline_warning": null,
+          "error": null,
+          "history_checked_date": "2026-10-10",
+          "message": "已获取资料，等待交易时段核验",
+          "metadata_checked_date": "2026-10-10",
+          "state": "WAITING_SESSION",
+          "updated_at": "2026-10-10T12:45:04.910370+08:00"
+        },
+        "baseline": {
+          "historical_days": 9,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237,
+          "semantics_verified": false
+        },
+        "latest_final_bar": null,
+        "latest_decision": null,
+        "today_received_minutes": 0,
+        "latest_bar_age_seconds": null,
+        "source_receive_delay_seconds": null,
+        "calibration": {},
+        "release_status": "DATA_PROVIDER_BLOCKED"
+      }
+    }
+  ],
+  "setup_before_input": {
+    "provider": {},
+    "baseline_ready_count": 0,
+    "eligible_watch_count": 0,
+    "enabled_watch_count": 0,
+    "baseline_status": "UNAVAILABLE",
+    "readiness_scope": "all_237_continuous_slots_have_five_prior_sessions",
+    "price_attention_requires_baseline": false,
+    "calibration": {
+      "state": "WAITING_CONSENT",
+      "message": "请先确认数据使用范围"
+    },
+    "operations": {
+      "checked_at": "2026-10-10T12:45:01.083666+08:00",
+      "errors": {},
+      "state": "RUNNING"
+    },
+    "calendar_ready": true,
+    "clock_ready": true,
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [],
+      "expected_eligible_symbol_minutes": 0,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": null,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    },
+    "source_documentation": "https://github.com/akfamily/akshare",
+    "maintenance": {
+      "backup": "/var/folders/bd/250gtz4d085f27y9t18kxhz40000gn/T/spiketell-personal-input-m48g33sv/backups/radar-2026-10-10.sqlite3",
+      "database_check": "ok",
+      "date": "2026-10-10",
+      "retention_days": 90
+    }
+  },
+  "setup_after_input": {
+    "provider": {},
+    "baseline_ready_count": 0,
+    "eligible_watch_count": 0,
+    "enabled_watch_count": 2,
+    "baseline_status": "UNAVAILABLE",
+    "readiness_scope": "all_237_continuous_slots_have_five_prior_sessions",
+    "price_attention_requires_baseline": false,
+    "calibration": {
+      "state": "WAITING_CONSENT",
+      "message": "请先确认数据使用范围"
+    },
+    "operations": {
+      "checked_at": "2026-10-10T12:45:01.083666+08:00",
+      "errors": {},
+      "state": "RUNNING"
+    },
+    "calendar_ready": true,
+    "clock_ready": true,
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [],
+      "expected_eligible_symbol_minutes": 0,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": null,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    },
+    "source_documentation": "https://github.com/akfamily/akshare",
+    "maintenance": {
+      "backup": "/var/folders/bd/250gtz4d085f27y9t18kxhz40000gn/T/spiketell-personal-input-m48g33sv/backups/radar-2026-10-10.sqlite3",
+      "database_check": "ok",
+      "date": "2026-10-10",
+      "retention_days": 90
+    }
+  },
+  "feed": {
+    "status": "STOPPED",
+    "session": "CLOSED",
+    "updated_at": "2026-10-10T12:45:04.923681+08:00",
+    "available_count": 0,
+    "monitored_count": 2,
+    "last_bar_end_at": null,
+    "reasons": [
+      "PROVIDER_RIGHTS_UNVERIFIED",
+      "UNKNOWN_TIMESTAMP_SEMANTICS",
+      "FINALIZATION_UNVERIFIED",
+      "CAPACITY_UNVERIFIED",
+      "NO_SESSION",
+      "FEED_UNAVAILABLE"
+    ],
+    "data_mode": "LIVE",
+    "release_status": "DATA_PROVIDER_BLOCKED"
+  },
+  "database_integrity": "ok",
+  "episodes": 0,
+  "input_and_history_check_passed": true
+}

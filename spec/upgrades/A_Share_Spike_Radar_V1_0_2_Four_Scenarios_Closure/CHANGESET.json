@@ -1,0 +1,67 @@
+{
+  "bundle_id": "A_SHARE_SPIKE_RADAR_V1_0_2_FOUR_SCENARIOS_CLOSURE",
+  "type": "single_targeted_incremental_upgrade",
+  "base_artifacts": [
+    {
+      "file": "A_Share_Multi_Stock_Spike_Radar_V1_1plus4_Bundle.zip",
+      "sha256": "08a3dcf41b4090b4e2aaa05f824d9737b01c5b01db4b80f8380176761b4c4a5b",
+      "rule_version": "spike_rules_v1.0.0"
+    },
+    {
+      "file": "A_Share_Spike_Radar_V1_0_1_Minute_Only_Closure.zip",
+      "sha256": "a7ff085170dd0ba28b7cb41001a71feccbe589cca45161d62a0957dffcb7245e",
+      "rule_version": "spike_rules_v1.0.1"
+    }
+  ],
+  "target_rule_version": "spike_rules_v1.0.2",
+  "status": "SPEC_DELTA_READY",
+  "runtime_verified": false,
+  "feed_provider": "AKShare (candidate; real session gates mandatory)",
+  "bar_frequency": "FINAL 1m only",
+  "scope": [
+    "RAPID_RISE",
+    "MOMENTUM_ACCELERATION",
+    "VOLUME_BREAKOUT",
+    "SPIKE_REVERSAL"
+  ],
+  "no_new_components": [
+    "10-15s poller",
+    "Level-2",
+    "AI prediction",
+    "buy recommendations",
+    "auto-trade",
+    "Redis/BullMQ"
+  ],
+  "merge_priority": "base V1.0.0 -> v1.0.1 -> v1.0.2 (only enumerated deltas override)",
+  "acceptance_ids": [
+    "F201",
+    "F202",
+    "F203",
+    "F204",
+    "F205",
+    "F206",
+    "F207",
+    "F208",
+    "F209",
+    "F210",
+    "F211",
+    "F212",
+    "F213",
+    "F214",
+    "F215",
+    "F216",
+    "F217",
+    "F218",
+    "F219",
+    "F220",
+    "F221",
+    "F222",
+    "F223",
+    "F224",
+    "F225",
+    "F226",
+    "F227",
+    "F228"
+  ],
+  "original_gates_preserved": "G01-G14; T001-T040; M101-M114"
+}

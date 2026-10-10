@@ -1,0 +1,91 @@
+{
+  "policy": "minute_only_v1.0.1",
+  "data_mode": "SIMULATION",
+  "note": "Scenario contract, not executable price fixtures. Codex must supply full synthetic MinuteBar fixtures and tests for each row.",
+  "cases": [
+    {
+      "id": "M101",
+      "scenario": "one_minute_fast_close_rise",
+      "expected": "TRIGGER",
+      "check": "Eligible price close change at least 1.8; no second-level claim"
+    },
+    {
+      "id": "M102",
+      "scenario": "intraminute_high_only_reversal",
+      "expected": "DIAGNOSTIC_ONLY",
+      "check": "minute high excursion but close fails trigger; no desktop notification"
+    },
+    {
+      "id": "M103",
+      "scenario": "three_minute_rising",
+      "expected": "TRIGGER",
+      "check": "ret3>=1.8 and final ret1>=0.3, continuous within session"
+    },
+    {
+      "id": "M104",
+      "scenario": "opening_first_bar_no_adjacent",
+      "expected": "NO_TRIGGER",
+      "check": "do not fabricate comparison to prior day"
+    },
+    {
+      "id": "M105",
+      "scenario": "cold_start_strong_price",
+      "expected": "RAPID_MEDIUM",
+      "check": "burst remains null and one RAPID_NEW"
+    },
+    {
+      "id": "M106",
+      "scenario": "cold_start_long_upper_wick",
+      "expected": "NO_RAPID_OVERRIDE",
+      "check": "no ungrounded rapid attention"
+    },
+    {
+      "id": "M107",
+      "scenario": "same_episode_reaccelerates",
+      "expected": "SAME_CARD",
+      "check": "one episode and no duplicate RAPID_NEW"
+    },
+    {
+      "id": "M108",
+      "scenario": "medium_rapid_to_high",
+      "expected": "HIGH_UPGRADE_ONCE",
+      "check": "high still needs 5 historic slots and burst>=2"
+    },
+    {
+      "id": "M109",
+      "scenario": "out_of_session_event",
+      "expected": "NO_ALERT",
+      "check": "lunch/auction excluded"
+    },
+    {
+      "id": "M110",
+      "scenario": "late_backfill_event",
+      "expected": "NO_LIVE_ALERT",
+      "check": "never re-alert historical data"
+    },
+    {
+      "id": "M111",
+      "scenario": "low_amount_fast_rise",
+      "expected": "NO_TRIGGER",
+      "check": "amount <1000000 blocks signal"
+    },
+    {
+      "id": "M112",
+      "scenario": "unknown_bar_time_labels",
+      "expected": "FAIL_CLOSED",
+      "check": "no LIVE until timestamp meaning tested"
+    },
+    {
+      "id": "M113",
+      "scenario": "fifty_symbol_polling",
+      "expected": "LIVE_GATE_REQUIRED",
+      "check": "require measured >=95% coverage and p95<=45s"
+    },
+    {
+      "id": "M114",
+      "scenario": "restart_replay_duplicate",
+      "expected": "NO_DUPLICATE_NOTIFICATION",
+      "check": "persistent per episode alert keys"
+    }
+  ]
+}
