@@ -1,0 +1,1930 @@
+[
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:01:35.135382+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "对照实时报价观察两只股票的分钟边界与收盘后稳定性",
+      "observed_at": "2026-10-12T10:01:33.140220+08:00",
+      "primary_qualified_samples": 0,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 0,
+      "required_sample_count": 4,
+      "state": "OBSERVING"
+    },
+    "provider": {
+      "personal_use_confirmed": true
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:01:20.607644+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 104,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:01:50.237931+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "对照实时报价观察两只股票的分钟边界与收盘后稳定性",
+      "observed_at": "2026-10-12T10:01:47.468329+08:00",
+      "primary_qualified_samples": 1,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 1,
+      "required_sample_count": 4,
+      "state": "OBSERVING"
+    },
+    "provider": {
+      "personal_use_confirmed": true
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:01:20.607644+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 104,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:02:05.404564+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "对照实时报价观察两只股票的分钟边界与收盘后稳定性",
+      "observed_at": "2026-10-12T10:02:01.240545+08:00",
+      "primary_qualified_samples": 1,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 1,
+      "required_sample_count": 4,
+      "state": "OBSERVING"
+    },
+    "provider": {
+      "personal_use_confirmed": true
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:01:20.607644+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 104,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:02:20.528435+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "对照实时报价观察两只股票的分钟边界与收盘后稳定性",
+      "observed_at": "2026-10-12T10:02:14.860546+08:00",
+      "primary_qualified_samples": 1,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 1,
+      "required_sample_count": 4,
+      "state": "OBSERVING"
+    },
+    "provider": {
+      "personal_use_confirmed": true
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:02:10.002049+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 117,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:02:35.638047+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "对照实时报价观察两只股票的分钟边界与收盘后稳定性",
+      "observed_at": "2026-10-12T10:02:26.358254+08:00",
+      "primary_qualified_samples": 1,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 1,
+      "required_sample_count": 4,
+      "state": "OBSERVING"
+    },
+    "provider": {
+      "personal_use_confirmed": true
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:02:10.002049+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 117,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:02:50.824557+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "对照实时报价观察两只股票的分钟边界与收盘后稳定性",
+      "observed_at": "2026-10-12T10:02:38.354142+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:02:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:03:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "OBSERVING"
+    },
+    "provider": {
+      "personal_use_confirmed": true
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:02:10.002049+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 117,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:03:05.970981+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "对照实时报价观察两只股票的分钟边界与收盘后稳定性",
+      "observed_at": "2026-10-12T10:02:53.344426+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "4130722.00",
+              "bar_end_at": "2026-10-12T10:02:00+08:00",
+              "bar_start_at": "2026-10-12T10:01:00+08:00",
+              "close": "9.69",
+              "high": "9.70",
+              "is_final": true,
+              "low": "9.69",
+              "open": "9.69",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:02:50.071498+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SH.600000",
+              "volume_shares": 426200
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:02:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:03:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "OBSERVING"
+    },
+    "provider": {
+      "personal_use_confirmed": true
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:02:10.002049+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 117,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:03:21.076410+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "对照实时报价观察两只股票的分钟边界与收盘后稳定性",
+      "observed_at": "2026-10-12T10:03:06.499849+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "4130722.00",
+              "bar_end_at": "2026-10-12T10:02:00+08:00",
+              "bar_start_at": "2026-10-12T10:01:00+08:00",
+              "close": "9.69",
+              "high": "9.70",
+              "is_final": true,
+              "low": "9.69",
+              "open": "9.69",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:03:04.814844+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SH.600000",
+              "volume_shares": 426200
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:02:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:03:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "OBSERVING"
+    },
+    "provider": {
+      "personal_use_confirmed": true
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:03:10.002690+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 130,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:03:36.165434+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "对照实时报价观察两只股票的分钟边界与收盘后稳定性",
+      "observed_at": "2026-10-12T10:03:35.387023+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:02:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:03:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "OBSERVING"
+    },
+    "provider": {
+      "personal_use_confirmed": true
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:03:10.002690+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 130,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:03:51.269257+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "对照实时报价观察两只股票的分钟边界与收盘后稳定性",
+      "observed_at": "2026-10-12T10:03:46.740570+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:04:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:03:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "OBSERVING"
+    },
+    "provider": {
+      "personal_use_confirmed": true
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:03:10.002690+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 130,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:04:06.371410+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "对照实时报价观察两只股票的分钟边界与收盘后稳定性",
+      "observed_at": "2026-10-12T10:03:59.889246+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:04:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:03:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "OBSERVING"
+    },
+    "provider": {
+      "personal_use_confirmed": true
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:03:10.002690+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 130,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:04:21.491843+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "对照实时报价观察两只股票的分钟边界与收盘后稳定性",
+      "observed_at": "2026-10-12T10:04:11.723440+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:04:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:03:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "OBSERVING"
+    },
+    "provider": {
+      "personal_use_confirmed": true
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:04:10.001184+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 143,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:04:36.597356+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "对照实时报价观察两只股票的分钟边界与收盘后稳定性",
+      "observed_at": "2026-10-12T10:04:33.689324+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "1098313.00",
+              "bar_end_at": "2026-10-12T10:04:00+08:00",
+              "bar_start_at": "2026-10-12T10:03:00+08:00",
+              "close": "9.68",
+              "high": "9.69",
+              "is_final": true,
+              "low": "9.68",
+              "open": "9.68",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:04:33.348092+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SH.600000",
+              "volume_shares": 113400
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:04:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:03:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "OBSERVING"
+    },
+    "provider": {
+      "personal_use_confirmed": true
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:04:10.001184+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 143,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:04:51.745162+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "对照实时报价观察两只股票的分钟边界与收盘后稳定性",
+      "observed_at": "2026-10-12T10:04:44.566051+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "OBSERVING"
+    },
+    "provider": {
+      "personal_use_confirmed": true
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:04:10.001184+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 143,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:05:06.903739+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "对照实时报价观察两只股票的分钟边界与收盘后稳定性",
+      "observed_at": "2026-10-12T10:05:06.678142+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "OBSERVING"
+    },
+    "provider": {
+      "personal_use_confirmed": true
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:04:10.001184+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 143,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:05:21.989157+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "对照实时报价观察两只股票的分钟边界与收盘后稳定性",
+      "observed_at": "2026-10-12T10:05:21.023477+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "OBSERVING"
+    },
+    "provider": {
+      "personal_use_confirmed": true
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:05:09.997600+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 156,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:05:37.147580+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+      "observed_at": "2026-10-12T10:05:34.595194+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "1497762.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "9.68",
+              "high": "9.69",
+              "is_final": true,
+              "low": "9.68",
+              "open": "9.68",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:32.862931+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SH.600000",
+              "volume_shares": 154700
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "3949358.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "11.76",
+              "high": "11.77",
+              "is_final": true,
+              "low": "11.76",
+              "open": "11.77",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:34.595025+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SZ.000001",
+              "volume_shares": 335600
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "QUALIFIED"
+    },
+    "provider": {
+      "capacity_verified": false,
+      "finalization_verified": true,
+      "history_timestamp_semantics": "UNKNOWN",
+      "personal_use_confirmed": true,
+      "timestamp_semantics": "end"
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:05:09.997600+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 156,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:05:52.279452+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+      "observed_at": "2026-10-12T10:05:34.595194+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "1497762.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "9.68",
+              "high": "9.69",
+              "is_final": true,
+              "low": "9.68",
+              "open": "9.68",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:32.862931+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SH.600000",
+              "volume_shares": 154700
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "3949358.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "11.76",
+              "high": "11.77",
+              "is_final": true,
+              "low": "11.76",
+              "open": "11.77",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:34.595025+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SZ.000001",
+              "volume_shares": 335600
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "QUALIFIED"
+    },
+    "provider": {
+      "capacity_verified": false,
+      "finalization_verified": true,
+      "history_timestamp_semantics": "UNKNOWN",
+      "personal_use_confirmed": true,
+      "timestamp_semantics": "end"
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:05:09.997600+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 156,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:06:07.414240+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+      "observed_at": "2026-10-12T10:05:34.595194+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "1497762.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "9.68",
+              "high": "9.69",
+              "is_final": true,
+              "low": "9.68",
+              "open": "9.68",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:32.862931+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SH.600000",
+              "volume_shares": 154700
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "3949358.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "11.76",
+              "high": "11.77",
+              "is_final": true,
+              "low": "11.76",
+              "open": "11.77",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:34.595025+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SZ.000001",
+              "volume_shares": 335600
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "QUALIFIED"
+    },
+    "provider": {
+      "capacity_verified": false,
+      "finalization_verified": true,
+      "history_timestamp_semantics": "UNKNOWN",
+      "personal_use_confirmed": true,
+      "timestamp_semantics": "end"
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:05:09.997600+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 156,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:06:22.567492+08:00",
+      "available_count": 13,
+      "monitored_count": 13,
+      "last_bar_end_at": "2026-10-12T10:06:00+08:00",
+      "reasons": [
+        "CAPACITY_UNVERIFIED"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+      "observed_at": "2026-10-12T10:05:34.595194+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "1497762.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "9.68",
+              "high": "9.69",
+              "is_final": true,
+              "low": "9.68",
+              "open": "9.68",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:32.862931+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SH.600000",
+              "volume_shares": 154700
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "3949358.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "11.76",
+              "high": "11.77",
+              "is_final": true,
+              "low": "11.76",
+              "open": "11.77",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:34.595025+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SZ.000001",
+              "volume_shares": 335600
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "QUALIFIED"
+    },
+    "provider": {
+      "capacity_verified": false,
+      "finalization_verified": true,
+      "history_timestamp_semantics": "UNKNOWN",
+      "personal_use_confirmed": true,
+      "timestamp_semantics": "end"
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:06:21.312669+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 169,
+      "valid_final_symbol_minutes": 26,
+      "coverage_ratio": 0.15384615384615385,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:06:37.714066+08:00",
+      "available_count": 13,
+      "monitored_count": 13,
+      "last_bar_end_at": "2026-10-12T10:06:00+08:00",
+      "reasons": [
+        "CAPACITY_UNVERIFIED"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+      "observed_at": "2026-10-12T10:05:34.595194+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "1497762.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "9.68",
+              "high": "9.69",
+              "is_final": true,
+              "low": "9.68",
+              "open": "9.68",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:32.862931+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SH.600000",
+              "volume_shares": 154700
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "3949358.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "11.76",
+              "high": "11.77",
+              "is_final": true,
+              "low": "11.76",
+              "open": "11.77",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:34.595025+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SZ.000001",
+              "volume_shares": 335600
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "QUALIFIED"
+    },
+    "provider": {
+      "capacity_verified": false,
+      "finalization_verified": true,
+      "history_timestamp_semantics": "UNKNOWN",
+      "personal_use_confirmed": true,
+      "timestamp_semantics": "end"
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:06:21.312669+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 169,
+      "valid_final_symbol_minutes": 26,
+      "coverage_ratio": 0.15384615384615385,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:06:52.816644+08:00",
+      "available_count": 13,
+      "monitored_count": 13,
+      "last_bar_end_at": "2026-10-12T10:06:00+08:00",
+      "reasons": [
+        "CAPACITY_UNVERIFIED",
+        "LATENCY_ELEVATED"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+      "observed_at": "2026-10-12T10:05:34.595194+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "1497762.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "9.68",
+              "high": "9.69",
+              "is_final": true,
+              "low": "9.68",
+              "open": "9.68",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:32.862931+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SH.600000",
+              "volume_shares": 154700
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "3949358.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "11.76",
+              "high": "11.77",
+              "is_final": true,
+              "low": "11.76",
+              "open": "11.77",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:34.595025+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SZ.000001",
+              "volume_shares": 335600
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "QUALIFIED"
+    },
+    "provider": {
+      "capacity_verified": false,
+      "finalization_verified": true,
+      "history_timestamp_semantics": "UNKNOWN",
+      "personal_use_confirmed": true,
+      "timestamp_semantics": "end"
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:06:21.312669+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 169,
+      "valid_final_symbol_minutes": 26,
+      "coverage_ratio": 0.15384615384615385,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:07:07.924602+08:00",
+      "available_count": 13,
+      "monitored_count": 13,
+      "last_bar_end_at": "2026-10-12T10:06:00+08:00",
+      "reasons": [
+        "CAPACITY_UNVERIFIED",
+        "LATENCY_ELEVATED"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+      "observed_at": "2026-10-12T10:05:34.595194+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "1497762.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "9.68",
+              "high": "9.69",
+              "is_final": true,
+              "low": "9.68",
+              "open": "9.68",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:32.862931+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SH.600000",
+              "volume_shares": 154700
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "3949358.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "11.76",
+              "high": "11.77",
+              "is_final": true,
+              "low": "11.76",
+              "open": "11.77",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:34.595025+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SZ.000001",
+              "volume_shares": 335600
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "QUALIFIED"
+    },
+    "provider": {
+      "capacity_verified": false,
+      "finalization_verified": true,
+      "history_timestamp_semantics": "UNKNOWN",
+      "personal_use_confirmed": true,
+      "timestamp_semantics": "end"
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:06:21.312669+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 169,
+      "valid_final_symbol_minutes": 26,
+      "coverage_ratio": 0.15384615384615385,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:07:23.008939+08:00",
+      "available_count": 13,
+      "monitored_count": 13,
+      "last_bar_end_at": "2026-10-12T10:06:00+08:00",
+      "reasons": [
+        "CAPACITY_UNVERIFIED",
+        "LATENCY_ELEVATED"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+      "observed_at": "2026-10-12T10:05:34.595194+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "1497762.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "9.68",
+              "high": "9.69",
+              "is_final": true,
+              "low": "9.68",
+              "open": "9.68",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:32.862931+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SH.600000",
+              "volume_shares": 154700
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "3949358.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "11.76",
+              "high": "11.77",
+              "is_final": true,
+              "low": "11.76",
+              "open": "11.77",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:34.595025+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SZ.000001",
+              "volume_shares": 335600
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "QUALIFIED"
+    },
+    "provider": {
+      "capacity_verified": false,
+      "finalization_verified": true,
+      "history_timestamp_semantics": "UNKNOWN",
+      "personal_use_confirmed": true,
+      "timestamp_semantics": "end"
+    },
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:07:10.004466+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 182,
+      "valid_final_symbol_minutes": 26,
+      "coverage_ratio": 0.14285714285714285,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    }
+  }
+]

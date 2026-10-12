@@ -1,0 +1,107 @@
+[
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:07:55.123458+08:00",
+      "available_count": 13,
+      "monitored_count": 13,
+      "last_bar_end_at": "2026-10-12T10:07:00+08:00",
+      "reasons": [
+        "CAPACITY_UNVERIFIED",
+        "LATENCY_ELEVATED"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "monitored_count": 13,
+    "available_count": 13,
+    "today_episode_count": 0,
+    "high_count": 0,
+    "top_cards": [],
+    "all_cards": [],
+    "risk_cards": [],
+    "historical_cards": [],
+    "cursor": 0,
+    "card_evidence": {},
+    "scenario_diagnostics": []
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:08:05.857605+08:00",
+      "available_count": 13,
+      "monitored_count": 13,
+      "last_bar_end_at": "2026-10-12T10:07:00+08:00",
+      "reasons": [
+        "CAPACITY_UNVERIFIED",
+        "LATENCY_ELEVATED"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "monitored_count": 13,
+    "available_count": 13,
+    "today_episode_count": 0,
+    "high_count": 0,
+    "top_cards": [],
+    "all_cards": [],
+    "risk_cards": [],
+    "historical_cards": [],
+    "cursor": 0,
+    "card_evidence": {},
+    "scenario_diagnostics": []
+  },
+  {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:08:15.940663+08:00",
+      "available_count": 13,
+      "monitored_count": 13,
+      "last_bar_end_at": "2026-10-12T10:07:00+08:00",
+      "reasons": [
+        "CAPACITY_UNVERIFIED",
+        "LATENCY_ELEVATED"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "monitored_count": 13,
+    "available_count": 13,
+    "today_episode_count": 0,
+    "high_count": 0,
+    "top_cards": [],
+    "all_cards": [],
+    "risk_cards": [],
+    "historical_cards": [],
+    "cursor": 0,
+    "card_evidence": {},
+    "scenario_diagnostics": []
+  },
+  {
+    "feed": {
+      "status": "HEALTHY",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:08:26.066978+08:00",
+      "available_count": 13,
+      "monitored_count": 13,
+      "last_bar_end_at": "2026-10-12T10:08:00+08:00",
+      "reasons": [],
+      "data_mode": "LIVE",
+      "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+    },
+    "monitored_count": 13,
+    "available_count": 13,
+    "today_episode_count": 0,
+    "high_count": 0,
+    "top_cards": [],
+    "all_cards": [],
+    "risk_cards": [],
+    "historical_cards": [],
+    "cursor": 0,
+    "card_evidence": {},
+    "scenario_diagnostics": []
+  }
+]

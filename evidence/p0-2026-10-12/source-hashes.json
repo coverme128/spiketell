@@ -1,0 +1,13 @@
+{
+  "app/movement_diagnostics.py": "d2dfd9e945868794cb0a383916423a1001fc39a62b9ae7fcd86b56d07e556dd0",
+  "app/domain/rules.py": "e91fd27aab8eac9ce7359a3486fa58586e2991e740547639d9dedd4617e2bd84",
+  "app/domain/engine.py": "776c4b0b7631de510d9c1399ad4b470ad6879cc28854ef7e5830225b348058b0",
+  "app/main.py": "962a7024ed9d4fa7b3015f38814453d45b402458f4869faf46c8166ca137e6b2",
+  "web/src/MovementPanel.tsx": "4d43e9b0a89a7f1cad41fcbe336e005f1704a79ff232c1716c597f65cb00f35c",
+  "web/src/main.tsx": "892e023ed959ead3aad24277468b56c446f958b59ac9137c625540332951cd8a",
+  "web/src/types.ts": "f8c27a918591b954a3a450acf00b646e7bd7d23c194955178b4404146f91ce4f",
+  "scripts/replay_movement.py": "8cc0ce80ee502fc92a22b1159f243d331139847672c3509248b4d368444e2c04",
+  "tests/test_movement_diagnostics.py": "098f695a0509a8f480fe9c6d8162a719798a333a04009aa4a1f100d967a9f5cb",
+  "web/tests/p0.spec.ts": "517394c8e8d999de22150085485347e57168ea7dc411b1bcf757bfc8fd3bcda1",
+  "app/contracts/rule_profile.v1.0.2.json": "2dc742038c07b011a948f761a546d8d99008c904e33cd1a62929f6a9251bf049"
+}

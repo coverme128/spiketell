@@ -1,0 +1,111 @@
+{
+  "provider": {
+    "capacity_verified": true,
+    "finalization_verified": true,
+    "history_timestamp_semantics": "UNKNOWN",
+    "personal_use_confirmed": true,
+    "qualified_pool_size": 13,
+    "timestamp_semantics": "end"
+  },
+  "baseline_ready_count": 0,
+  "eligible_watch_count": 13,
+  "enabled_watch_count": 13,
+  "baseline_status": "WARMING",
+  "readiness_scope": "all_237_continuous_slots_have_five_prior_sessions",
+  "price_attention_requires_baseline": false,
+  "calibration": {
+    "history_status": "UNVERIFIED",
+    "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+    "observed_at": "2026-10-12T10:05:34.595194+08:00",
+    "primary_close_checks": [
+      {
+        "confirmed_final_bars": [
+          {
+            "amount_cny": "1497762.00",
+            "bar_end_at": "2026-10-12T10:05:00+08:00",
+            "bar_start_at": "2026-10-12T10:04:00+08:00",
+            "close": "9.68",
+            "high": "9.69",
+            "is_final": true,
+            "low": "9.68",
+            "open": "9.68",
+            "quality": "VALID",
+            "received_at": "2026-10-12T10:05:32.862931+08:00",
+            "source": "akshare/eastmoney",
+            "symbol": "SH.600000",
+            "volume_shares": 154700
+          }
+        ],
+        "invalid": false,
+        "observed_label": "2026-10-12T10:05:00+08:00",
+        "symbol": "SH.600000"
+      },
+      {
+        "confirmed_final_bars": [
+          {
+            "amount_cny": "3949358.00",
+            "bar_end_at": "2026-10-12T10:05:00+08:00",
+            "bar_start_at": "2026-10-12T10:04:00+08:00",
+            "close": "11.76",
+            "high": "11.77",
+            "is_final": true,
+            "low": "11.76",
+            "open": "11.77",
+            "quality": "VALID",
+            "received_at": "2026-10-12T10:05:34.595025+08:00",
+            "source": "akshare/eastmoney",
+            "symbol": "SZ.000001",
+            "volume_shares": 335600
+          }
+        ],
+        "invalid": false,
+        "observed_label": "2026-10-12T10:05:00+08:00",
+        "symbol": "SZ.000001"
+      }
+    ],
+    "primary_qualified_samples": 2,
+    "primary_required_samples": 2,
+    "qualified_sample_count": 2,
+    "required_sample_count": 4,
+    "state": "QUALIFIED"
+  },
+  "operations": {
+    "checked_at": "2026-10-12T11:49:10.949702+08:00",
+    "errors": {},
+    "state": "RUNNING"
+  },
+  "calendar_ready": true,
+  "clock_ready": true,
+  "measurements": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "complete_sessions": 0,
+    "sessions": [
+      {
+        "session_date": "2026-10-12",
+        "started_at": "2026-10-12T09:49:56.677622+08:00",
+        "last_seen_at": "2026-10-12T11:30:10.027381+08:00",
+        "max_gap_seconds": 79.817857,
+        "browser_visible_minutes": 0,
+        "complete_50_stock_session": false
+      }
+    ],
+    "expected_eligible_symbol_minutes": 1261,
+    "valid_final_symbol_minutes": 1105,
+    "coverage_ratio": 0.8762886597938144,
+    "missing_symbol_minutes": {},
+    "visible_alert_samples": 0,
+    "visible_alert_p50_seconds": null,
+    "visible_alert_p95_seconds": null,
+    "expected_visible_alerts": 0,
+    "missing_visible_receipts": [],
+    "meets_numeric_targets": false,
+    "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+  },
+  "source_documentation": "https://github.com/akfamily/akshare",
+  "maintenance": {
+    "backup": "data/backups/radar-2026-10-12.sqlite3",
+    "database_check": "ok",
+    "date": "2026-10-12",
+    "retention_days": 90
+  }
+}

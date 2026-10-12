@@ -236,3 +236,36 @@ def test_lunch_gap_does_not_hide_late_afternoon_recovery(store):
     calendar={'trading_dates':['2026-10-09']}
     record_expected(store,morning,calendar);record_expected(store,afternoon,calendar)
     assert store.rows('SELECT max_gap_seconds FROM session_observations')[0][0]>=300
+
+
+def test_primary_calibration_can_qualify_without_unverified_history(store,monkeypatch):
+    at=timestamp('2026-10-09T10:00:15+08:00')
+    calibration=Calibration(store,lambda:{})
+    for symbol in ('SH.600000','SZ.000001'):
+        for step in range(3):
+            observed=at+timedelta(seconds=step*10)
+            qt=quote_value(observed);qt.update(f47=1000+step,f48=100000+1000*step)
+            row={'时间':'2026-10-09 10:01:00','收盘':'10.1','成交量':str(100+step),'成交额':str(100000+1000*step)}
+            calibration.observe('eastmoney',symbol,row,qt,observed)
+    assert len(calibration.confirmed)==2
+    row={'时间':'2026-10-09 10:01:00','开盘':'10','最高':'10.2','最低':'9.9','收盘':'10.1','成交量':'102','成交额':'102000'}
+    at=timestamp('2026-10-09T10:01:12+08:00');monkeypatch.setattr('app.calibration.now',lambda:at)
+    raw={s:([row],[],at) for s in ('SH.600000','SZ.000001')};state={}
+    calibration.qualify_primary({'personal_use_confirmed':True},raw,state)
+    assert not store.evidence('provider')
+    at+=timedelta(seconds=10)
+    raw={s:([row],[],at) for s in raw}
+    calibration.qualify_primary({'personal_use_confirmed':True},raw,state)
+    result=store.evidence('provider')
+    assert result['finalization_verified'] and result['timestamp_semantics']=='end'
+    assert result['history_timestamp_semantics']=='UNKNOWN' and not result['capacity_verified']
+    assert len(result['timestamp_samples'])==2
+    assert all(s['volume_delta_matches']>=2 for s in result['timestamp_samples'])
+
+
+def test_primary_calibration_does_not_accept_amount_only_or_unobserved_close(store):
+    calibration=Calibration(store,lambda:{})
+    seed_calibration(calibration)
+    state={}
+    calibration.qualify_primary({}, {}, state)
+    assert not store.evidence('provider') and state['primary_qualified_samples']==0

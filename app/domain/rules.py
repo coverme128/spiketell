@@ -142,6 +142,16 @@ def evaluate(bars: list[dict], prior_same_slot_amounts: list[str], now: str) -> 
             diagnostics.append("INTRAMINUTE_PEAK_REVERSAL")
 
         result = empty()
+        result['condition_checks'] = {
+            'PRICE_1M': {'met':old1,'ret1_pct':str(ret1),'required_gte':P['trigger']['ret1_pct_gte']},
+            'PRICE_3M': {'met':old3,'ret3_pct':str(ret3) if ret3 is not None else None,
+                         'required_gte':P['trigger']['ret3_pct_gte'],'last_return_required_gte':P['trigger']['ret3_and_ret1_pct_gte']},
+            'MOMENTUM_ACCELERATION': {'met':accel,'contiguous_four_bars':has4,'returns_pct': [str((D(bars[i+1]['close'])/D(bars[i]['close'])-1)*100) for i in range(len(bars)-4,len(bars)-1)] if has4 else None,'requirements':accel_p},
+            'VOLUME_BREAKOUT': {'met':new_breakout,'contiguous_21_bars':has21,'price_shape_met':broad_breakout,
+                                'width_pct':str(width) if width is not None else None,'above_prior_high':breakout20,
+                                'baseline_sessions':len(good_values),'burst':str(burst) if burst is not None else None,'requirements':breakout_p},
+            'SPIKE_REVERSAL': {'met':reversal,'peak_from_previous_close_pct':str(peak_from_prev),
+                               'peak_to_close_pct':str(peak_to_close),'requirements':P['peak_reversal']}}
         result.update(ret1_pct=str(ret1), ret3_pct=str(ret3) if ret3 is not None else None,
                       turnover_burst=str(burst) if burst is not None else None,
                       breakout20=breakout20, platform_width_pct=str(width) if width is not None else None,
@@ -180,6 +190,7 @@ def evaluate(bars: list[dict], prior_same_slot_amounts: list[str], now: str) -> 
                                and pullback<D(P["rapid_attention"]["pullback_from_day_high_pct_lt"]))
         if rapid_attention and priority=="LOW":
             priority="MEDIUM"
+        result['rating_checks']={'upper_wick_ratio':str(wick),'pullback_from_day_high_pct':str(pullback),'persistence':persistence,'score_profile':P['score'],'priority_requirements':P['priority'],'rapid_attention_met':rapid_attention}
         risks=[]
         if wick >= D("0.5"): risks.append("上影线明显")
         if pullback >= D("0.8"): risks.append("冲高回落")

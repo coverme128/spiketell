@@ -130,6 +130,7 @@ class Engine:
                     self.store.counter("episode_created_count")
             elif ep:
                 ep.update(next_episode_state(ep, signal, bar["close"], consecutive_weak=ep["weak"], nontrigger_minutes=ep["nontrigger"]))
+            alert = None
             if ep:
                 previous_scenarios = ep.get("signal", {}).get("matched_scenarios", [])
                 ep["matched_scenarios"] = list(dict.fromkeys(ep.get("matched_scenarios", []) + signal["matched_scenarios"]))
@@ -151,6 +152,16 @@ class Engine:
                         "CREATED" if prior_state is None else
                         "SCENARIOS_CHANGED" if previous_scenarios != signal["matched_scenarios"] else "UPDATED")
                 self._event(db, ep, bar, kind, prior_state, at, delivery, alert)
+            signal['processing_trace'] = {
+                'recorded_at': at.isoformat(), 'gap': gap, 'notify_enabled': notify,
+                'episode_id': ep['episode_id'] if ep else None,
+                'episode_state': ep['state'] if ep else None,
+                'alert_kind': alert,
+                'reason': 'ALERT_DECIDED' if alert else 'EPISODE_MERGED' if ep else
+                          'DATA_GAP' if gap else 'COOLDOWN_OR_QUIET' if signal['is_attention_eligible'] else
+                          'CANDIDATE_FILTERED' if signal['triggered'] or signal['diagnostics'] else 'TRIGGER_NOT_MET'}
+            db.execute('UPDATE bar_decisions SET payload=? WHERE symbol=? AND bar_start_at=? AND rule_version=?',
+                       (dump(signal), symbol, start, VERSION))
             db.execute("INSERT INTO symbol_progress VALUES (?,?) ON CONFLICT(symbol) DO UPDATE SET payload=excluded.payload", (symbol, dump(progress)))
             return signal
 

@@ -1,0 +1,95 @@
+{
+  "image": "WechatIMG420.jpeg",
+  "search": {
+    "items": [
+      {
+        "symbol": "SH.688561",
+        "name": "奇安信-U"
+      }
+    ]
+  },
+  "requested": [
+    "300765",
+    "688629",
+    "603083",
+    "600256",
+    "601698",
+    "688102",
+    "600118",
+    "688297",
+    "002389",
+    "600879",
+    "300124",
+    "002044",
+    "SH.688561"
+  ],
+  "result": {
+    "items": [
+      {
+        "symbol": "SZ.300765",
+        "status": "ADDED",
+        "reason": "元数据验证前暂停信号"
+      },
+      {
+        "symbol": "SH.688629",
+        "status": "ADDED",
+        "reason": "元数据验证前暂停信号"
+      },
+      {
+        "symbol": "SH.603083",
+        "status": "ADDED",
+        "reason": "元数据验证前暂停信号"
+      },
+      {
+        "symbol": "SH.600256",
+        "status": "ADDED",
+        "reason": "元数据验证前暂停信号"
+      },
+      {
+        "symbol": "SH.601698",
+        "status": "ADDED",
+        "reason": "元数据验证前暂停信号"
+      },
+      {
+        "symbol": "SH.688102",
+        "status": "ADDED",
+        "reason": "元数据验证前暂停信号"
+      },
+      {
+        "symbol": "SH.600118",
+        "status": "ADDED",
+        "reason": "元数据验证前暂停信号"
+      },
+      {
+        "symbol": "SH.688297",
+        "status": "ADDED",
+        "reason": "元数据验证前暂停信号"
+      },
+      {
+        "symbol": "SZ.002389",
+        "status": "ADDED",
+        "reason": "元数据验证前暂停信号"
+      },
+      {
+        "symbol": "SH.600879",
+        "status": "ADDED",
+        "reason": "元数据验证前暂停信号"
+      },
+      {
+        "symbol": "SZ.300124",
+        "status": "ADDED",
+        "reason": "元数据验证前暂停信号"
+      },
+      {
+        "symbol": "SZ.002044",
+        "status": "ADDED",
+        "reason": "元数据验证前暂停信号"
+      },
+      {
+        "symbol": "SH.688561",
+        "status": "ADDED",
+        "reason": "元数据验证前暂停信号"
+      }
+    ]
+  }
+}

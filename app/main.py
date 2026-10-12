@@ -28,6 +28,7 @@ from app.operations import Operations
 from app.calibration import Calibration
 from app.providers.public import quote, instrument, search, SourceError
 from app.measurements import report as measurement_report
+from app.movement_diagnostics import overview, replay
 from app.verification import baseline_summary, stock_verification
 
 
@@ -64,7 +65,7 @@ class BrowserPresence(BaseModel):
 class ReceiptRequest(BaseModel):
     model_config = ConfigDict(extra="forbid")
     event_id: str = Field(min_length=16, max_length=64)
-    kind: Literal["PAGE_VISIBLE", "OS_SHOWN", "CLICKED"]
+    kind: Literal["PAGE_VISIBLE", "OS_SHOWN", "CLICKED", "OS_ATTEMPTED", "OS_FAILED", "OS_SUPPRESSED"]
     browser_at: datetime
 
 
@@ -158,9 +159,17 @@ def create_app(db_path=None, scheduler=True):
     @api.get("/api/v1/radar")
     def radar():
         data = rt().radar()
+        data["movements"] = overview(rt(), now().date().isoformat())
         data["card_evidence"] = rt().card_evidence({c["episode_id"] for c in data["all_cards"] + data["historical_cards"] + data["risk_cards"]})
         data["scenario_diagnostics"] = rt().scenario_diagnostics()
         return data
+
+    @api.get('/api/v1/movement-diagnostics')
+    def movement_replay(symbol: str, date: str, start: str='09:30', end: str='11:03'):
+        try:
+            return replay(rt().store, symbol_id(symbol), date, start, end)
+        except (ValueError, TypeError):
+            raise HTTPException(422, 'INVALID_DIAGNOSTIC_RANGE')
 
     @api.get("/api/v1/scenario-diagnostics")
     def scenario_diagnostics(date: str | None = Query(default=None, pattern=r"^\d{4}-\d{2}-\d{2}$")):

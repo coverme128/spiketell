@@ -1,0 +1,697 @@
+{
+  "/setup": {
+    "provider": {},
+    "baseline_ready_count": 0,
+    "eligible_watch_count": 13,
+    "enabled_watch_count": 13,
+    "baseline_status": "WARMING",
+    "readiness_scope": "all_237_continuous_slots_have_five_prior_sessions",
+    "price_attention_requires_baseline": false,
+    "calibration": {
+      "state": "WAITING_CONSENT",
+      "message": "请先确认数据使用范围"
+    },
+    "operations": {
+      "checked_at": "2026-10-12T09:54:29.842785+08:00",
+      "errors": {},
+      "state": "RUNNING"
+    },
+    "calendar_ready": true,
+    "clock_ready": true,
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T09:54:29.819891+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 13,
+      "valid_final_symbol_minutes": 0,
+      "coverage_ratio": 0.0,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    },
+    "source_documentation": "https://github.com/akfamily/akshare",
+    "maintenance": {
+      "backup": "data/backups/radar-2026-10-12.sqlite3",
+      "database_check": "ok",
+      "date": "2026-10-12",
+      "retention_days": 90
+    }
+  },
+  "/watchlist": [
+    {
+      "symbol": "SH.600118",
+      "name": "中国卫星",
+      "enabled": true,
+      "source_state": "STALE",
+      "metadata": {
+        "board": "MAIN",
+        "checked_at": "2026-10-12T09:53:54.480258+08:00",
+        "eligibility_basis": "recent_trade_and_verified_daily_limits",
+        "limits_verified": true,
+        "list_date": "1997-09-08",
+        "lower_limit_cny": "49.19",
+        "metadata_source": "eastmoney/stock/get",
+        "name": "中国卫星",
+        "ordinary_a": true,
+        "previous_close_cny": "54.66",
+        "quote_at": "2026-10-12T09:53:54+08:00",
+        "risk_status": "NORMAL",
+        "suspended": false,
+        "symbol": "SH.600118",
+        "upper_limit_cny": "60.13"
+      },
+      "excluded_rows": {},
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T09:53:56.655465+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "last_bar_end_at": null,
+      "lag_seconds": null
+    },
+    {
+      "symbol": "SH.600256",
+      "name": "广汇能源",
+      "enabled": true,
+      "source_state": "STALE",
+      "metadata": {
+        "board": "MAIN",
+        "checked_at": "2026-10-12T09:53:54.046985+08:00",
+        "eligibility_basis": "recent_trade_and_verified_daily_limits",
+        "limits_verified": true,
+        "list_date": "2000-05-26",
+        "lower_limit_cny": "6.48",
+        "metadata_source": "eastmoney/stock/get",
+        "name": "广汇能源",
+        "ordinary_a": true,
+        "previous_close_cny": "7.2",
+        "quote_at": "2026-10-12T09:53:51+08:00",
+        "risk_status": "NORMAL",
+        "suspended": false,
+        "symbol": "SH.600256",
+        "upper_limit_cny": "7.92"
+      },
+      "excluded_rows": {},
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T09:53:56.129756+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "last_bar_end_at": null,
+      "lag_seconds": null
+    },
+    {
+      "symbol": "SH.600879",
+      "name": "航天电子",
+      "enabled": true,
+      "source_state": "STALE",
+      "metadata": {
+        "board": "MAIN",
+        "checked_at": "2026-10-12T09:53:54.937499+08:00",
+        "eligibility_basis": "recent_trade_and_verified_daily_limits",
+        "limits_verified": true,
+        "list_date": "1995-11-15",
+        "lower_limit_cny": "12.0",
+        "metadata_source": "eastmoney/stock/get",
+        "name": "航天电子",
+        "ordinary_a": true,
+        "previous_close_cny": "13.33",
+        "quote_at": "2026-10-12T09:53:54+08:00",
+        "risk_status": "NORMAL",
+        "suspended": false,
+        "symbol": "SH.600879",
+        "upper_limit_cny": "14.66"
+      },
+      "excluded_rows": {},
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T09:53:57.604145+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "last_bar_end_at": null,
+      "lag_seconds": null
+    },
+    {
+      "symbol": "SH.601698",
+      "name": "中国卫通",
+      "enabled": true,
+      "source_state": "STALE",
+      "metadata": {
+        "board": "MAIN",
+        "checked_at": "2026-10-12T09:53:54.058221+08:00",
+        "eligibility_basis": "recent_trade_and_verified_daily_limits",
+        "limits_verified": true,
+        "list_date": "2019-06-28",
+        "lower_limit_cny": "20.32",
+        "metadata_source": "eastmoney/stock/get",
+        "name": "中国卫通",
+        "ordinary_a": true,
+        "previous_close_cny": "22.58",
+        "quote_at": "2026-10-12T09:53:53+08:00",
+        "risk_status": "NORMAL",
+        "suspended": false,
+        "symbol": "SH.601698",
+        "upper_limit_cny": "24.84"
+      },
+      "excluded_rows": {},
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T09:53:56.247197+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "last_bar_end_at": null,
+      "lag_seconds": null
+    },
+    {
+      "symbol": "SH.603083",
+      "name": "剑桥科技",
+      "enabled": true,
+      "source_state": "STALE",
+      "metadata": {
+        "board": "MAIN",
+        "checked_at": "2026-10-12T09:53:53.638711+08:00",
+        "eligibility_basis": "recent_trade_and_verified_daily_limits",
+        "limits_verified": true,
+        "list_date": "2017-11-10",
+        "lower_limit_cny": "173.7",
+        "metadata_source": "eastmoney/stock/get",
+        "name": "剑桥科技",
+        "ordinary_a": true,
+        "previous_close_cny": "193.0",
+        "quote_at": "2026-10-12T09:53:51+08:00",
+        "risk_status": "NORMAL",
+        "suspended": false,
+        "symbol": "SH.603083",
+        "upper_limit_cny": "212.3"
+      },
+      "excluded_rows": {},
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T09:53:55.925467+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "last_bar_end_at": null,
+      "lag_seconds": null
+    },
+    {
+      "symbol": "SH.688102",
+      "name": "斯瑞新材",
+      "enabled": true,
+      "source_state": "STALE",
+      "metadata": {
+        "board": "STAR",
+        "checked_at": "2026-10-12T09:53:54.066736+08:00",
+        "eligibility_basis": "recent_trade_and_verified_daily_limits",
+        "limits_verified": true,
+        "list_date": "2022-03-16",
+        "lower_limit_cny": "21.74",
+        "metadata_source": "eastmoney/stock/get",
+        "name": "斯瑞新材",
+        "ordinary_a": true,
+        "previous_close_cny": "27.17",
+        "quote_at": "2026-10-12T09:53:53+08:00",
+        "risk_status": "NORMAL",
+        "suspended": false,
+        "symbol": "SH.688102",
+        "upper_limit_cny": "32.6"
+      },
+      "excluded_rows": {},
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T09:53:56.548706+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "last_bar_end_at": null,
+      "lag_seconds": null
+    },
+    {
+      "symbol": "SH.688297",
+      "name": "中无人机",
+      "enabled": true,
+      "source_state": "STALE",
+      "metadata": {
+        "board": "STAR",
+        "checked_at": "2026-10-12T09:53:54.483432+08:00",
+        "eligibility_basis": "recent_trade_and_verified_daily_limits",
+        "limits_verified": true,
+        "list_date": "2022-06-29",
+        "lower_limit_cny": "31.94",
+        "metadata_source": "eastmoney/stock/get",
+        "name": "中无人机",
+        "ordinary_a": true,
+        "previous_close_cny": "39.93",
+        "quote_at": "2026-10-12T09:53:53+08:00",
+        "risk_status": "NORMAL",
+        "suspended": false,
+        "symbol": "SH.688297",
+        "upper_limit_cny": "47.92"
+      },
+      "excluded_rows": {},
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T09:53:56.731636+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "last_bar_end_at": null,
+      "lag_seconds": null
+    },
+    {
+      "symbol": "SH.688561",
+      "name": "奇安信-U",
+      "enabled": true,
+      "source_state": "STALE",
+      "metadata": {
+        "board": "STAR",
+        "checked_at": "2026-10-12T09:53:55.358912+08:00",
+        "eligibility_basis": "recent_trade_and_verified_daily_limits",
+        "limits_verified": true,
+        "list_date": "2020-07-22",
+        "lower_limit_cny": "24.85",
+        "metadata_source": "eastmoney/stock/get",
+        "name": "奇安信-U",
+        "ordinary_a": true,
+        "previous_close_cny": "31.06",
+        "quote_at": "2026-10-12T09:53:53+08:00",
+        "risk_status": "NORMAL",
+        "suspended": false,
+        "symbol": "SH.688561",
+        "upper_limit_cny": "37.27"
+      },
+      "excluded_rows": {},
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T09:53:58.097041+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "last_bar_end_at": null,
+      "lag_seconds": null
+    },
+    {
+      "symbol": "SH.688629",
+      "name": "华丰科技",
+      "enabled": true,
+      "source_state": "STALE",
+      "metadata": {
+        "board": "STAR",
+        "checked_at": "2026-10-12T09:53:53.631510+08:00",
+        "eligibility_basis": "recent_trade_and_verified_daily_limits",
+        "limits_verified": true,
+        "list_date": "2023-06-27",
+        "lower_limit_cny": "75.66",
+        "metadata_source": "eastmoney/stock/get",
+        "name": "华丰科技",
+        "ordinary_a": true,
+        "previous_close_cny": "94.57",
+        "quote_at": "2026-10-12T09:53:53+08:00",
+        "risk_status": "NORMAL",
+        "suspended": false,
+        "symbol": "SH.688629",
+        "upper_limit_cny": "113.48"
+      },
+      "excluded_rows": {},
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T09:53:55.630207+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "last_bar_end_at": null,
+      "lag_seconds": null
+    },
+    {
+      "symbol": "SZ.002044",
+      "name": "美年健康",
+      "enabled": true,
+      "source_state": "STALE",
+      "metadata": {
+        "board": "MAIN",
+        "checked_at": "2026-10-12T09:53:55.008852+08:00",
+        "eligibility_basis": "recent_trade_and_verified_daily_limits",
+        "limits_verified": true,
+        "list_date": "2005-05-18",
+        "lower_limit_cny": "4.41",
+        "metadata_source": "eastmoney/stock/get",
+        "name": "美年健康",
+        "ordinary_a": true,
+        "previous_close_cny": "4.9",
+        "quote_at": "2026-10-12T09:53:54+08:00",
+        "risk_status": "NORMAL",
+        "suspended": false,
+        "symbol": "SZ.002044",
+        "upper_limit_cny": "5.39"
+      },
+      "excluded_rows": {},
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T09:53:57.820189+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "last_bar_end_at": null,
+      "lag_seconds": null
+    },
+    {
+      "symbol": "SZ.002389",
+      "name": "航天彩虹",
+      "enabled": true,
+      "source_state": "STALE",
+      "metadata": {
+        "board": "MAIN",
+        "checked_at": "2026-10-12T09:53:54.529554+08:00",
+        "eligibility_basis": "recent_trade_and_verified_daily_limits",
+        "limits_verified": true,
+        "list_date": "2010-04-13",
+        "lower_limit_cny": "16.08",
+        "metadata_source": "eastmoney/stock/get",
+        "name": "航天彩虹",
+        "ordinary_a": true,
+        "previous_close_cny": "17.87",
+        "quote_at": "2026-10-12T09:53:51+08:00",
+        "risk_status": "NORMAL",
+        "suspended": false,
+        "symbol": "SZ.002389",
+        "upper_limit_cny": "19.66"
+      },
+      "excluded_rows": {},
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T09:53:57.279261+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "last_bar_end_at": null,
+      "lag_seconds": null
+    },
+    {
+      "symbol": "SZ.300124",
+      "name": "汇川技术",
+      "enabled": true,
+      "source_state": "STALE",
+      "metadata": {
+        "board": "CHINEXT",
+        "checked_at": "2026-10-12T09:53:54.932865+08:00",
+        "eligibility_basis": "recent_trade_and_verified_daily_limits",
+        "limits_verified": true,
+        "list_date": "2010-09-28",
+        "lower_limit_cny": "40.47",
+        "metadata_source": "eastmoney/stock/get",
+        "name": "汇川技术",
+        "ordinary_a": true,
+        "previous_close_cny": "50.59",
+        "quote_at": "2026-10-12T09:53:51+08:00",
+        "risk_status": "NORMAL",
+        "suspended": false,
+        "symbol": "SZ.300124",
+        "upper_limit_cny": "60.71"
+      },
+      "excluded_rows": {},
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T09:53:57.459533+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "last_bar_end_at": null,
+      "lag_seconds": null
+    },
+    {
+      "symbol": "SZ.300765",
+      "name": "石药创新",
+      "enabled": true,
+      "source_state": "STALE",
+      "metadata": {
+        "board": "CHINEXT",
+        "checked_at": "2026-10-12T09:53:53.628617+08:00",
+        "eligibility_basis": "recent_trade_and_verified_daily_limits",
+        "limits_verified": true,
+        "list_date": "2019-03-22",
+        "lower_limit_cny": "36.32",
+        "metadata_source": "eastmoney/stock/get",
+        "name": "石药创新",
+        "ordinary_a": true,
+        "previous_close_cny": "45.4",
+        "quote_at": "2026-10-12T09:53:51+08:00",
+        "risk_status": "NORMAL",
+        "suspended": false,
+        "symbol": "SZ.300765",
+        "upper_limit_cny": "54.48"
+      },
+      "excluded_rows": {},
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T09:53:55.731533+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "last_bar_end_at": null,
+      "lag_seconds": null
+    }
+  ],
+  "/radar": {
+    "feed": {
+      "status": "STOPPED",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T09:54:42.688506+08:00",
+      "available_count": 0,
+      "monitored_count": 13,
+      "last_bar_end_at": null,
+      "reasons": [
+        "PROVIDER_RIGHTS_UNVERIFIED",
+        "UNKNOWN_TIMESTAMP_SEMANTICS",
+        "FINALIZATION_UNVERIFIED",
+        "CAPACITY_UNVERIFIED",
+        "FEED_UNAVAILABLE"
+      ],
+      "data_mode": "LIVE",
+      "release_status": "DATA_PROVIDER_BLOCKED"
+    },
+    "monitored_count": 13,
+    "available_count": 0,
+    "today_episode_count": 0,
+    "high_count": 0,
+    "top_cards": [],
+    "all_cards": [],
+    "risk_cards": [],
+    "historical_cards": [],
+    "cursor": 0,
+    "card_evidence": {},
+    "scenario_diagnostics": []
+  }
+}

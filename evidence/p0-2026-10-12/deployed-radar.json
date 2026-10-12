@@ -1,0 +1,512 @@
+{
+  "feed": {
+    "status": "STOPPED",
+    "session": "MIDDAY_BREAK",
+    "updated_at": "2026-10-12T11:49:15.445013+08:00",
+    "available_count": 0,
+    "monitored_count": 13,
+    "last_bar_end_at": "2026-10-12T11:29:00+08:00",
+    "reasons": [
+      "NO_SESSION",
+      "FEED_UNAVAILABLE"
+    ],
+    "data_mode": "LIVE",
+    "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+  },
+  "monitored_count": 13,
+  "available_count": 0,
+  "today_episode_count": 0,
+  "high_count": 0,
+  "top_cards": [],
+  "all_cards": [],
+  "risk_cards": [],
+  "historical_cards": [],
+  "cursor": 0,
+  "movements": {
+    "items": [
+      {
+        "symbol": "SH.600256",
+        "name": "广汇能源",
+        "bar_start_at": "2026-10-12T11:26:00+08:00",
+        "scenarios": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "ret1_pct": "0.287769784172661870503597100",
+        "ret3_pct": "0.143678160919540229885057500",
+        "priority": "LOW",
+        "state": "CANDIDATE_FILTERED",
+        "reason": "历史成交基准不足，放量未确认",
+        "qualified": false,
+        "trace": {
+          "reason_code": "CANDIDATE_FILTERED",
+          "events": [],
+          "receipts": [],
+          "alert_decisions": 0,
+          "delivery_evidence": "unconfirmed",
+          "engine_trace": null,
+          "historical_trace_inferred": true
+        }
+      },
+      {
+        "symbol": "SH.688561",
+        "name": "奇安信-U",
+        "bar_start_at": "2026-10-12T11:12:00+08:00",
+        "scenarios": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "ret1_pct": "0.491480996068152031454783700",
+        "ret3_pct": "0.327118089630356558717697100",
+        "priority": "LOW",
+        "state": "CANDIDATE_FILTERED",
+        "reason": "历史成交基准不足，放量未确认",
+        "qualified": false,
+        "trace": {
+          "reason_code": "CANDIDATE_FILTERED",
+          "events": [],
+          "receipts": [],
+          "alert_decisions": 0,
+          "delivery_evidence": "unconfirmed",
+          "engine_trace": null,
+          "historical_trace_inferred": true
+        }
+      },
+      {
+        "symbol": "SH.688561",
+        "name": "奇安信-U",
+        "bar_start_at": "2026-10-12T11:08:00+08:00",
+        "scenarios": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "ret1_pct": "0.328191663931736133902198900",
+        "ret3_pct": "0.427069645203679369250985500",
+        "priority": "LOW",
+        "state": "CANDIDATE_FILTERED",
+        "reason": "历史成交基准不足，放量未确认",
+        "qualified": false,
+        "trace": {
+          "reason_code": "CANDIDATE_FILTERED",
+          "events": [],
+          "receipts": [],
+          "alert_decisions": 0,
+          "delivery_evidence": "unconfirmed",
+          "engine_trace": null,
+          "historical_trace_inferred": true
+        }
+      },
+      {
+        "symbol": "SZ.002044",
+        "name": "美年健康",
+        "bar_start_at": "2026-10-12T10:49:00+08:00",
+        "scenarios": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "ret1_pct": "0.413223140495867768595041300",
+        "ret3_pct": "1.039501039501039501039501000",
+        "priority": "LOW",
+        "state": "CANDIDATE_FILTERED",
+        "reason": "历史成交基准不足，放量未确认",
+        "qualified": false,
+        "trace": {
+          "reason_code": "CANDIDATE_FILTERED",
+          "events": [],
+          "receipts": [],
+          "alert_decisions": 0,
+          "delivery_evidence": "unconfirmed",
+          "engine_trace": null,
+          "historical_trace_inferred": true
+        }
+      },
+      {
+        "symbol": "SH.688561",
+        "name": "奇安信-U",
+        "bar_start_at": "2026-10-12T10:22:00+08:00",
+        "scenarios": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "ret1_pct": "0.592495062541145490454246200",
+        "ret3_pct": "0.526315789473684210526315800",
+        "priority": "LOW",
+        "state": "CANDIDATE_FILTERED",
+        "reason": "历史成交基准不足，放量未确认",
+        "qualified": false,
+        "trace": {
+          "reason_code": "CANDIDATE_FILTERED",
+          "events": [],
+          "receipts": [],
+          "alert_decisions": 0,
+          "delivery_evidence": "unconfirmed",
+          "engine_trace": null,
+          "historical_trace_inferred": true
+        }
+      },
+      {
+        "symbol": "SH.600879",
+        "name": "航天电子",
+        "bar_start_at": "2026-10-12T10:20:00+08:00",
+        "scenarios": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "ret1_pct": "0.305576776165011459129106200",
+        "ret3_pct": "0.459066564651874521805661800",
+        "priority": "LOW",
+        "state": "CANDIDATE_FILTERED",
+        "reason": "历史成交基准不足，放量未确认",
+        "qualified": false,
+        "trace": {
+          "reason_code": "CANDIDATE_FILTERED",
+          "events": [],
+          "receipts": [],
+          "alert_decisions": 0,
+          "delivery_evidence": "unconfirmed",
+          "engine_trace": null,
+          "historical_trace_inferred": true
+        }
+      },
+      {
+        "symbol": "SH.688561",
+        "name": "奇安信-U",
+        "bar_start_at": "2026-10-12T10:19:00+08:00",
+        "scenarios": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "ret1_pct": "0.562355276215679788289778400",
+        "ret3_pct": "0.896116827082641885164288100",
+        "priority": "LOW",
+        "state": "CANDIDATE_FILTERED",
+        "reason": "历史成交基准不足，放量未确认",
+        "qualified": false,
+        "trace": {
+          "reason_code": "CANDIDATE_FILTERED",
+          "events": [],
+          "receipts": [],
+          "alert_decisions": 0,
+          "delivery_evidence": "unconfirmed",
+          "engine_trace": null,
+          "historical_trace_inferred": true
+        }
+      },
+      {
+        "symbol": "SZ.002044",
+        "name": "美年健康",
+        "bar_start_at": "2026-10-12T10:16:00+08:00",
+        "scenarios": [
+          "RAPID_RISE"
+        ],
+        "ret1_pct": "1.059322033898305084745762700",
+        "ret3_pct": "0.845665961945031712473572900",
+        "priority": "LOW",
+        "state": "CANDIDATE_FILTERED",
+        "reason": "冲高回落；成交基准积累中",
+        "qualified": true,
+        "trace": {
+          "reason_code": "CANDIDATE_FILTERED",
+          "events": [],
+          "receipts": [],
+          "alert_decisions": 0,
+          "delivery_evidence": "unconfirmed",
+          "engine_trace": null,
+          "historical_trace_inferred": true
+        }
+      }
+    ],
+    "health": {
+      "state": "OUTSIDE_SESSION",
+      "first_decision_bar_start": "2026-10-12T10:07:00+08:00",
+      "monitor_started_at": "2026-10-12T10:08:18.534675+08:00",
+      "monitor_start_evidence": "decision time or original bar receipt proxy; not process boot",
+      "expected_stocks": 13,
+      "valid_stocks": 0,
+      "latest_bar_end_at": "2026-10-12T11:29:00+08:00",
+      "feed_status": "STOPPED",
+      "feed_reasons": [
+        "NO_SESSION",
+        "FEED_UNAVAILABLE"
+      ],
+      "missing_stock_minutes": 13,
+      "uncovered_stock_minutes": 156,
+      "coverage_definition": "expected stock-minutes since watchlist addition; uncovered includes delayed receipts and pre-monitor calibration",
+      "candidate_count": 8,
+      "qualified_count": 1,
+      "count_unit": "stock-minute; not episodes",
+      "high_alert_count": 0,
+      "notification_receipts": {},
+      "notification_state": "NO_FAILURE_RECEIPT"
+    }
+  },
+  "card_evidence": {},
+  "scenario_diagnostics": [
+    {
+      "symbol": "SH.600256",
+      "bar_start_at": "2026-10-12T11:26:00+08:00",
+      "rule_version": "spike_rules_v1.0.2",
+      "bar_end_at": "2026-10-12T11:27:00+08:00",
+      "received_at": "2026-10-12T11:27:17.820552+08:00",
+      "source": "akshare/eastmoney",
+      "data_mode": "LIVE",
+      "event_types": [
+        "BREAKOUT_UNVERIFIED"
+      ],
+      "decision": {
+        "action": "IGNORE",
+        "breakout20": true,
+        "diagnostics": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "error": "NO_TRIGGER",
+        "force_weakening": false,
+        "is_attention_eligible": false,
+        "matched_scenarios": [],
+        "momentum_acceleration": false,
+        "persistence3": false,
+        "platform_width_pct": "0.7235890014471780028943560058",
+        "primary_scenario": null,
+        "priority": "LOW",
+        "rapid_attention": false,
+        "raw_score": 0,
+        "reasons": [],
+        "ret1_pct": "0.287769784172661870503597100",
+        "ret3_pct": "0.143678160919540229885057500",
+        "risks": [],
+        "rule_version": "spike_rules_v1.0.2",
+        "score": 0,
+        "trigger_kinds": [],
+        "triggered": false,
+        "turnover_burst": null
+      }
+    },
+    {
+      "symbol": "SH.688561",
+      "bar_start_at": "2026-10-12T11:12:00+08:00",
+      "rule_version": "spike_rules_v1.0.2",
+      "bar_end_at": "2026-10-12T11:13:00+08:00",
+      "received_at": "2026-10-12T11:13:17.628350+08:00",
+      "source": "akshare/eastmoney",
+      "data_mode": "LIVE",
+      "event_types": [
+        "BREAKOUT_UNVERIFIED"
+      ],
+      "decision": {
+        "action": "IGNORE",
+        "breakout20": true,
+        "diagnostics": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "error": "NO_TRIGGER",
+        "force_weakening": false,
+        "is_attention_eligible": false,
+        "matched_scenarios": [],
+        "momentum_acceleration": false,
+        "persistence3": false,
+        "platform_width_pct": "0.7897334649555774925962487660",
+        "primary_scenario": null,
+        "priority": "LOW",
+        "rapid_attention": false,
+        "raw_score": 0,
+        "reasons": [],
+        "ret1_pct": "0.491480996068152031454783700",
+        "ret3_pct": "0.327118089630356558717697100",
+        "risks": [],
+        "rule_version": "spike_rules_v1.0.2",
+        "score": 0,
+        "trigger_kinds": [],
+        "triggered": false,
+        "turnover_burst": null
+      }
+    },
+    {
+      "symbol": "SH.688561",
+      "bar_start_at": "2026-10-12T11:08:00+08:00",
+      "rule_version": "spike_rules_v1.0.2",
+      "bar_end_at": "2026-10-12T11:09:00+08:00",
+      "received_at": "2026-10-12T11:09:17.341595+08:00",
+      "source": "akshare/eastmoney",
+      "data_mode": "LIVE",
+      "event_types": [
+        "BREAKOUT_UNVERIFIED"
+      ],
+      "decision": {
+        "action": "IGNORE",
+        "breakout20": true,
+        "diagnostics": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "error": "NO_TRIGGER",
+        "force_weakening": false,
+        "is_attention_eligible": false,
+        "matched_scenarios": [],
+        "momentum_acceleration": false,
+        "persistence3": false,
+        "platform_width_pct": "0.3620803159973666886109282423",
+        "primary_scenario": null,
+        "priority": "LOW",
+        "rapid_attention": false,
+        "raw_score": 0,
+        "reasons": [],
+        "ret1_pct": "0.328191663931736133902198900",
+        "ret3_pct": "0.427069645203679369250985500",
+        "risks": [],
+        "rule_version": "spike_rules_v1.0.2",
+        "score": 0,
+        "trigger_kinds": [],
+        "triggered": false,
+        "turnover_burst": null
+      }
+    },
+    {
+      "symbol": "SZ.002044",
+      "bar_start_at": "2026-10-12T10:49:00+08:00",
+      "rule_version": "spike_rules_v1.0.2",
+      "bar_end_at": "2026-10-12T10:50:00+08:00",
+      "received_at": "2026-10-12T10:50:19.451584+08:00",
+      "source": "akshare/eastmoney",
+      "data_mode": "LIVE",
+      "event_types": [
+        "BREAKOUT_UNVERIFIED"
+      ],
+      "decision": {
+        "action": "IGNORE",
+        "breakout20": true,
+        "diagnostics": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "error": "NO_TRIGGER",
+        "force_weakening": false,
+        "is_attention_eligible": false,
+        "matched_scenarios": [],
+        "momentum_acceleration": false,
+        "persistence3": false,
+        "platform_width_pct": "1.041666666666666666666666667",
+        "primary_scenario": null,
+        "priority": "LOW",
+        "rapid_attention": false,
+        "raw_score": 0,
+        "reasons": [],
+        "ret1_pct": "0.413223140495867768595041300",
+        "ret3_pct": "1.039501039501039501039501000",
+        "risks": [],
+        "rule_version": "spike_rules_v1.0.2",
+        "score": 0,
+        "trigger_kinds": [],
+        "triggered": false,
+        "turnover_burst": null
+      }
+    },
+    {
+      "symbol": "SH.688561",
+      "bar_start_at": "2026-10-12T10:22:00+08:00",
+      "rule_version": "spike_rules_v1.0.2",
+      "bar_end_at": "2026-10-12T10:23:00+08:00",
+      "received_at": "2026-10-12T10:23:18.053157+08:00",
+      "source": "akshare/eastmoney",
+      "data_mode": "LIVE",
+      "event_types": [
+        "BREAKOUT_UNVERIFIED"
+      ],
+      "decision": {
+        "action": "IGNORE",
+        "breakout20": true,
+        "diagnostics": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "error": "NO_TRIGGER",
+        "force_weakening": false,
+        "is_attention_eligible": false,
+        "matched_scenarios": [],
+        "momentum_acceleration": false,
+        "persistence3": false,
+        "platform_width_pct": "1.097439308280678417026937147",
+        "primary_scenario": null,
+        "priority": "LOW",
+        "rapid_attention": false,
+        "raw_score": 0,
+        "reasons": [],
+        "ret1_pct": "0.592495062541145490454246200",
+        "ret3_pct": "0.526315789473684210526315800",
+        "risks": [],
+        "rule_version": "spike_rules_v1.0.2",
+        "score": 0,
+        "trigger_kinds": [],
+        "triggered": false,
+        "turnover_burst": null
+      }
+    },
+    {
+      "symbol": "SH.600879",
+      "bar_start_at": "2026-10-12T10:20:00+08:00",
+      "rule_version": "spike_rules_v1.0.2",
+      "bar_end_at": "2026-10-12T10:21:00+08:00",
+      "received_at": "2026-10-12T10:21:16.947258+08:00",
+      "source": "akshare/eastmoney",
+      "data_mode": "LIVE",
+      "event_types": [
+        "BREAKOUT_UNVERIFIED"
+      ],
+      "decision": {
+        "action": "IGNORE",
+        "breakout20": true,
+        "diagnostics": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "error": "NO_TRIGGER",
+        "force_weakening": false,
+        "is_attention_eligible": false,
+        "matched_scenarios": [],
+        "momentum_acceleration": false,
+        "persistence3": false,
+        "platform_width_pct": "0.5376344086021505376344086022",
+        "primary_scenario": null,
+        "priority": "LOW",
+        "rapid_attention": false,
+        "raw_score": 0,
+        "reasons": [],
+        "ret1_pct": "0.305576776165011459129106200",
+        "ret3_pct": "0.459066564651874521805661800",
+        "risks": [],
+        "rule_version": "spike_rules_v1.0.2",
+        "score": 0,
+        "trigger_kinds": [],
+        "triggered": false,
+        "turnover_burst": null
+      }
+    },
+    {
+      "symbol": "SH.688561",
+      "bar_start_at": "2026-10-12T10:19:00+08:00",
+      "rule_version": "spike_rules_v1.0.2",
+      "bar_end_at": "2026-10-12T10:20:00+08:00",
+      "received_at": "2026-10-12T10:20:18.724069+08:00",
+      "source": "akshare/eastmoney",
+      "data_mode": "LIVE",
+      "event_types": [
+        "BREAKOUT_UNVERIFIED"
+      ],
+      "decision": {
+        "action": "IGNORE",
+        "breakout20": true,
+        "diagnostics": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "error": "NO_TRIGGER",
+        "force_weakening": false,
+        "is_attention_eligible": false,
+        "matched_scenarios": [],
+        "momentum_acceleration": false,
+        "persistence3": false,
+        "platform_width_pct": "0.7656458055925432756324900133",
+        "primary_scenario": null,
+        "priority": "LOW",
+        "rapid_attention": false,
+        "raw_score": 0,
+        "reasons": [],
+        "ret1_pct": "0.562355276215679788289778400",
+        "ret3_pct": "0.896116827082641885164288100",
+        "risks": [],
+        "rule_version": "spike_rules_v1.0.2",
+        "score": 0,
+        "trigger_kinds": [],
+        "triggered": false,
+        "turnover_burst": null
+      }
+    }
+  ]
+}

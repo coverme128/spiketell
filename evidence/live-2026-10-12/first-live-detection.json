@@ -1,0 +1,1988 @@
+{
+  "radar": {
+    "feed": {
+      "status": "HEALTHY",
+      "session": "CONTINUOUS",
+      "updated_at": "2026-10-12T10:08:41.339517+08:00",
+      "available_count": 13,
+      "monitored_count": 13,
+      "last_bar_end_at": "2026-10-12T10:08:00+08:00",
+      "reasons": [],
+      "data_mode": "LIVE",
+      "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+    },
+    "monitored_count": 13,
+    "available_count": 13,
+    "today_episode_count": 0,
+    "high_count": 0,
+    "top_cards": [],
+    "all_cards": [],
+    "risk_cards": [],
+    "historical_cards": [],
+    "cursor": 0,
+    "card_evidence": {},
+    "scenario_diagnostics": []
+  },
+  "setup": {
+    "provider": {
+      "capacity_verified": true,
+      "finalization_verified": true,
+      "history_timestamp_semantics": "UNKNOWN",
+      "personal_use_confirmed": true,
+      "qualified_pool_size": 13,
+      "timestamp_semantics": "end"
+    },
+    "baseline_ready_count": 0,
+    "eligible_watch_count": 13,
+    "enabled_watch_count": 13,
+    "baseline_status": "WARMING",
+    "readiness_scope": "all_237_continuous_slots_have_five_prior_sessions",
+    "price_attention_requires_baseline": false,
+    "calibration": {
+      "history_status": "UNVERIFIED",
+      "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+      "observed_at": "2026-10-12T10:05:34.595194+08:00",
+      "primary_close_checks": [
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "1497762.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "9.68",
+              "high": "9.69",
+              "is_final": true,
+              "low": "9.68",
+              "open": "9.68",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:32.862931+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SH.600000",
+              "volume_shares": 154700
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SH.600000"
+        },
+        {
+          "confirmed_final_bars": [
+            {
+              "amount_cny": "3949358.00",
+              "bar_end_at": "2026-10-12T10:05:00+08:00",
+              "bar_start_at": "2026-10-12T10:04:00+08:00",
+              "close": "11.76",
+              "high": "11.77",
+              "is_final": true,
+              "low": "11.76",
+              "open": "11.77",
+              "quality": "VALID",
+              "received_at": "2026-10-12T10:05:34.595025+08:00",
+              "source": "akshare/eastmoney",
+              "symbol": "SZ.000001",
+              "volume_shares": 335600
+            }
+          ],
+          "invalid": false,
+          "observed_label": "2026-10-12T10:05:00+08:00",
+          "symbol": "SZ.000001"
+        }
+      ],
+      "primary_qualified_samples": 2,
+      "primary_required_samples": 2,
+      "qualified_sample_count": 2,
+      "required_sample_count": 4,
+      "state": "QUALIFIED"
+    },
+    "operations": {
+      "checked_at": "2026-10-12T10:08:31.861814+08:00",
+      "errors": {},
+      "state": "RUNNING"
+    },
+    "calendar_ready": true,
+    "clock_ready": true,
+    "measurements": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "complete_sessions": 0,
+      "sessions": [
+        {
+          "session_date": "2026-10-12",
+          "started_at": "2026-10-12T09:49:56.677622+08:00",
+          "last_seen_at": "2026-10-12T10:08:21.002093+08:00",
+          "max_gap_seconds": 79.817857,
+          "browser_visible_minutes": 0,
+          "complete_50_stock_session": false
+        }
+      ],
+      "expected_eligible_symbol_minutes": 195,
+      "valid_final_symbol_minutes": 52,
+      "coverage_ratio": 0.26666666666666666,
+      "missing_symbol_minutes": {},
+      "visible_alert_samples": 0,
+      "visible_alert_p50_seconds": null,
+      "visible_alert_p95_seconds": null,
+      "expected_visible_alerts": 0,
+      "missing_visible_receipts": [],
+      "meets_numeric_targets": false,
+      "note": "无提醒样本时延迟保持空值；本报告不代替源权限、语义、通知与其他发布门禁。"
+    },
+    "source_documentation": "https://github.com/akfamily/akshare",
+    "maintenance": {
+      "backup": "data/backups/radar-2026-10-12.sqlite3",
+      "database_check": "ok",
+      "date": "2026-10-12",
+      "retention_days": 90
+    }
+  },
+  "stocks": [
+    {
+      "symbol": "SH.600118",
+      "name": "中国卫星",
+      "checked_at": "2026-10-12T10:08:41.429606+08:00",
+      "data_mode": "LIVE",
+      "rule_version": "spike_rules_v1.0.2",
+      "state": "DETECTING",
+      "message": "正在检测：最新分钟未达到提醒条件，这不代表采集停止。",
+      "session": "CONTINUOUS",
+      "feed_health": "HEALTHY",
+      "blockers": [],
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T10:05:45.697855+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "latest_final_bar": {
+        "amount_cny": "3680347.00",
+        "bar_end_at": "2026-10-12T10:08:00+08:00",
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "close": "53.38",
+        "high": "53.45",
+        "is_final": true,
+        "low": "53.38",
+        "open": "53.40",
+        "quality": "VALID",
+        "received_at": "2026-10-12T10:08:18.534675+08:00",
+        "source": "akshare/eastmoney",
+        "symbol": "SH.600118",
+        "volume_shares": 68900
+      },
+      "latest_decision": {
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "rule_version": "spike_rules_v1.0.2",
+        "details": {
+          "action": "IGNORE",
+          "breakout20": false,
+          "diagnostics": [],
+          "error": "NO_TRIGGER",
+          "force_weakening": false,
+          "is_attention_eligible": false,
+          "matched_scenarios": [],
+          "momentum_acceleration": false,
+          "persistence3": false,
+          "platform_width_pct": "1.560150375939849624060150376",
+          "primary_scenario": null,
+          "priority": "LOW",
+          "rapid_attention": false,
+          "raw_score": 0,
+          "reasons": [],
+          "ret1_pct": "0",
+          "ret3_pct": "0.112528132033008252063015800",
+          "risks": [],
+          "rule_version": "spike_rules_v1.0.2",
+          "score": 0,
+          "trigger_kinds": [],
+          "triggered": false,
+          "turnover_burst": null
+        }
+      },
+      "today_received_minutes": 38,
+      "latest_bar_age_seconds": 41.429606,
+      "source_receive_delay_seconds": 18.534675,
+      "calibration": {
+        "history_status": "UNVERIFIED",
+        "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+        "observed_at": "2026-10-12T10:05:34.595194+08:00",
+        "primary_close_checks": [
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "1497762.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "9.68",
+                "high": "9.69",
+                "is_final": true,
+                "low": "9.68",
+                "open": "9.68",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:32.862931+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SH.600000",
+                "volume_shares": 154700
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SH.600000"
+          },
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "3949358.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "11.76",
+                "high": "11.77",
+                "is_final": true,
+                "low": "11.76",
+                "open": "11.77",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:34.595025+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SZ.000001",
+                "volume_shares": 335600
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SZ.000001"
+          }
+        ],
+        "primary_qualified_samples": 2,
+        "primary_required_samples": 2,
+        "qualified_sample_count": 2,
+        "required_sample_count": 4,
+        "state": "QUALIFIED"
+      },
+      "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+    },
+    {
+      "symbol": "SH.600256",
+      "name": "广汇能源",
+      "checked_at": "2026-10-12T10:08:41.480237+08:00",
+      "data_mode": "LIVE",
+      "rule_version": "spike_rules_v1.0.2",
+      "state": "DETECTING",
+      "message": "正在检测：最新分钟未达到提醒条件，这不代表采集停止。",
+      "session": "CONTINUOUS",
+      "feed_health": "HEALTHY",
+      "blockers": [],
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T10:05:45.035834+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "latest_final_bar": {
+        "amount_cny": "12343788.00",
+        "bar_end_at": "2026-10-12T10:08:00+08:00",
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "close": "7.09",
+        "high": "7.11",
+        "is_final": true,
+        "low": "7.09",
+        "open": "7.11",
+        "quality": "VALID",
+        "received_at": "2026-10-12T10:08:18.531100+08:00",
+        "source": "akshare/eastmoney",
+        "symbol": "SH.600256",
+        "volume_shares": 1738800
+      },
+      "latest_decision": {
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "rule_version": "spike_rules_v1.0.2",
+        "details": {
+          "action": "IGNORE",
+          "breakout20": false,
+          "diagnostics": [],
+          "error": "NO_TRIGGER",
+          "force_weakening": false,
+          "is_attention_eligible": false,
+          "matched_scenarios": [],
+          "momentum_acceleration": false,
+          "persistence3": false,
+          "platform_width_pct": "3.098591549295774647887323944",
+          "primary_scenario": null,
+          "priority": "LOW",
+          "rapid_attention": false,
+          "raw_score": 0,
+          "reasons": [],
+          "ret1_pct": "-0.1408450704225352112676056300",
+          "ret3_pct": "-0.8391608391608391608391608400",
+          "risks": [],
+          "rule_version": "spike_rules_v1.0.2",
+          "score": 0,
+          "trigger_kinds": [],
+          "triggered": false,
+          "turnover_burst": null
+        }
+      },
+      "today_received_minutes": 38,
+      "latest_bar_age_seconds": 41.480237,
+      "source_receive_delay_seconds": 18.5311,
+      "calibration": {
+        "history_status": "UNVERIFIED",
+        "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+        "observed_at": "2026-10-12T10:05:34.595194+08:00",
+        "primary_close_checks": [
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "1497762.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "9.68",
+                "high": "9.69",
+                "is_final": true,
+                "low": "9.68",
+                "open": "9.68",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:32.862931+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SH.600000",
+                "volume_shares": 154700
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SH.600000"
+          },
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "3949358.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "11.76",
+                "high": "11.77",
+                "is_final": true,
+                "low": "11.76",
+                "open": "11.77",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:34.595025+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SZ.000001",
+                "volume_shares": 335600
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SZ.000001"
+          }
+        ],
+        "primary_qualified_samples": 2,
+        "primary_required_samples": 2,
+        "qualified_sample_count": 2,
+        "required_sample_count": 4,
+        "state": "QUALIFIED"
+      },
+      "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+    },
+    {
+      "symbol": "SH.600879",
+      "name": "航天电子",
+      "checked_at": "2026-10-12T10:08:41.562082+08:00",
+      "data_mode": "LIVE",
+      "rule_version": "spike_rules_v1.0.2",
+      "state": "DETECTING",
+      "message": "正在检测：最新分钟未达到提醒条件，这不代表采集停止。",
+      "session": "CONTINUOUS",
+      "feed_health": "HEALTHY",
+      "blockers": [],
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T10:05:46.032478+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "latest_final_bar": {
+        "amount_cny": "2271849.00",
+        "bar_end_at": "2026-10-12T10:08:00+08:00",
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "close": "13.06",
+        "high": "13.07",
+        "is_final": true,
+        "low": "13.05",
+        "open": "13.07",
+        "quality": "VALID",
+        "received_at": "2026-10-12T10:08:18.538718+08:00",
+        "source": "akshare/eastmoney",
+        "symbol": "SH.600879",
+        "volume_shares": 174000
+      },
+      "latest_decision": {
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "rule_version": "spike_rules_v1.0.2",
+        "details": {
+          "action": "IGNORE",
+          "breakout20": false,
+          "diagnostics": [],
+          "error": "NO_TRIGGER",
+          "force_weakening": false,
+          "is_attention_eligible": false,
+          "matched_scenarios": [],
+          "momentum_acceleration": false,
+          "persistence3": false,
+          "platform_width_pct": "1.459293394777265745007680492",
+          "primary_scenario": null,
+          "priority": "LOW",
+          "rapid_attention": false,
+          "raw_score": 0,
+          "reasons": [],
+          "ret1_pct": "-0.0765110941086457536342769700",
+          "ret3_pct": "0.153374233128834355828220900",
+          "risks": [],
+          "rule_version": "spike_rules_v1.0.2",
+          "score": 0,
+          "trigger_kinds": [],
+          "triggered": false,
+          "turnover_burst": null
+        }
+      },
+      "today_received_minutes": 38,
+      "latest_bar_age_seconds": 41.562082,
+      "source_receive_delay_seconds": 18.538718,
+      "calibration": {
+        "history_status": "UNVERIFIED",
+        "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+        "observed_at": "2026-10-12T10:05:34.595194+08:00",
+        "primary_close_checks": [
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "1497762.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "9.68",
+                "high": "9.69",
+                "is_final": true,
+                "low": "9.68",
+                "open": "9.68",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:32.862931+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SH.600000",
+                "volume_shares": 154700
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SH.600000"
+          },
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "3949358.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "11.76",
+                "high": "11.77",
+                "is_final": true,
+                "low": "11.76",
+                "open": "11.77",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:34.595025+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SZ.000001",
+                "volume_shares": 335600
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SZ.000001"
+          }
+        ],
+        "primary_qualified_samples": 2,
+        "primary_required_samples": 2,
+        "qualified_sample_count": 2,
+        "required_sample_count": 4,
+        "state": "QUALIFIED"
+      },
+      "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+    },
+    {
+      "symbol": "SH.601698",
+      "name": "中国卫通",
+      "checked_at": "2026-10-12T10:08:41.619668+08:00",
+      "data_mode": "LIVE",
+      "rule_version": "spike_rules_v1.0.2",
+      "state": "DETECTING",
+      "message": "正在检测：最新分钟未达到提醒条件，这不代表采集停止。",
+      "session": "CONTINUOUS",
+      "feed_health": "HEALTHY",
+      "blockers": [],
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T10:05:44.503177+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "latest_final_bar": {
+        "amount_cny": "481721.00",
+        "bar_end_at": "2026-10-12T10:08:00+08:00",
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "close": "22.41",
+        "high": "22.42",
+        "is_final": true,
+        "low": "22.39",
+        "open": "22.40",
+        "quality": "VALID",
+        "received_at": "2026-10-12T10:08:19.193371+08:00",
+        "source": "akshare/eastmoney",
+        "symbol": "SH.601698",
+        "volume_shares": 21500
+      },
+      "latest_decision": {
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "rule_version": "spike_rules_v1.0.2",
+        "details": {
+          "action": "IGNORE",
+          "breakout20": false,
+          "diagnostics": [],
+          "error": "LOW_TURNOVER",
+          "force_weakening": false,
+          "is_attention_eligible": false,
+          "matched_scenarios": [],
+          "momentum_acceleration": false,
+          "persistence3": false,
+          "platform_width_pct": null,
+          "primary_scenario": null,
+          "priority": "LOW",
+          "rapid_attention": false,
+          "raw_score": 0,
+          "reasons": [],
+          "ret1_pct": null,
+          "ret3_pct": null,
+          "risks": [],
+          "rule_version": "spike_rules_v1.0.2",
+          "score": 0,
+          "trigger_kinds": [],
+          "triggered": false,
+          "turnover_burst": null
+        }
+      },
+      "today_received_minutes": 38,
+      "latest_bar_age_seconds": 41.619668,
+      "source_receive_delay_seconds": 19.193371,
+      "calibration": {
+        "history_status": "UNVERIFIED",
+        "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+        "observed_at": "2026-10-12T10:05:34.595194+08:00",
+        "primary_close_checks": [
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "1497762.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "9.68",
+                "high": "9.69",
+                "is_final": true,
+                "low": "9.68",
+                "open": "9.68",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:32.862931+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SH.600000",
+                "volume_shares": 154700
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SH.600000"
+          },
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "3949358.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "11.76",
+                "high": "11.77",
+                "is_final": true,
+                "low": "11.76",
+                "open": "11.77",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:34.595025+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SZ.000001",
+                "volume_shares": 335600
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SZ.000001"
+          }
+        ],
+        "primary_qualified_samples": 2,
+        "primary_required_samples": 2,
+        "qualified_sample_count": 2,
+        "required_sample_count": 4,
+        "state": "QUALIFIED"
+      },
+      "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+    },
+    {
+      "symbol": "SH.603083",
+      "name": "剑桥科技",
+      "checked_at": "2026-10-12T10:08:41.668276+08:00",
+      "data_mode": "LIVE",
+      "rule_version": "spike_rules_v1.0.2",
+      "state": "DETECTING",
+      "message": "正在检测：最新分钟未达到提醒条件，这不代表采集停止。",
+      "session": "CONTINUOUS",
+      "feed_health": "HEALTHY",
+      "blockers": [],
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T10:05:46.591118+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "latest_final_bar": {
+        "amount_cny": "17942235.00",
+        "bar_end_at": "2026-10-12T10:08:00+08:00",
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "close": "182.41",
+        "high": "183.30",
+        "is_final": true,
+        "low": "182.31",
+        "open": "183.30",
+        "quality": "VALID",
+        "received_at": "2026-10-12T10:08:19.468200+08:00",
+        "source": "akshare/eastmoney",
+        "symbol": "SH.603083",
+        "volume_shares": 98100
+      },
+      "latest_decision": {
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "rule_version": "spike_rules_v1.0.2",
+        "details": {
+          "action": "IGNORE",
+          "breakout20": false,
+          "diagnostics": [],
+          "error": "NO_TRIGGER",
+          "force_weakening": false,
+          "is_attention_eligible": false,
+          "matched_scenarios": [],
+          "momentum_acceleration": false,
+          "persistence3": false,
+          "platform_width_pct": "2.696145999889728179963610299",
+          "primary_scenario": null,
+          "priority": "LOW",
+          "rapid_attention": false,
+          "raw_score": 0,
+          "reasons": [],
+          "ret1_pct": "-0.4963997381627754745799694500",
+          "ret3_pct": "-0.1149928813930566203044573400",
+          "risks": [],
+          "rule_version": "spike_rules_v1.0.2",
+          "score": 0,
+          "trigger_kinds": [],
+          "triggered": false,
+          "turnover_burst": null
+        }
+      },
+      "today_received_minutes": 38,
+      "latest_bar_age_seconds": 41.668276,
+      "source_receive_delay_seconds": 19.4682,
+      "calibration": {
+        "history_status": "UNVERIFIED",
+        "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+        "observed_at": "2026-10-12T10:05:34.595194+08:00",
+        "primary_close_checks": [
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "1497762.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "9.68",
+                "high": "9.69",
+                "is_final": true,
+                "low": "9.68",
+                "open": "9.68",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:32.862931+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SH.600000",
+                "volume_shares": 154700
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SH.600000"
+          },
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "3949358.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "11.76",
+                "high": "11.77",
+                "is_final": true,
+                "low": "11.76",
+                "open": "11.77",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:34.595025+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SZ.000001",
+                "volume_shares": 335600
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SZ.000001"
+          }
+        ],
+        "primary_qualified_samples": 2,
+        "primary_required_samples": 2,
+        "qualified_sample_count": 2,
+        "required_sample_count": 4,
+        "state": "QUALIFIED"
+      },
+      "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+    },
+    {
+      "symbol": "SH.688102",
+      "name": "斯瑞新材",
+      "checked_at": "2026-10-12T10:08:41.708277+08:00",
+      "data_mode": "LIVE",
+      "rule_version": "spike_rules_v1.0.2",
+      "state": "DETECTING",
+      "message": "正在检测：最新分钟未达到提醒条件，这不代表采集停止。",
+      "session": "CONTINUOUS",
+      "feed_health": "HEALTHY",
+      "blockers": [],
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T10:05:44.623758+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "latest_final_bar": {
+        "amount_cny": "662512.00",
+        "bar_end_at": "2026-10-12T10:08:00+08:00",
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "close": "26.61",
+        "high": "26.64",
+        "is_final": true,
+        "low": "26.61",
+        "open": "26.62",
+        "quality": "VALID",
+        "received_at": "2026-10-12T10:08:19.459821+08:00",
+        "source": "akshare/eastmoney",
+        "symbol": "SH.688102",
+        "volume_shares": 24900
+      },
+      "latest_decision": {
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "rule_version": "spike_rules_v1.0.2",
+        "details": {
+          "action": "IGNORE",
+          "breakout20": false,
+          "diagnostics": [],
+          "error": "LOW_TURNOVER",
+          "force_weakening": false,
+          "is_attention_eligible": false,
+          "matched_scenarios": [],
+          "momentum_acceleration": false,
+          "persistence3": false,
+          "platform_width_pct": null,
+          "primary_scenario": null,
+          "priority": "LOW",
+          "rapid_attention": false,
+          "raw_score": 0,
+          "reasons": [],
+          "ret1_pct": null,
+          "ret3_pct": null,
+          "risks": [],
+          "rule_version": "spike_rules_v1.0.2",
+          "score": 0,
+          "trigger_kinds": [],
+          "triggered": false,
+          "turnover_burst": null
+        }
+      },
+      "today_received_minutes": 38,
+      "latest_bar_age_seconds": 41.708277,
+      "source_receive_delay_seconds": 19.459821,
+      "calibration": {
+        "history_status": "UNVERIFIED",
+        "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+        "observed_at": "2026-10-12T10:05:34.595194+08:00",
+        "primary_close_checks": [
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "1497762.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "9.68",
+                "high": "9.69",
+                "is_final": true,
+                "low": "9.68",
+                "open": "9.68",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:32.862931+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SH.600000",
+                "volume_shares": 154700
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SH.600000"
+          },
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "3949358.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "11.76",
+                "high": "11.77",
+                "is_final": true,
+                "low": "11.76",
+                "open": "11.77",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:34.595025+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SZ.000001",
+                "volume_shares": 335600
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SZ.000001"
+          }
+        ],
+        "primary_qualified_samples": 2,
+        "primary_required_samples": 2,
+        "qualified_sample_count": 2,
+        "required_sample_count": 4,
+        "state": "QUALIFIED"
+      },
+      "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+    },
+    {
+      "symbol": "SH.688297",
+      "name": "中无人机",
+      "checked_at": "2026-10-12T10:08:41.748039+08:00",
+      "data_mode": "LIVE",
+      "rule_version": "spike_rules_v1.0.2",
+      "state": "DETECTING",
+      "message": "正在检测：最新分钟未达到提醒条件，这不代表采集停止。",
+      "session": "CONTINUOUS",
+      "feed_health": "HEALTHY",
+      "blockers": [],
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T10:05:45.136297+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "latest_final_bar": {
+        "amount_cny": "797049.00",
+        "bar_end_at": "2026-10-12T10:08:00+08:00",
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "close": "39.27",
+        "high": "39.27",
+        "is_final": true,
+        "low": "39.21",
+        "open": "39.21",
+        "quality": "VALID",
+        "received_at": "2026-10-12T10:08:19.891058+08:00",
+        "source": "akshare/eastmoney",
+        "symbol": "SH.688297",
+        "volume_shares": 20300
+      },
+      "latest_decision": {
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "rule_version": "spike_rules_v1.0.2",
+        "details": {
+          "action": "IGNORE",
+          "breakout20": false,
+          "diagnostics": [],
+          "error": "LOW_TURNOVER",
+          "force_weakening": false,
+          "is_attention_eligible": false,
+          "matched_scenarios": [],
+          "momentum_acceleration": false,
+          "persistence3": false,
+          "platform_width_pct": null,
+          "primary_scenario": null,
+          "priority": "LOW",
+          "rapid_attention": false,
+          "raw_score": 0,
+          "reasons": [],
+          "ret1_pct": null,
+          "ret3_pct": null,
+          "risks": [],
+          "rule_version": "spike_rules_v1.0.2",
+          "score": 0,
+          "trigger_kinds": [],
+          "triggered": false,
+          "turnover_burst": null
+        }
+      },
+      "today_received_minutes": 38,
+      "latest_bar_age_seconds": 41.748039,
+      "source_receive_delay_seconds": 19.891058,
+      "calibration": {
+        "history_status": "UNVERIFIED",
+        "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+        "observed_at": "2026-10-12T10:05:34.595194+08:00",
+        "primary_close_checks": [
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "1497762.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "9.68",
+                "high": "9.69",
+                "is_final": true,
+                "low": "9.68",
+                "open": "9.68",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:32.862931+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SH.600000",
+                "volume_shares": 154700
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SH.600000"
+          },
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "3949358.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "11.76",
+                "high": "11.77",
+                "is_final": true,
+                "low": "11.76",
+                "open": "11.77",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:34.595025+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SZ.000001",
+                "volume_shares": 335600
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SZ.000001"
+          }
+        ],
+        "primary_qualified_samples": 2,
+        "primary_required_samples": 2,
+        "qualified_sample_count": 2,
+        "required_sample_count": 4,
+        "state": "QUALIFIED"
+      },
+      "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+    },
+    {
+      "symbol": "SH.688561",
+      "name": "奇安信-U",
+      "checked_at": "2026-10-12T10:08:41.799866+08:00",
+      "data_mode": "LIVE",
+      "rule_version": "spike_rules_v1.0.2",
+      "state": "DETECTING",
+      "message": "正在检测：最新分钟未达到提醒条件，这不代表采集停止。",
+      "session": "CONTINUOUS",
+      "feed_health": "HEALTHY",
+      "blockers": [],
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T10:05:46.814239+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "latest_final_bar": {
+        "amount_cny": "677875.00",
+        "bar_end_at": "2026-10-12T10:08:00+08:00",
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "close": "30.19",
+        "high": "30.20",
+        "is_final": true,
+        "low": "30.15",
+        "open": "30.17",
+        "quality": "VALID",
+        "received_at": "2026-10-12T10:08:19.998644+08:00",
+        "source": "akshare/eastmoney",
+        "symbol": "SH.688561",
+        "volume_shares": 22500
+      },
+      "latest_decision": {
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "rule_version": "spike_rules_v1.0.2",
+        "details": {
+          "action": "IGNORE",
+          "breakout20": false,
+          "diagnostics": [],
+          "error": "LOW_TURNOVER",
+          "force_weakening": false,
+          "is_attention_eligible": false,
+          "matched_scenarios": [],
+          "momentum_acceleration": false,
+          "persistence3": false,
+          "platform_width_pct": null,
+          "primary_scenario": null,
+          "priority": "LOW",
+          "rapid_attention": false,
+          "raw_score": 0,
+          "reasons": [],
+          "ret1_pct": null,
+          "ret3_pct": null,
+          "risks": [],
+          "rule_version": "spike_rules_v1.0.2",
+          "score": 0,
+          "trigger_kinds": [],
+          "triggered": false,
+          "turnover_burst": null
+        }
+      },
+      "today_received_minutes": 38,
+      "latest_bar_age_seconds": 41.799866,
+      "source_receive_delay_seconds": 19.998644,
+      "calibration": {
+        "history_status": "UNVERIFIED",
+        "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+        "observed_at": "2026-10-12T10:05:34.595194+08:00",
+        "primary_close_checks": [
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "1497762.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "9.68",
+                "high": "9.69",
+                "is_final": true,
+                "low": "9.68",
+                "open": "9.68",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:32.862931+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SH.600000",
+                "volume_shares": 154700
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SH.600000"
+          },
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "3949358.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "11.76",
+                "high": "11.77",
+                "is_final": true,
+                "low": "11.76",
+                "open": "11.77",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:34.595025+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SZ.000001",
+                "volume_shares": 335600
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SZ.000001"
+          }
+        ],
+        "primary_qualified_samples": 2,
+        "primary_required_samples": 2,
+        "qualified_sample_count": 2,
+        "required_sample_count": 4,
+        "state": "QUALIFIED"
+      },
+      "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+    },
+    {
+      "symbol": "SH.688629",
+      "name": "华丰科技",
+      "checked_at": "2026-10-12T10:08:41.857998+08:00",
+      "data_mode": "LIVE",
+      "rule_version": "spike_rules_v1.0.2",
+      "state": "DETECTING",
+      "message": "正在检测：最新分钟未达到提醒条件，这不代表采集停止。",
+      "session": "CONTINUOUS",
+      "feed_health": "HEALTHY",
+      "blockers": [],
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T10:05:40.754543+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "latest_final_bar": {
+        "amount_cny": "5957053.00",
+        "bar_end_at": "2026-10-12T10:08:00+08:00",
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "close": "91.62",
+        "high": "91.86",
+        "is_final": true,
+        "low": "91.59",
+        "open": "91.74",
+        "quality": "VALID",
+        "received_at": "2026-10-12T10:08:20.097280+08:00",
+        "source": "akshare/eastmoney",
+        "symbol": "SH.688629",
+        "volume_shares": 64900
+      },
+      "latest_decision": {
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "rule_version": "spike_rules_v1.0.2",
+        "details": {
+          "action": "IGNORE",
+          "breakout20": false,
+          "diagnostics": [],
+          "error": "NO_TRIGGER",
+          "force_weakening": false,
+          "is_attention_eligible": false,
+          "matched_scenarios": [],
+          "momentum_acceleration": false,
+          "persistence3": false,
+          "platform_width_pct": "2.361599297012302284710017575",
+          "primary_scenario": null,
+          "priority": "LOW",
+          "rapid_attention": false,
+          "raw_score": 0,
+          "reasons": [],
+          "ret1_pct": "-0.1308044473512099411379986900",
+          "ret3_pct": "0.251668672721304300251668700",
+          "risks": [],
+          "rule_version": "spike_rules_v1.0.2",
+          "score": 0,
+          "trigger_kinds": [],
+          "triggered": false,
+          "turnover_burst": null
+        }
+      },
+      "today_received_minutes": 38,
+      "latest_bar_age_seconds": 41.857998,
+      "source_receive_delay_seconds": 20.09728,
+      "calibration": {
+        "history_status": "UNVERIFIED",
+        "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+        "observed_at": "2026-10-12T10:05:34.595194+08:00",
+        "primary_close_checks": [
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "1497762.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "9.68",
+                "high": "9.69",
+                "is_final": true,
+                "low": "9.68",
+                "open": "9.68",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:32.862931+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SH.600000",
+                "volume_shares": 154700
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SH.600000"
+          },
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "3949358.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "11.76",
+                "high": "11.77",
+                "is_final": true,
+                "low": "11.76",
+                "open": "11.77",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:34.595025+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SZ.000001",
+                "volume_shares": 335600
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SZ.000001"
+          }
+        ],
+        "primary_qualified_samples": 2,
+        "primary_required_samples": 2,
+        "qualified_sample_count": 2,
+        "required_sample_count": 4,
+        "state": "QUALIFIED"
+      },
+      "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+    },
+    {
+      "symbol": "SZ.002044",
+      "name": "美年健康",
+      "checked_at": "2026-10-12T10:08:41.912009+08:00",
+      "data_mode": "LIVE",
+      "rule_version": "spike_rules_v1.0.2",
+      "state": "DETECTING",
+      "message": "正在检测：最新分钟未达到提醒条件，这不代表采集停止。",
+      "session": "CONTINUOUS",
+      "feed_health": "HEALTHY",
+      "blockers": [],
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T10:05:46.233600+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "latest_final_bar": {
+        "amount_cny": "5507951.00",
+        "bar_end_at": "2026-10-12T10:08:00+08:00",
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "close": "4.76",
+        "high": "4.77",
+        "is_final": true,
+        "low": "4.75",
+        "open": "4.76",
+        "quality": "VALID",
+        "received_at": "2026-10-12T10:08:20.494303+08:00",
+        "source": "akshare/eastmoney",
+        "symbol": "SZ.002044",
+        "volume_shares": 1157700
+      },
+      "latest_decision": {
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "rule_version": "spike_rules_v1.0.2",
+        "details": {
+          "action": "IGNORE",
+          "breakout20": false,
+          "diagnostics": [],
+          "error": "NO_TRIGGER",
+          "force_weakening": false,
+          "is_attention_eligible": false,
+          "matched_scenarios": [],
+          "momentum_acceleration": false,
+          "persistence3": false,
+          "platform_width_pct": "3.375527426160337552742616034",
+          "primary_scenario": null,
+          "priority": "LOW",
+          "rapid_attention": false,
+          "raw_score": 0,
+          "reasons": [],
+          "ret1_pct": "0",
+          "ret3_pct": "0",
+          "risks": [],
+          "rule_version": "spike_rules_v1.0.2",
+          "score": 0,
+          "trigger_kinds": [],
+          "triggered": false,
+          "turnover_burst": null
+        }
+      },
+      "today_received_minutes": 38,
+      "latest_bar_age_seconds": 41.912009,
+      "source_receive_delay_seconds": 20.494303,
+      "calibration": {
+        "history_status": "UNVERIFIED",
+        "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+        "observed_at": "2026-10-12T10:05:34.595194+08:00",
+        "primary_close_checks": [
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "1497762.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "9.68",
+                "high": "9.69",
+                "is_final": true,
+                "low": "9.68",
+                "open": "9.68",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:32.862931+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SH.600000",
+                "volume_shares": 154700
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SH.600000"
+          },
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "3949358.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "11.76",
+                "high": "11.77",
+                "is_final": true,
+                "low": "11.76",
+                "open": "11.77",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:34.595025+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SZ.000001",
+                "volume_shares": 335600
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SZ.000001"
+          }
+        ],
+        "primary_qualified_samples": 2,
+        "primary_required_samples": 2,
+        "qualified_sample_count": 2,
+        "required_sample_count": 4,
+        "state": "QUALIFIED"
+      },
+      "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+    },
+    {
+      "symbol": "SZ.002389",
+      "name": "航天彩虹",
+      "checked_at": "2026-10-12T10:08:41.955538+08:00",
+      "data_mode": "LIVE",
+      "rule_version": "spike_rules_v1.0.2",
+      "state": "DETECTING",
+      "message": "正在检测：最新分钟未达到提醒条件，这不代表采集停止。",
+      "session": "CONTINUOUS",
+      "feed_health": "HEALTHY",
+      "blockers": [],
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T10:05:45.546018+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "latest_final_bar": {
+        "amount_cny": "522453.00",
+        "bar_end_at": "2026-10-12T10:08:00+08:00",
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "close": "17.78",
+        "high": "17.79",
+        "is_final": true,
+        "low": "17.75",
+        "open": "17.75",
+        "quality": "VALID",
+        "received_at": "2026-10-12T10:08:20.500722+08:00",
+        "source": "akshare/eastmoney",
+        "symbol": "SZ.002389",
+        "volume_shares": 29400
+      },
+      "latest_decision": {
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "rule_version": "spike_rules_v1.0.2",
+        "details": {
+          "action": "IGNORE",
+          "breakout20": false,
+          "diagnostics": [],
+          "error": "LOW_TURNOVER",
+          "force_weakening": false,
+          "is_attention_eligible": false,
+          "matched_scenarios": [],
+          "momentum_acceleration": false,
+          "persistence3": false,
+          "platform_width_pct": null,
+          "primary_scenario": null,
+          "priority": "LOW",
+          "rapid_attention": false,
+          "raw_score": 0,
+          "reasons": [],
+          "ret1_pct": null,
+          "ret3_pct": null,
+          "risks": [],
+          "rule_version": "spike_rules_v1.0.2",
+          "score": 0,
+          "trigger_kinds": [],
+          "triggered": false,
+          "turnover_burst": null
+        }
+      },
+      "today_received_minutes": 38,
+      "latest_bar_age_seconds": 41.955538,
+      "source_receive_delay_seconds": 20.500722,
+      "calibration": {
+        "history_status": "UNVERIFIED",
+        "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+        "observed_at": "2026-10-12T10:05:34.595194+08:00",
+        "primary_close_checks": [
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "1497762.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "9.68",
+                "high": "9.69",
+                "is_final": true,
+                "low": "9.68",
+                "open": "9.68",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:32.862931+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SH.600000",
+                "volume_shares": 154700
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SH.600000"
+          },
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "3949358.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "11.76",
+                "high": "11.77",
+                "is_final": true,
+                "low": "11.76",
+                "open": "11.77",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:34.595025+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SZ.000001",
+                "volume_shares": 335600
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SZ.000001"
+          }
+        ],
+        "primary_qualified_samples": 2,
+        "primary_required_samples": 2,
+        "qualified_sample_count": 2,
+        "required_sample_count": 4,
+        "state": "QUALIFIED"
+      },
+      "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+    },
+    {
+      "symbol": "SZ.300124",
+      "name": "汇川技术",
+      "checked_at": "2026-10-12T10:08:42.001026+08:00",
+      "data_mode": "LIVE",
+      "rule_version": "spike_rules_v1.0.2",
+      "state": "DETECTING",
+      "message": "正在检测：最新分钟未达到提醒条件，这不代表采集停止。",
+      "session": "CONTINUOUS",
+      "feed_health": "HEALTHY",
+      "blockers": [],
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T10:05:46.691794+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "latest_final_bar": {
+        "amount_cny": "3983923.00",
+        "bar_end_at": "2026-10-12T10:08:00+08:00",
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "close": "50.68",
+        "high": "50.72",
+        "is_final": true,
+        "low": "50.66",
+        "open": "50.66",
+        "quality": "VALID",
+        "received_at": "2026-10-12T10:08:20.621008+08:00",
+        "source": "akshare/eastmoney",
+        "symbol": "SZ.300124",
+        "volume_shares": 78600
+      },
+      "latest_decision": {
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "rule_version": "spike_rules_v1.0.2",
+        "details": {
+          "action": "IGNORE",
+          "breakout20": false,
+          "diagnostics": [],
+          "error": "NO_TRIGGER",
+          "force_weakening": false,
+          "is_attention_eligible": false,
+          "matched_scenarios": [],
+          "momentum_acceleration": false,
+          "persistence3": false,
+          "platform_width_pct": "0.7895775759968416896960126332",
+          "primary_scenario": null,
+          "priority": "LOW",
+          "rapid_attention": false,
+          "raw_score": 0,
+          "reasons": [],
+          "ret1_pct": "0",
+          "ret3_pct": "-0.1182499014584154513204572300",
+          "risks": [],
+          "rule_version": "spike_rules_v1.0.2",
+          "score": 0,
+          "trigger_kinds": [],
+          "triggered": false,
+          "turnover_burst": null
+        }
+      },
+      "today_received_minutes": 38,
+      "latest_bar_age_seconds": 42.001026,
+      "source_receive_delay_seconds": 20.621008,
+      "calibration": {
+        "history_status": "UNVERIFIED",
+        "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+        "observed_at": "2026-10-12T10:05:34.595194+08:00",
+        "primary_close_checks": [
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "1497762.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "9.68",
+                "high": "9.69",
+                "is_final": true,
+                "low": "9.68",
+                "open": "9.68",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:32.862931+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SH.600000",
+                "volume_shares": 154700
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SH.600000"
+          },
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "3949358.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "11.76",
+                "high": "11.77",
+                "is_final": true,
+                "low": "11.76",
+                "open": "11.77",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:34.595025+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SZ.000001",
+                "volume_shares": 335600
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SZ.000001"
+          }
+        ],
+        "primary_qualified_samples": 2,
+        "primary_required_samples": 2,
+        "qualified_sample_count": 2,
+        "required_sample_count": 4,
+        "state": "QUALIFIED"
+      },
+      "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+    },
+    {
+      "symbol": "SZ.300765",
+      "name": "石药创新",
+      "checked_at": "2026-10-12T10:08:42.065532+08:00",
+      "data_mode": "LIVE",
+      "rule_version": "spike_rules_v1.0.2",
+      "state": "DETECTING",
+      "message": "正在检测：最新分钟未达到提醒条件，这不代表采集停止。",
+      "session": "CONTINUOUS",
+      "feed_health": "HEALTHY",
+      "blockers": [],
+      "preparation": {
+        "baseline": {
+          "historical_days": 9,
+          "semantics_verified": false,
+          "slots_with_five_days": 0,
+          "total_continuous_slots": 237
+        },
+        "baseline_warning": null,
+        "error": null,
+        "history_checked_date": "2026-10-12",
+        "message": "资料准备完成",
+        "metadata_checked_date": "2026-10-12",
+        "state": "PREPARED",
+        "updated_at": "2026-10-12T10:05:43.497587+08:00"
+      },
+      "baseline": {
+        "historical_days": 9,
+        "slots_with_five_days": 0,
+        "total_continuous_slots": 237,
+        "semantics_verified": false
+      },
+      "latest_final_bar": {
+        "amount_cny": "1931996.00",
+        "bar_end_at": "2026-10-12T10:08:00+08:00",
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "close": "43.95",
+        "high": "44.06",
+        "is_final": true,
+        "low": "43.95",
+        "open": "44.03",
+        "quality": "VALID",
+        "received_at": "2026-10-12T10:08:20.998235+08:00",
+        "source": "akshare/eastmoney",
+        "symbol": "SZ.300765",
+        "volume_shares": 43900
+      },
+      "latest_decision": {
+        "bar_start_at": "2026-10-12T10:07:00+08:00",
+        "rule_version": "spike_rules_v1.0.2",
+        "details": {
+          "action": "IGNORE",
+          "breakout20": false,
+          "diagnostics": [],
+          "error": "NO_TRIGGER",
+          "force_weakening": false,
+          "is_attention_eligible": false,
+          "matched_scenarios": [],
+          "momentum_acceleration": false,
+          "persistence3": false,
+          "platform_width_pct": "3.600729261622607110300820419",
+          "primary_scenario": null,
+          "priority": "LOW",
+          "rapid_attention": false,
+          "raw_score": 0,
+          "reasons": [],
+          "ret1_pct": "-0.1590186278964107223989095900",
+          "ret3_pct": "0.113895216400911161731207300",
+          "risks": [],
+          "rule_version": "spike_rules_v1.0.2",
+          "score": 0,
+          "trigger_kinds": [],
+          "triggered": false,
+          "turnover_burst": null
+        }
+      },
+      "today_received_minutes": 38,
+      "latest_bar_age_seconds": 42.065532,
+      "source_receive_delay_seconds": 20.998235,
+      "calibration": {
+        "history_status": "UNVERIFIED",
+        "message": "主行情分钟边界、成交单位及收盘稳定性已核验；历史基准尚未核验，先验证股票池采集",
+        "observed_at": "2026-10-12T10:05:34.595194+08:00",
+        "primary_close_checks": [
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "1497762.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "9.68",
+                "high": "9.69",
+                "is_final": true,
+                "low": "9.68",
+                "open": "9.68",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:32.862931+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SH.600000",
+                "volume_shares": 154700
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SH.600000"
+          },
+          {
+            "confirmed_final_bars": [
+              {
+                "amount_cny": "3949358.00",
+                "bar_end_at": "2026-10-12T10:05:00+08:00",
+                "bar_start_at": "2026-10-12T10:04:00+08:00",
+                "close": "11.76",
+                "high": "11.77",
+                "is_final": true,
+                "low": "11.76",
+                "open": "11.77",
+                "quality": "VALID",
+                "received_at": "2026-10-12T10:05:34.595025+08:00",
+                "source": "akshare/eastmoney",
+                "symbol": "SZ.000001",
+                "volume_shares": 335600
+              }
+            ],
+            "invalid": false,
+            "observed_label": "2026-10-12T10:05:00+08:00",
+            "symbol": "SZ.000001"
+          }
+        ],
+        "primary_qualified_samples": 2,
+        "primary_required_samples": 2,
+        "qualified_sample_count": 2,
+        "required_sample_count": 4,
+        "state": "QUALIFIED"
+      },
+      "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+    }
+  ],
+  "polls": [
+    {
+      "error_count": 0,
+      "errors": {},
+      "lag_seconds": {
+        "SH.600118": 18.534675,
+        "SH.600256": 18.5311,
+        "SH.600879": 18.538718,
+        "SH.601698": 19.193371,
+        "SH.603083": 19.4682,
+        "SH.688102": 19.459821,
+        "SH.688297": 19.891058,
+        "SH.688561": 19.998644,
+        "SH.688629": 20.09728,
+        "SZ.002044": 20.494303,
+        "SZ.002389": 20.500722,
+        "SZ.300124": 20.621008,
+        "SZ.300765": 20.998235
+      },
+      "requested_count": 13,
+      "valid_symbols": 13
+    },
+    {
+      "error_count": 0,
+      "errors": {},
+      "lag_seconds": {
+        "SH.600118": 22.337655,
+        "SH.600256": 22.181142,
+        "SH.600879": 22.060499,
+        "SH.601698": 24.09089,
+        "SH.603083": 23.738194,
+        "SH.688102": 23.870444,
+        "SH.688297": 24.664889,
+        "SH.688561": 24.813359,
+        "SH.688629": 26.093125,
+        "SZ.002044": 25.77281,
+        "SZ.002389": 25.870609,
+        "SZ.300124": 26.247655,
+        "SZ.300765": 26.829581
+      },
+      "requested_count": 13,
+      "valid_symbols": 13
+    },
+    {
+      "error_count": 0,
+      "errors": {},
+      "lag_seconds": {
+        "SH.600118": 17.970999,
+        "SH.600256": 17.464973,
+        "SH.600879": 16.967985,
+        "SH.601698": 18.088241,
+        "SH.603083": 18.697198,
+        "SH.688102": 18.311176,
+        "SH.688297": 18.941836,
+        "SH.688561": 19.158567,
+        "SH.688629": 20.383668,
+        "SZ.002044": 21.308216,
+        "SZ.002389": 20.273711,
+        "SZ.300124": 20.74526,
+        "SZ.300765": 20.667393
+      },
+      "requested_count": 13,
+      "valid_symbols": 13
+    }
+  ],
+  "integrity": "ok",
+  "decisions_count": 13,
+  "episodes_count": 0
+}

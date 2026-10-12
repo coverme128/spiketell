@@ -1,3 +1,4 @@
+import type {Movements} from './MovementPanel';
 export type Scenario = 'RAPID_RISE'|'MOMENTUM_ACCELERATION'|'VOLUME_BREAKOUT'|'SPIKE_REVERSAL';
 export type Card = {
   primary_scenario?:Scenario|null;matched_scenarios?:Scenario[];is_attention_eligible?:boolean;
@@ -9,7 +10,7 @@ export type Card = {
 export type Feed = {status:string;session:string;updated_at:string;available_count:number;monitored_count:number;last_bar_end_at:string|null;reasons:string[];data_mode:string;release_status:string};
 export type CardEvidence = {amount_cny:string;source:string};
 export type Diagnostic = {symbol:string;bar_end_at:string;received_at:string;event_types:string[];data_mode:string};
-export type Radar = {scenario_diagnostics?:Diagnostic[];feed:Feed;monitored_count:number;available_count:number;today_episode_count:number;high_count:number;top_cards:Card[];risk_cards?:Card[];all_cards:Card[];historical_cards:Card[];cursor:number;card_evidence:Record<string,CardEvidence>};
+export type Radar = {movements?:Movements;scenario_diagnostics?:Diagnostic[];feed:Feed;monitored_count:number;available_count:number;today_episode_count:number;high_count:number;top_cards:Card[];risk_cards?:Card[];all_cards:Card[];historical_cards:Card[];cursor:number;card_evidence:Record<string,CardEvidence>};
 export type Watch = {symbol:string;name:string;enabled:boolean;source_state:string;last_bar_end_at:string|null;preparation?:{state:string;message:string;error?:string};baseline?:{historical_days:number;slots_with_five_days:number;semantics_verified:boolean}};
 export type Settings = {quiet_mode:boolean;notification_enabled:boolean;max_watchlist:number;retention_days?:number};
 export type EpisodeEvent = {event_id:string;audit_sequence:number;event_type:string;next_state:string;recorded_at:string;source:string;rule_version:string;source_received_at:string;bar_end_at:string;delivery_mode:string;alert_kind:string|null;episode_id:string;card:Card};

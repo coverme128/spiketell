@@ -1,0 +1,235 @@
+{
+  "feed": {
+    "status": "STOPPED",
+    "session": "MIDDAY_BREAK",
+    "updated_at": "2026-10-12T11:42:59.098916+08:00",
+    "available_count": 0,
+    "monitored_count": 13,
+    "last_bar_end_at": "2026-10-12T11:29:00+08:00",
+    "reasons": [
+      "NO_SESSION",
+      "FEED_UNAVAILABLE"
+    ],
+    "data_mode": "LIVE",
+    "release_status": "IMPLEMENTED_PENDING_RUNTIME"
+  },
+  "monitored_count": 13,
+  "available_count": 0,
+  "today_episode_count": 0,
+  "high_count": 0,
+  "top_cards": [],
+  "all_cards": [],
+  "risk_cards": [],
+  "historical_cards": [],
+  "cursor": 0,
+  "movements": {
+    "items": [
+      {
+        "symbol": "SH.600256",
+        "name": "广汇能源",
+        "bar_start_at": "2026-10-12T11:26:00+08:00",
+        "scenarios": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "ret1_pct": "0.287769784172661870503597100",
+        "ret3_pct": "0.143678160919540229885057500",
+        "priority": "LOW",
+        "state": "CANDIDATE_FILTERED",
+        "reason": "历史成交基准不足，放量未确认",
+        "qualified": false,
+        "trace": {
+          "reason_code": "CANDIDATE_FILTERED",
+          "events": [],
+          "receipts": [],
+          "alert_decisions": 0,
+          "delivery_evidence": "unconfirmed",
+          "engine_trace": null,
+          "historical_trace_inferred": true
+        }
+      },
+      {
+        "symbol": "SH.688561",
+        "name": "奇安信-U",
+        "bar_start_at": "2026-10-12T11:12:00+08:00",
+        "scenarios": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "ret1_pct": "0.491480996068152031454783700",
+        "ret3_pct": "0.327118089630356558717697100",
+        "priority": "LOW",
+        "state": "CANDIDATE_FILTERED",
+        "reason": "历史成交基准不足，放量未确认",
+        "qualified": false,
+        "trace": {
+          "reason_code": "CANDIDATE_FILTERED",
+          "events": [],
+          "receipts": [],
+          "alert_decisions": 0,
+          "delivery_evidence": "unconfirmed",
+          "engine_trace": null,
+          "historical_trace_inferred": true
+        }
+      },
+      {
+        "symbol": "SH.688561",
+        "name": "奇安信-U",
+        "bar_start_at": "2026-10-12T11:08:00+08:00",
+        "scenarios": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "ret1_pct": "0.328191663931736133902198900",
+        "ret3_pct": "0.427069645203679369250985500",
+        "priority": "LOW",
+        "state": "CANDIDATE_FILTERED",
+        "reason": "历史成交基准不足，放量未确认",
+        "qualified": false,
+        "trace": {
+          "reason_code": "CANDIDATE_FILTERED",
+          "events": [],
+          "receipts": [],
+          "alert_decisions": 0,
+          "delivery_evidence": "unconfirmed",
+          "engine_trace": null,
+          "historical_trace_inferred": true
+        }
+      },
+      {
+        "symbol": "SZ.002044",
+        "name": "美年健康",
+        "bar_start_at": "2026-10-12T10:49:00+08:00",
+        "scenarios": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "ret1_pct": "0.413223140495867768595041300",
+        "ret3_pct": "1.039501039501039501039501000",
+        "priority": "LOW",
+        "state": "CANDIDATE_FILTERED",
+        "reason": "历史成交基准不足，放量未确认",
+        "qualified": false,
+        "trace": {
+          "reason_code": "CANDIDATE_FILTERED",
+          "events": [],
+          "receipts": [],
+          "alert_decisions": 0,
+          "delivery_evidence": "unconfirmed",
+          "engine_trace": null,
+          "historical_trace_inferred": true
+        }
+      },
+      {
+        "symbol": "SH.688561",
+        "name": "奇安信-U",
+        "bar_start_at": "2026-10-12T10:22:00+08:00",
+        "scenarios": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "ret1_pct": "0.592495062541145490454246200",
+        "ret3_pct": "0.526315789473684210526315800",
+        "priority": "LOW",
+        "state": "CANDIDATE_FILTERED",
+        "reason": "历史成交基准不足，放量未确认",
+        "qualified": false,
+        "trace": {
+          "reason_code": "CANDIDATE_FILTERED",
+          "events": [],
+          "receipts": [],
+          "alert_decisions": 0,
+          "delivery_evidence": "unconfirmed",
+          "engine_trace": null,
+          "historical_trace_inferred": true
+        }
+      },
+      {
+        "symbol": "SH.600879",
+        "name": "航天电子",
+        "bar_start_at": "2026-10-12T10:20:00+08:00",
+        "scenarios": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "ret1_pct": "0.305576776165011459129106200",
+        "ret3_pct": "0.459066564651874521805661800",
+        "priority": "LOW",
+        "state": "CANDIDATE_FILTERED",
+        "reason": "历史成交基准不足，放量未确认",
+        "qualified": false,
+        "trace": {
+          "reason_code": "CANDIDATE_FILTERED",
+          "events": [],
+          "receipts": [],
+          "alert_decisions": 0,
+          "delivery_evidence": "unconfirmed",
+          "engine_trace": null,
+          "historical_trace_inferred": true
+        }
+      },
+      {
+        "symbol": "SH.688561",
+        "name": "奇安信-U",
+        "bar_start_at": "2026-10-12T10:19:00+08:00",
+        "scenarios": [
+          "BREAKOUT_UNVERIFIED"
+        ],
+        "ret1_pct": "0.562355276215679788289778400",
+        "ret3_pct": "0.896116827082641885164288100",
+        "priority": "LOW",
+        "state": "CANDIDATE_FILTERED",
+        "reason": "历史成交基准不足，放量未确认",
+        "qualified": false,
+        "trace": {
+          "reason_code": "CANDIDATE_FILTERED",
+          "events": [],
+          "receipts": [],
+          "alert_decisions": 0,
+          "delivery_evidence": "unconfirmed",
+          "engine_trace": null,
+          "historical_trace_inferred": true
+        }
+      },
+      {
+        "symbol": "SZ.002044",
+        "name": "美年健康",
+        "bar_start_at": "2026-10-12T10:16:00+08:00",
+        "scenarios": [
+          "RAPID_RISE"
+        ],
+        "ret1_pct": "1.059322033898305084745762700",
+        "ret3_pct": "0.845665961945031712473572900",
+        "priority": "LOW",
+        "state": "CANDIDATE_FILTERED",
+        "reason": "冲高回落；成交基准积累中",
+        "qualified": true,
+        "trace": {
+          "reason_code": "CANDIDATE_FILTERED",
+          "events": [],
+          "receipts": [],
+          "alert_decisions": 0,
+          "delivery_evidence": "unconfirmed",
+          "engine_trace": null,
+          "historical_trace_inferred": true
+        }
+      }
+    ],
+    "health": {
+      "state": "DATA_UNAVAILABLE",
+      "first_decision_bar_start": "2026-10-12T10:07:00+08:00",
+      "monitor_started_at": "2026-10-12T10:08:18.534675+08:00",
+      "monitor_start_evidence": "decision time or original bar receipt proxy; not process boot",
+      "expected_stocks": 13,
+      "valid_stocks": 0,
+      "latest_bar_end_at": "2026-10-12T11:29:00+08:00",
+      "feed_status": "STOPPED",
+      "feed_reasons": [
+        "NO_SESSION",
+        "FEED_UNAVAILABLE"
+      ],
+      "missing_stock_minutes": 156,
+      "candidate_count": 8,
+      "qualified_count": 1,
+      "count_unit": "stock-minute; not episodes",
+      "high_alert_count": 0,
+      "notification_receipts": {},
+      "notification_state": "NO_FAILURE_RECEIPT"
+    }
+  },
+  "card_evidence": {}
+}

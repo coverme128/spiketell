@@ -2,6 +2,7 @@ import React, {useCallback, useEffect, useRef, useState} from 'react';
 import {createRoot} from 'react-dom/client';
 import {api, Card, CardEvidence, Detail, EpisodeEvent, Radar, Settings, Watch} from './types';
 import './style.css';
+import {MovementPanel} from './MovementPanel';
 import {SetupPanel} from './SetupPanel';
 import {StockSearch} from './StockSearch';
 import {StockVerification} from './StockVerification';
@@ -63,9 +64,9 @@ function App(){
     if(localStorage.getItem(key))return;localStorage.setItem(key,'1');
     const high=['HIGH_NEW','HIGH_UPGRADE','RAPID_NEW','ACCEL_NEW','BREAKOUT_NEW'].includes(data.alert_kind);setToast(`${high?'重点':'一般'}异动 · ${data.card.name} ${pct(data.card.ret1_pct)}`);
     if(high&&settingsRef.current?.notification_enabled&&!settingsRef.current.quiet_mode&&typeof Notification!=='undefined'&&Notification.permission==='granted'&&document.visibilityState==='visible'){
-      const show=()=>{if(localStorage.getItem('os:'+key))return;localStorage.setItem('os:'+key,'1');try{const n=new Notification(`重点异动 | ${data.card.name} (${data.card.symbol})`,{body:`${scenarios[data.card.primary_scenario??'']??'分钟异动'} · 1m ${pct(data.card.ret1_pct)} · 成交额 ${data.card.turnover_burst===null?'尚无基准':Number(data.card.turnover_burst).toFixed(1)+'×'} · 截至 ${time(data.bar_end_at)} · 异动提醒，不是买入建议`,tag:key});n.onshow=()=>receipt('OS_SHOWN');n.onclick=()=>{receipt('CLICKED');window.focus();void openDetail(data.episode_id);n.close()}}catch{setToast('系统通知不可用，请查看页面内提醒')}};
+      const show=()=>{if(localStorage.getItem('os:'+key))return;localStorage.setItem('os:'+key,'1');try{receipt('OS_ATTEMPTED');const n=new Notification(`重点异动 | ${data.card.name} (${data.card.symbol})`,{body:`${scenarios[data.card.primary_scenario??'']??'分钟异动'} · 1m ${pct(data.card.ret1_pct)} · 成交额 ${data.card.turnover_burst===null?'尚无基准':Number(data.card.turnover_burst).toFixed(1)+'×'} · 截至 ${time(data.bar_end_at)} · 异动提醒，不是买入建议`,tag:key});n.onshow=()=>receipt('OS_SHOWN');n.onerror=()=>receipt('OS_FAILED');n.onclick=()=>{receipt('CLICKED');window.focus();void openDetail(data.episode_id);n.close()}}catch{receipt('OS_FAILED');setToast('系统通知不可用，请查看页面内提醒')}};
       if(navigator.locks)void navigator.locks.request(key,show);else show();
-    }
+    }else if(high){receipt('OS_SUPPRESSED')}
    });
   };
   const init=async()=>{if(await refresh()){if(!cancelled&&!bootstrap.current){bootstrap.current=true;connect();const id=new URLSearchParams(location.hash.slice(1)).get('episode');if(id)void openDetail(id)}}};
@@ -89,7 +90,7 @@ function App(){
  return <div className="shell">
   <aside className="sidebar"><a className="brand" href="#" onClick={()=>setPage('radar')}><span className="brand-mark">◉</span><span>SpikeTell<small>A 股异动雷达</small></span></a><div className="workspace-label">个人工作台 <span>V1</span></div>
    <nav aria-label="主导航">{[['radar','异动雷达'],['list','自选股票'],['activity','活动日志']].map(([key,label])=><button key={key} className={page===key?'nav-item selected':'nav-item'} onClick={()=>setPage(key)}><Icon kind={key}/>{label}{key==='list'&&<span className="nav-count">{watch.length}</span>}</button>)}</nav>
-   <div className="sidebar-bottom"><div className="local-label"><span className="dot"/> 本机运行 · 数据本地保存</div><p>少一些盯盘。<br/>只关注值得查看的变化。</p><small>SPIKE RULES V1.0.0</small></div>
+   <div className="sidebar-bottom"><div className="local-label"><span className="dot"/> 本机运行 · 数据本地保存</div><p>少一些盯盘。<br/>只关注值得查看的变化。</p><small>SPIKE RULES V1.0.2</small></div>
   </aside>
   <main><header className="topbar"><span>工作台 <span className="slash">/</span> {page==='radar'?'异动雷达':page==='list'?'自选股票':'活动日志'}</span><span className="connection"><span className={`dot ${connection==='connected'&&!error?'green':''}`}/>{error?'服务连接失败':connection==='connected'?'事件连接正常':connection==='degraded'?'降级连接 · 15 秒轮询':'正在连接'}</span></header>
   <div className="content">
@@ -99,13 +100,14 @@ function App(){
    <section className={`feed-panel ${healthy?'healthy':''}`} aria-label="行情状态"><div className="feed-title"><span className={`status-orb ${healthy?'green':''}`}/><div><strong>{!feed?'正在读取行情状态':healthy?'行情监控中':feed.status==='DEGRADED'?'部分行情不可用':'新异动检测已暂停'}</strong><p>{feed?sessions[feed.session]:'连接本机服务中'} · 上海时间</p></div></div><div className="feed-meta"><span>有效行情 <b>{feed?.available_count??'—'} / {feed?.monitored_count??'—'}</b></span><span>最新完整分钟 <b>{time(feed?.last_bar_end_at)}</b></span><button className="text-button" onClick={async()=>{try{setDiagnostics(await api('/diagnostics'))}catch(e){setError(String(e))}}}>查看诊断 ↗</button></div>{feed&&!healthy&&<div className="feed-reasons">{feed.reasons.map(r=>reasons[r]||r).join(' · ')}</div>}</section>
    {page==='radar'&&<>
     <SetupPanel/>
-    <div className="stat-grid"><div className="stat"><span>已启用监控 <Icon kind="list"/></span><strong>{radar?.monitored_count??'—'}<small>只股票</small></strong><p>{watch.length?`${watch.length} 只自选 · ${radar?.available_count??0} 只行情有效`:'从添加第一只自选股开始'}</p></div><div className="stat"><span>今日异动 <Icon kind="activity"/></span><strong>{radar?.today_episode_count??'—'}<small>轮独立事件</small></strong><p>同一轮异动持续更新，不重复出卡</p></div><div className="stat highlight"><span>当前重点 <Icon kind="radar"/></span><strong>{error?'—':radar?.high_count??'—'}<small>值得查看</small></strong><p>仅统计有效行情下的重点异动</p></div></div>
+    <div className="stat-grid"><div className="stat"><span>已启用监控 <Icon kind="list"/></span><strong>{radar?.monitored_count??'—'}<small>只股票</small></strong><p>{watch.length?`${watch.length} 只自选 · ${radar?.available_count??0} 只行情有效`:'从添加第一只自选股开始'}</p></div><div className="stat"><span>今日关注事件 <Icon kind="activity"/></span><strong>{radar?.today_episode_count??'—'}<small>轮独立事件</small></strong><p>同一轮异动持续更新，不重复出卡</p></div><div className="stat highlight"><span>当前重点 <Icon kind="radar"/></span><strong>{error?'—':radar?.high_count??'—'}<small>值得查看</small></strong><p>仅统计有效行情下的重点异动</p></div></div>
     <section className="section"><div className="section-heading"><h2>重点关注 <span>TOP 3</span></h2><button className="text-button" onClick={()=>setAll(!all)}>{all?'收起全部':'查看全部异动'} ↗</button></div>
      {radar&&!error&&(all?radar.all_cards:radar.top_cards).length>0?<div className="card-grid">{(all?radar.all_cards:radar.top_cards).map(c=><SpikeCard key={c.episode_id} card={c} onOpen={openDetail} facts={cardFacts[c.episode_id]}/>)}</div>:<div className="empty-state"><div className="radar-art"><i/><i/><i/><span>✦</span></div><h3>{!feed?'正在连接本机服务':feed.status==='STOPPED'?'等待可信行情接入':'当前没有达到重点提醒条件的异动'}</h3><p>{feed?.status==='STOPPED'?'数据条件满足后开始检测。历史信号不会作为新的重点提醒。':'系统仍在监控已启用的自选股，有重要变化时会在这里显示。'}</p><button className="primary" onClick={()=>setPage('list')}>{watch.length?'管理自选股':'＋ 添加自选股'}</button><div className="empty-foot">已完成分钟 · 可解释规则 · 同一异动持续追踪</div></div>}
     </section>
     {radar&&!error&&(radar.risk_cards?.length??0)>0&&<section className="section risk-section"><div className="section-heading"><h2>风险变化 <span>退出重点关注</span></h2></div><div className="card-grid">{radar.risk_cards!.map(c=><SpikeCard key={c.episode_id} card={c} onOpen={openDetail} facts={cardFacts[c.episode_id]}/>)}</div></section>}
     {radar&&(radar.scenario_diagnostics?.length??0)>0&&<section className="section"><details><summary>分钟诊断记录（不发送上涨提醒）</summary><ul>{radar.scenario_diagnostics!.map(d=><li key={d.symbol+d.bar_end_at}>{d.symbol} · {time(d.bar_end_at)} · {d.data_mode==='SIMULATION'?'SIMULATION / 非实盘':'行情诊断'} · {d.event_types.includes('REVERSAL_OBSERVED')?'分钟内曾冲高且收盘回落，谨慎查看':'突破形态待确认：历史同分钟成交基准不足，不能认定放量'}</li>)}</ul></details></section>}
     {radar&&radar.historical_cards.length>0&&<section className="section"><div className="section-heading"><h2>最近事件 <span>历史记录</span></h2><button className="text-button" onClick={()=>setPage('activity')}>全部活动 ↗</button></div><div className="card-grid">{radar.historical_cards.map(c=><SpikeCard key={c.episode_id} card={error?{...c,feed_health:"STOPPED"}:c} onOpen={openDetail} facts={cardFacts[c.episode_id]}/>)}</div></section>}
+    <MovementPanel data={radar?.movements} error={!!error}/>
     <div className="notification-panel"><div><h3>让重要变化，及时找到你。</h3><p>{permission==='granted'?'浏览器通知已授权。':permission==='denied'?'通知权限已拒绝，可在浏览器站点设置中修改。':'浏览器通知未开启。'} 页面打开时可查看提醒；关闭页面后不会收到系统推送。</p></div><div className="notification-controls">{permission==='default'&&<button onClick={()=>void notification()}>开启浏览器通知 ↗</button>}{permission==='granted'&&<button onClick={()=>{try{new Notification('SpikeTell · 通知测试',{body:'测试通知，非行情异动。'})}catch{setToast('系统通知不可用')}}}>测试通知</button>}<label><input type="checkbox" disabled={saving||!settings} checked={settings?.notification_enabled??true} onChange={e=>void mutate('/settings',{notification_enabled:e.target.checked})}/> 重点提醒</label><label><input type="checkbox" disabled={saving||!settings} checked={settings?.quiet_mode??false} onChange={e=>void mutate('/settings',{quiet_mode:e.target.checked})}/> 安静模式</label></div></div>
    </>}
    {page==='list'&&<>

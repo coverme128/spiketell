@@ -1,0 +1,15 @@
+{
+  "reason": "Observed delayed/nonidentical Sina rows blocked primary live calibration",
+  "change": "Separate optional historical qualification from measured primary source qualification",
+  "required_primary_evidence": [
+    "two symbols",
+    "three intraminute observations spanning at least 15 seconds",
+    "two positive amount deltas match timestamped quote",
+    "two matching volume deltas in lots",
+    "same observed minute closes and passes two post-close stable reads",
+    "price-volume-amount units consistent"
+  ],
+  "history_policy": "UNKNOWN unless separately cross-qualified; cannot use unverified history for HIGH or breakout",
+  "tests": "175 passed; calibration-tests.log",
+  "runtime_verification": "13/13 LIVE DETECTING at 2026-10-12T10:08:41+08:00; HEALTHY; 13 new decisions"
+}

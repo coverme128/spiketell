@@ -1,0 +1,152 @@
+{
+  "capacity_verified": false,
+  "finalization_policy": "two_identical_post_close_observations_5s_apart_min_close_age_8s",
+  "finalization_verified": true,
+  "history_timestamp_semantics": "UNKNOWN",
+  "history_warning": "HISTORY_SOURCE_NOT_ALIGNED; unverified baselines cannot enable HIGH or VOLUME_BREAKOUT",
+  "name": "akshare",
+  "personal_use_confirmed": true,
+  "primary_close_checks": [
+    {
+      "confirmed_final_bars": [
+        {
+          "amount_cny": "1497762.00",
+          "bar_end_at": "2026-10-12T10:05:00+08:00",
+          "bar_start_at": "2026-10-12T10:04:00+08:00",
+          "close": "9.68",
+          "high": "9.69",
+          "is_final": true,
+          "low": "9.68",
+          "open": "9.68",
+          "quality": "VALID",
+          "received_at": "2026-10-12T10:05:32.862931+08:00",
+          "source": "akshare/eastmoney",
+          "symbol": "SH.600000",
+          "volume_shares": 154700
+        }
+      ],
+      "invalid": false,
+      "observed_label": "2026-10-12T10:05:00+08:00",
+      "symbol": "SH.600000"
+    },
+    {
+      "confirmed_final_bars": [
+        {
+          "amount_cny": "3949358.00",
+          "bar_end_at": "2026-10-12T10:05:00+08:00",
+          "bar_start_at": "2026-10-12T10:04:00+08:00",
+          "close": "11.76",
+          "high": "11.77",
+          "is_final": true,
+          "low": "11.76",
+          "open": "11.77",
+          "quality": "VALID",
+          "received_at": "2026-10-12T10:05:34.595025+08:00",
+          "source": "akshare/eastmoney",
+          "symbol": "SZ.000001",
+          "volume_shares": 335600
+        }
+      ],
+      "invalid": false,
+      "observed_label": "2026-10-12T10:05:00+08:00",
+      "symbol": "SZ.000001"
+    }
+  ],
+  "qualification_method": "two_symbols_quote_amount_volume_deltas_and_observed_final_close",
+  "qualified_at": "2026-10-12T10:05:34.605267+08:00",
+  "rights_evidence": "local-user-declaration:2026-10-12T09:56:45.275743+08:00",
+  "rights_scope": "个人本机使用，用户确认具备所选数据源使用权限",
+  "timestamp_samples": [
+    {
+      "amount_delta_matches": 2,
+      "observations": [
+        {
+          "amount": "478286.00",
+          "at": "2026-10-12T10:04:22.250735+08:00",
+          "close": "9.68",
+          "label": "2026-10-12T10:05:00+08:00",
+          "quote_amount": "196408847.0",
+          "quote_at": "2026-10-12T10:04:21+08:00",
+          "quote_close": "9.68",
+          "quote_volume": "203400",
+          "semantics": "end",
+          "volume": "494"
+        },
+        {
+          "amount": "771722.00",
+          "at": "2026-10-12T10:04:33.348092+08:00",
+          "close": "9.68",
+          "label": "2026-10-12T10:05:00+08:00",
+          "quote_amount": "196702283.0",
+          "quote_at": "2026-10-12T10:04:30+08:00",
+          "quote_close": "9.68",
+          "quote_volume": "203703",
+          "semantics": "end",
+          "volume": "797"
+        },
+        {
+          "amount": "1092148.00",
+          "at": "2026-10-12T10:04:44.137839+08:00",
+          "close": "9.68",
+          "label": "2026-10-12T10:05:00+08:00",
+          "quote_amount": "197022709.0",
+          "quote_at": "2026-10-12T10:04:42+08:00",
+          "quote_close": "9.68",
+          "quote_volume": "204034",
+          "semantics": "end",
+          "volume": "1128"
+        }
+      ],
+      "semantics": "end",
+      "source": "eastmoney",
+      "symbol": "SH.600000",
+      "volume_delta_matches": 2
+    },
+    {
+      "amount_delta_matches": 2,
+      "observations": [
+        {
+          "amount": "1276895.00",
+          "at": "2026-10-12T10:04:22.821828+08:00",
+          "close": "11.77",
+          "label": "2026-10-12T10:05:00+08:00",
+          "quote_amount": "410577565.59",
+          "quote_at": "2026-10-12T10:04:21+08:00",
+          "quote_close": "11.77",
+          "quote_volume": "350413",
+          "semantics": "end",
+          "volume": "1085"
+        },
+        {
+          "amount": "3050386.00",
+          "at": "2026-10-12T10:04:33.689157+08:00",
+          "close": "11.77",
+          "label": "2026-10-12T10:05:00+08:00",
+          "quote_amount": "412351056.59",
+          "quote_at": "2026-10-12T10:04:33+08:00",
+          "quote_close": "11.77",
+          "quote_volume": "351920",
+          "semantics": "end",
+          "volume": "2592"
+        },
+        {
+          "amount": "3282193.00",
+          "at": "2026-10-12T10:04:44.565861+08:00",
+          "close": "11.77",
+          "label": "2026-10-12T10:05:00+08:00",
+          "quote_amount": "412582863.59",
+          "quote_at": "2026-10-12T10:04:42+08:00",
+          "quote_close": "11.77",
+          "quote_volume": "352117",
+          "semantics": "end",
+          "volume": "2789"
+        }
+      ],
+      "semantics": "end",
+      "source": "eastmoney",
+      "symbol": "SZ.000001",
+      "volume_delta_matches": 2
+    }
+  ],
+  "timestamp_semantics": "end"
+}
